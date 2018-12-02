@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Post a Job | Freelancer</title>
+    <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="job-body">
+<header class="header">
+    <div class="wrapper">
+        <div class="wrapper--header">
+            <div class="header__logo">
+                <a href="../index.html" class="header__logo__link">
+                    <img src="../img/header-logo.png" class="header__logo__img" alt="header-logo"/>
+                </a>
+            </div>
+            <div class="header__menu--mobile" id="menu-open">
+            <span class="header__menu--mobile__item">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+            </div>
+            <div class="header--menu-log-menu">
+                <ul class="header__menu">
+                    <li class="header__menu__item">
+                        <a href="#" class="header__menu__link">Buy</a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a href="sell.html" class="header__menu__link">Sell</a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a href="#" class="header__menu__link">How it works</a>
+                    </li>
+                </ul>
+                <ul class="header__log-menu">
+                    <li class="header__log-menu__post">
+                        <a href="#" class="header__log-menu__post__link">Post a job</a>
+                    </li>
+                    <li class="header__log-menu__log">
+                        <a href="#" class="header__log-menu__log__link">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="wrapper">
+        <section class="job-form">
+            <header class="job-form__header">
+                <h1 class="job-form__title">Get your Job Done!</h1>
+                <p class="job-form__text">Post a Job for Free - Start receiving proposals within minutes</p>
+            </header>
+            <form action="">
+                <div class="job-form__box">
+                    <div class="job-form__box--grid">
+                        <div class="job-form__box__register">
+                            <div class="job-form__box__register--grid">
+                                <div class="job-form__box__block1">
+                                    <input type="text" placeholder="First Name" class="job-form__box__input">
+                                </div>
+                               <div class="job-form__box__block1">
+                                   <input type="text" placeholder="Last Name" class="job-form__box__input">
+                               </div>
+                            </div>
+                            <div class="job-form__box__block2">
+                                <input type="text" placeholder="E-mail address" class="job-form__box__input job-form__box__input--email">
+                            </div>
+                        </div>
+                        <div class="job-form__box__or">
+                            <p class="job-form__box__or--text">or</p>
+                        </div>
+                        <div class="job-form__box__social">
+                            <div class="job-form__box__social--block">
+                                <span class="job-form__box__social__icon">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </span>
+                                <a href="https://www.facebook.com/" class="job-form__box__social__link">
+                                    sign in with Facebook
+                                </a>
+                            </div>
+                            <div class="job-form__box__social--block">
+                                 <span class="job-form__box__social__icon job-form__box__social__linkedin--icon">
+                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </span>
+                                <a href="https://www.linkedin.com/" class="job-form__box__social__link job-form__box__social__linkedin">
+                                    sign in with Linkedin
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-form__list">
+                        <div>
+                            <label for="done" class="job-form__list__label">What do you need to get done?</label>
+                            <input type="text" id="done" class="job-form__list__input" placeholder="e.g. I need a professional website design">
+                        </div>
+                        <div class="job-form__list__box">
+                            <div class="job-form__list__box1">
+                                <label for="category" class="job-form__list__label">Pick Category</label>
+                                <select name="" id="category" class="job-form__list__select">
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                </select>
+                            </div>
+                            <div class="job-form__list__box1">
+                                <label for="subcategory" class="job-form__list__label">Subcategory</label>
+                                <select name="" id="subcategory" class="job-form__list__select">
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                    <option value="">select</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="description" class="job-form__list__label">Descripton</label>
+                            <textarea rows="4" cols="50" id="description" class="job-form__list__textarea" placeholder="Provide a more detailed description to help you get better proposals"></textarea>
+                        </div>
+                    </div>
+                    <div class="job-form__upload">
+                        <h3 class="job-form__upload__title">Upload samples and other helpful material</h3>
+                        <div class="job-form__upload__box" onClick="document.getElementById('hide').click()">
+                            <input type="file" id="hide">
+                            <p class="job-form__upload__text">Drop files here or
+                                <span class="job-form__upload__link">Browse</span>
+                                to add attachments
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-form__budget">
+                        <div class="job-form__budget__box1">
+                            <label for="type" class="job-form__list__label">Work Type</label>
+                            <select name="" id="type" class="job-form__list__select">
+                                <option value="">Fixed Price</option>
+                                <option value="">select</option>
+                                <option value="">select</option>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                        <div class="job-form__budget__box2">
+                            <label for="currency" class="job-form__list__label">Currency</label>
+                            <select name="" id="currency" class="job-form__list__select">
+                                <option value="">$USD</option>
+                                <option value="">select</option>
+                                <option value="">select</option>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                        <div class="job-form__budget__box3">
+                            <label for="budget" class="job-form__list__label">Budget</label>
+                            <input type="text" id="budget" class="job-form__list__input job-form__budget__input">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <section class="experience">
+                <h2 class="experience__title">Experience Level</h2>
+                <div class="experience__row">
+                    <div class="experience__box">
+                        <h3 class="experience__box__title">Entry</h3>
+                        <div class="experience__box--inside">
+                            <p class="experience__box__text">Freelancers with lower rates and less experience</p>
+                            <p class="experience__box__money">$</p>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <h3 class="experience__box__title">Intermediate</h3>
+                        <div class="experience__box--inside">
+                            <p class="experience__box__text">
+                                Freelancers with average
+                                rates and experience
+                            </p>
+                            <p class="experience__box__money">$$</p>
+                        </div>
+                    </div>
+                    <div class="experience__box">
+                        <h3 class="experience__box__title">Expert</h3>
+                        <div class="experience__box--inside">
+                            <p class="experience__box__text">
+                                Freelancers with higher
+                                rates and more experience
+                            </p>
+                            <p class="experience__box__money">$$$</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <article class="useful-article">
+            <h3 class="useful-article__title">Useful Tips</h3>
+            <p class="useful-article__text">
+                1. Describe your Job in as much detail as you can comfortably
+                reveal - it will increase the quality of proposals you receive
+                and shorten the selection process.
+            </p>
+            <p class="useful-article__text">
+                2. Upload as much relevant information (pictures, documents,
+                specifications, links, etc) as possible to get a realistic quote.
+            </p>
+            <p class="useful-article__text">
+                3. Match the experience level to your requirements – remember, you’re
+                looking for the best you can afford, not the cheapest you can get.
+            </p>
+            <p class="useful-article__text">
+                For more helpful tips, see our guide <span class="useful-article__italic">“Hiring a freelancer”.</span>
+            </p>
+        </article>
+    </div>
+</main>
+<footer class="footer">
+    <section class="footer--wrapper">
+        <div class="wrapper">
+            <div class="footer__box">
+                <div class="footer__box__column">
+                    <h3 class="footer__box__title">Company</h3>
+                    <ul class="footer__box__list">
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">About us</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Careers</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Our team</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Press</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Enterprise solutions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box__column">
+                    <h3 class="footer__box__title">Categories</h3>
+                    <ul class="footer__box__list">
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Web and mobile design</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Business</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Market research</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Website development</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Product management</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box__column">
+                    <h3 class="footer__box__title">Help</h3>
+                    <ul class="footer__box__list">
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">How it works</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Support</a>
+                        </li>
+                        <li class="footer__box__list__item">
+                            <a href="#" class="footer__box__list__link">Trust & safety</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box__column">
+                    <h3 class="footer__box__title">Newsletter</h3>
+                    <p class="footer__box__list__link">Enter your e-mail and subscribe to our newsletter</p>
+                    <form class="footer__box__form">
+                        <input type="text" placeholder="your e-mail" class="footer__box__form__input"/>
+                        <button class="footer__box__form__button">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="social-footer">
+        <div class="wrapper">
+            <div class="social-footer__box">
+                <div class="social-footer__item">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="social-footer__item">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="social-footer__item">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <div class="social-footer__item">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+            <p class="social-footer__copyright">© 2017.Privacy Policy</p>
+        </div>
+    </section>
+</footer>
+<script src="../js/js-libs.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

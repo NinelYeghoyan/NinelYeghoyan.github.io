@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact us</title>
+    <link rel="shortcut icon" type="img/favicon.png" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/libs.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body">
+<!-- header section -->
+<header class="header header--white">
+    <div class="wrapper">
+        <div class="header--wrapper">
+            <a href="../index.html" class="header__logo">
+                <img src="../img/logo.png" alt="header-logo"/>
+            </a>
+            <a href="../index.html" class="header__logo--small">
+                <img src="../img/logo-s.png" alt="header-logo"/>
+            </a>
+            <div class="header-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="header__list">
+            <li class="header__item header__mobile-languagePicker">
+                <a href="#" class="header__mobile-languagePicker__link">En</a>
+                <a href="#" class="header__mobile-languagePicker__link">Am</a>
+                <a href="#" class="header__mobile-languagePicker__link">Ru</a>
+            </li>
+            <li class="header__item">
+                <a href="about.html" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+                <a href="tour.html" class="header__link">Tours</a>
+            </li>
+            <li class="header__item">
+                <a href="services.html" class="header__link">services</a>
+            </li>
+            <li class="header__item">
+                <a href="armenia.html" class="header__link">armenia</a>
+            </li>
+            <li class="header__item">
+                <a href="news.html" class="header__link">news</a>
+            </li>
+            <li class="header__item">
+                <a href="contact.html" class="header__link">contact us</a>
+            </li>
+            <li class="header__item header__item--hidden">
+                <div class="header__languagePicker" onclick="dropdown_function()">
+                    <button class="header__languagePicker__button">en</button>
+                    <img src="../img/lang-arrow.png" alt="header-logo">
+                </div>
+                <div id="header__languagePicker-dropDown" class="header__languagePicker__content">
+                    <a href="#" class="header__languagePicker__link">en</a>
+                    <a href="#" class="header__languagePicker__link">ru</a>
+                    <a href="#" class="header__languagePicker__link">de</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<main class="main">
+    <!-- map section -->
+    <section class="contact-map">
+        <div id="map"></div>
+    </section>
+    <!-- contact info section -->
+    <section class="contact-info">
+        <div class="wrapper-min">
+            <div class="contact-info--wrapper">
+                <div class="contact-info__col">
+                    <p class="contact-info__text">
+                        <span class="contact-info__span">Address: </span>
+                        4 Vardanants str., Yerevan, Armenia
+                    </p>
+                </div>
+                <div class="contact-info__col">
+                    <p class="contact-info__text">
+                        <span class="contact-info__span">Phone Number: </span>
+                        +37410 56 36 67
+                    </p>
+                </div>
+                <div class="contact-info__col">
+                    <p class="contact-info__text">
+                        <span class="contact-info__span">Email: </span>
+                        info@armeniatravel.am
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact form section -->
+    <section class="contact-form">
+        <div class="wrapper-min">
+            <div class="contact-form--wrapper">
+                <!-- contact title -->
+                <div class="contact-form__blockCol">
+                    <h5 class="contact-form__title">get in
+                        <span class="contact-form__span">touch</span>
+                    </h5>
+                    <p class="contact-form__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam error exercitationem explicabo in quibusdam, quidem quisquam repellat sapiente tenetur.</p>
+                </div>
+                <!-- contact form -->
+                <div class="contact-form__blockCol">
+                    <form action="" method="POST">
+                        <div class="contact-form__row">
+                            <div class="contact-form__inputBlock">
+                                <label for="name" class="contact-form__label">name
+                                    <span class="contact-form__star">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" required class="contact-form__input"/>
+                            </div>
+                            <div class="contact-form__inputBlock">
+                                <label for="email" class="contact-form__label">email
+                                    <span class="contact-form__star">*</span>
+                                </label>
+                                <input type="email" id="email" name="e-mail" required class="contact-form__input"/>
+                            </div>
+                            <div class="contact-form__inputBlock">
+                                <label for="subject" class="contact-form__label">subject
+                                    <span class="contact-form__star">*</span>
+                                </label>
+                                <input type="text" id="subject" name="subject" required class="contact-form__input"/>
+                            </div>
+                        </div>
+                        <div class="contact-form__rowTextarea">
+                            <label for="message" class="contact-form__label">message
+                                <span class="contact-form__star">*</span>
+                            </label>
+                            <textarea name="message" id="message" rows="4" required class="contact-form__input"></textarea>
+                        </div>
+                        <div class="contact-form__rowButton">
+                            <input type="submit" name="submited" value="send" class="contact-form__button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- partners section -->
+    <section class="partners">
+        <div class="wrapper">
+            <!-- Owl carousel -->
+            <div class="owl-carousel owl-theme carousel2">
+                <div class="item">
+                    <div class="slider">
+                        <a href="http://www.araratbrandy.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/ARARAT%20logo.svg" alt="Ararat brandy"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://www.austrian.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/AUSTRIAN%20logo.svg" alt="Austrian-Airlines"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://busvoyage.am" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/BUSBOYAGE%20logo.svg" alt="BusVoyage"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://epicstudy.org" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/EPIC%20logo.svg"  alt="EPIC"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="http://www.iata.org" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/IATA%20logo.svg"  alt="IATA"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://lufthansa-city-center.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/LUFTHANSA%20CITY%20CENTER%20logo.svg"  alt="Lufthansa"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://pandokyerevan.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/TAVERN%20YEREVAN%20logo.svg"  alt="Tavern Yerevan"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://touroperator.am" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/UITO%20logo.svg"  alt="UITO"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- footer section -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-top">
+            <div class="footer-top__col">
+                <h5 class="footer__title">About</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Company</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Team</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Portfolio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Your DMC in Armenia</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">For Partner</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Why We?</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">Tours and Products</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Religion-better Pilgrimage</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Cultural – Historical</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Regional</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Wine and cuisine</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Birdwatching and botanic</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Educational</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">Services</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Tour packeges</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Hotel reservation</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Transport</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Excursions and guides</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Restaurants or Food</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Translation services & equipment for conference</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">Armenia</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">About Armenia</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Event Calendar</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">What to see</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Entertainments</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Food and drink</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Tourist info</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">contact us</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">4 Vardanants str. Yerevan, Armenia</li>
+                    <li class="footer__item">(+374) 10 56 36 67</li>
+                    <li class="footer__item">info@armeniatravel.am</li>
+                    <li class="footer__item footer-top__social">
+                        <a href="https://www.facebook.com/ArmeniaTravel/" target="_blank" class="footer-top__social__block">
+                            <img src="../img/fb-s.png" alt="facebook"/>
+                        </a>
+                        <a href="https://twitter.com/ArmeniaTravel_" target="_blank" class="footer-top__social__block">
+                            <img src="../img/tw-s.png" alt="twitter"/>
+                        </a>
+                        <a href="https://plus.google.com/b/101216774593900676378/101216774593900676378" target="_blank" class="footer-top__social__block">
+                            <img src="../img/google-s.png" alt="google"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="wrapper footer__wrapper">
+            <p class="footer__copyright">© Copyright 2018. Armenia Travel. All rights reserved.</p>
+            <p class="footer__design">Design created with <img src="../img/heart.png" alt="heart"/> by Braind</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/libs.min.js"></script>
+<script src="../js/script.js"></script>
+<script>
+    function initMap() {
+        // Map options
+        var options ={
+            zoom: 17,
+            center: {lat:40.1787284,lng:44.5174512},
+            styles: [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "lightness": 100
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#bdbdbd"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#dadada"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#c9c9c9"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }
+            ]
+        };
+
+        // New map
+        var map = new google.maps.Map(document.getElementById('map'), options);
+
+        // Add marker
+        var marker = new google.maps.Marker({
+            position: {lat:40.1787284,lng:44.5174512},
+            map: map,
+            icon: '../img/map-marker.png'
+        });
+
+        // Info window
+        var infoWindow = new google.maps.InfoWindow({
+            content: '<h6>4 Vardanants Street, Yerevan</h6>'
+        });
+
+        marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbKqoBQ7Vx-1GSCPOae9mOWU-0vCaOoqs&callback=initMap"
+        type="text/javascript"></script>
+</body>
+</html>

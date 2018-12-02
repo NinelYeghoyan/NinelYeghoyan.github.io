@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Armenia</title>
+    <link rel="shortcut icon" type="img/favicon.png" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/libs.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body">
+<!-- header section -->
+<header class="header">
+    <div class="wrapper">
+        <div class="header--wrapper">
+            <a href="../index.html" class="header__logo">
+                <img src="../img/logo.png" alt="header-logo"/>
+            </a>
+            <a href="../index.html" class="header__logo--small">
+                <img src="../img/logo-s.png" alt="header-logo"/>
+            </a>
+            <div class="header-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="header__list">
+            <li class="header__item header__mobile-languagePicker">
+                <a href="#" class="header__mobile-languagePicker__link">En</a>
+                <a href="#" class="header__mobile-languagePicker__link">Am</a>
+                <a href="#" class="header__mobile-languagePicker__link">Ru</a>
+            </li>
+            <li class="header__item">
+                <a href="about.html" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+                <a href="tour.html" class="header__link">Tours</a>
+            </li>
+            <li class="header__item">
+                <a href="services.html" class="header__link">services</a>
+            </li>
+            <li class="header__item">
+                <a href="armenia.html" class="header__link">armenia</a>
+            </li>
+            <li class="header__item">
+                <a href="news.html" class="header__link">news</a>
+            </li>
+            <li class="header__item">
+                <a href="contact.html" class="header__link">contact us</a>
+            </li>
+            <li class="header__item header__item--hidden">
+                <div class="header__languagePicker" onclick="dropdown_function()">
+                    <button class="header__languagePicker__button">en</button>
+                    <img src="../img/lang-arrow.png" alt="header-logo">
+                </div>
+                <div id="header__languagePicker-dropDown" class="header__languagePicker__content">
+                    <a href="#" class="header__languagePicker__link">en</a>
+                    <a href="#" class="header__languagePicker__link">ru</a>
+                    <a href="#" class="header__languagePicker__link">de</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<main class="main">
+    <!-- armenia banner section -->
+    <section class="armenia-banner">
+        <div class="wrapper"></div>
+    </section>
+    <!-- armenia tab section -->
+    <section class="armenia-tabs">
+        <!-- armenia tab menu section -->
+        <div class="armenia-tabs__menu" id="armenia-menuScroll">
+            <div class="about-menu__mobile">
+                <div class="about-menu__mobile__link">Show Sections
+                    <img src="../img/about/about-arrowDown.png" class="about-menu__mobile__icon" alt="arrow"/>
+                </div>
+            </div>
+            <ul class="armenia-tabs__list wrapper-min">
+                <li class="armenia-tabs__link current" data-tab="tab-1">About Armenia</li>
+                <li class="armenia-tabs__link" data-tab="tab-2">Event Calendar</li>
+                <li class="armenia-tabs__link" data-tab="tab-3">Sightseeing</li>
+                <li class="armenia-tabs__link" data-tab="tab-4">Entertainments</li>
+                <li class="armenia-tabs__link" data-tab="tab-5">Food and drink</li>
+                <li class="armenia-tabs__link" data-tab="tab-6">Tourist info</li>
+            </ul>
+        </div>
+        <!-- armenia tab content section -->
+        <div class="armenia-tabs__container">
+            <section id="tab-1" class="armenia-tabs__content current">
+                <div class="armenia-about">
+                    <div class="armenia-about__history">
+                        <div class="wrapper-min armenia-about__history--wrapper">
+                            <article class="armenia-about__col">
+                                <h3 class="armenia-about__title">history</h3>
+                                <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                            <aside class="armenia-about__col">
+                                <img src="../img/armenia/about/img_1.png" alt="history image"/>
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="armenia-about__culture">
+                        <div class="wrapper-min">
+                            <h3 class="armenia-about__title">Culture and
+                                <span class="armenia-about__titleSpan">traditions</span>
+                            </h3>
+                            <article class="armenia-about__culture__article">
+                                <div class="armenia-about__culture__articleCol">
+                                    <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                    <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                </div>
+                                <div class="armenia-about__culture__articleCol">
+                                    <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                    <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="armenia-about__religion">
+                        <div class="wrapper-min armenia-about__religion--wrapper">
+                            <article class="armenia-about__col">
+                                <h3 class="armenia-about__title">religion</h3>
+                                <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                            <aside class="armenia-about__col">
+                                <img src="../img/armenia/about/img_2.png" alt="religion image"/>
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="armenia-about__climate">
+                        <div class="wrapper-min armenia-about__climate--wrapper">
+                            <article class="armenia-about__col">
+                                <h3 class="armenia-about__title">Climate
+                                    <span class="armenia-about__titleSpan">In armenia</span>
+                                </h3>
+                                <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                <p class="armenia-about__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                            <article class="armenia-about__col">
+                                <ul class="armenia-about__climate__list">
+                                    <li class="armenia-about__climate__item">
+                                        <h6 class="armenia-about__climate__listTitle">winter</h6>
+                                        <p class="armenia-about__climate__listText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy . </p>
+                                    </li>
+                                    <li class="armenia-about__climate__item">
+                                        <h6 class="armenia-about__climate__listTitle">Spring</h6>
+                                        <p class="armenia-about__climate__listText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy . </p>
+                                    </li>
+                                    <li class="armenia-about__climate__item">
+                                        <h6 class="armenia-about__climate__listTitle">Summer</h6>
+                                        <p class="armenia-about__climate__listText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy . </p>
+                                    </li>
+                                    <li class="armenia-about__climate__item">
+                                        <h6 class="armenia-about__climate__listTitle">autumn</h6>
+                                        <p class="armenia-about__climate__listText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy . </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="armenia-about__reasons">
+                        <div class="wrapper-min">
+                            <h3 class="armenia-about__title">5 reasons to
+                                <span class="armenia-about__titleSpan">visit Armenia</span>
+                            </h3>
+                            <div class="armenia-about__reasons__row">
+                                <div class="armenia-about__reasons__col">
+                                    <h6 class="armenia-about__reasons__title">Reason Name</h6>
+                                    <p class="armenia-about__reasons__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                </div>
+                                <div class="armenia-about__reasons__col">
+                                    <h6 class="armenia-about__reasons__title">Reason Name</h6>
+                                    <p class="armenia-about__reasons__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                </div>
+                                <div class="armenia-about__reasons__col">
+                                    <h6 class="armenia-about__reasons__title">Reason Name</h6>
+                                    <p class="armenia-about__reasons__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                </div>
+                                <div class="armenia-about__reasons__col">
+                                    <h6 class="armenia-about__reasons__title">Reason Name</h6>
+                                    <p class="armenia-about__reasons__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                </div>
+                                <div class="armenia-about__reasons__col">
+                                    <h6 class="armenia-about__reasons__title">Reason Name</h6>
+                                    <p class="armenia-about__reasons__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- armenia tab event event section -->
+            <section id="tab-2" class="armenia-tabs__content">
+                <div class="wrapper-min">
+                    <h2 class="armenia-event__title">events and <span class="armenia-event__titleSpan">festivals</span></h2>
+                    <div class="armenia-event">
+                        <figure class="armenia-event__figure">
+                            <div class="armenia-event__imgBox"></div>
+                            <figcaption class="armenia-event__figcaption">
+                                <p class="armenia-event__figcaption__text">Wine Festival in Areni Village</p>
+                                <p class="armenia-event__figcaption__calendar">12th of October</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="armenia-event__figure">
+                            <div class="armenia-event__imgBox"></div>
+                            <figcaption class="armenia-event__figcaption">
+                                <p class="armenia-event__figcaption__text">Easter</p>
+                                <p class="armenia-event__figcaption__calendar">12th of October</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="armenia-event__figure">
+                            <div class="armenia-event__imgBox"></div>
+                            <figcaption class="armenia-event__figcaption">
+                                <p class="armenia-event__figcaption__text">Vardavar</p>
+                                <p class="armenia-event__figcaption__calendar">12th of October</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="armenia-event__figure">
+                            <div class="armenia-event__imgBox"></div>
+                            <figcaption class="armenia-event__figcaption">
+                                <p class="armenia-event__figcaption__text">Dolma Festival</p>
+                                <p class="armenia-event__figcaption__calendar">12th of October</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="armenia-event__figure">
+                            <div class="armenia-event__imgBox"></div>
+                            <figcaption class="armenia-event__figcaption">
+                                <p class="armenia-event__figcaption__text">Sheep Shearing Festival</p>
+                                <p class="armenia-event__figcaption__calendar">12th of October</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="armenia-event__figure">
+                            <div class="armenia-event__imgBox"></div>
+                            <figcaption class="armenia-event__figcaption">
+                                <p class="armenia-event__figcaption__text">Barbeque Festival in Akthala</p>
+                                <p class="armenia-event__figcaption__calendar">12th of October</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- armenia tab sightseeing section -->
+            <section id="tab-3" class="armenia-tabs__content">
+                <div class="wrapper-min">
+                    <ul class="armenia-sightseeing__list">
+                        <li class="armenia-sightseeing__filter" data-filter="all">
+                            <input type="button" class="armenia-sightseeing__list__input armenia-sightseeing__filterActive" value="All">
+                        </li>
+                        <li class="armenia-sightseeing__filter" data-filter="places">
+                            <input type="button"  class="armenia-sightseeing__list__input" value="Places">
+                        </li>
+                        <li class="armenia-sightseeing__filter" data-filter="museums">
+                            <input type="button"  class="armenia-sightseeing__list__input" value="Museums">
+                        </li>
+                        <li class="armenia-sightseeing__filter" data-filter="monasteries">
+                            <input type="button"  class="armenia-sightseeing__list__input" value="Monasteries & Temples">
+                        </li>
+                        <li class="armenia-sightseeing__filter" data-filter="castles">
+                            <input type="button"  class="armenia-sightseeing__list__input" value="Castles & Fortress">
+                        </li>
+                        <li class="armenia-sightseeing__filter" data-filter="caves">
+                            <input type="button" class="armenia-sightseeing__list__input" value="Caves">
+                        </li>
+                    </ul>
+                    <ul id="armenia-sightseeing__inner">
+                        <li class="armenia-sightseeing__row places">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img18.png" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">The National Gallery of Armenia</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row museums">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img15.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">Tatev monastery</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row monasteries">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img16.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">Amberd</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row castles">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img17.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">Dilijan</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row caves">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img19.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">caves</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row places">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img18.png" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">The National Gallery of Armenia</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row museums">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img15.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">Tatev monastery</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row monasteries">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img16.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">Amberd</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row castles">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img17.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">Dilijan</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                        <li class="armenia-sightseeing__row caves">
+                            <aside class="armenia-sightseeing__aside">
+                                <div class="armenia-sightseeing__aside__imgBox">
+                                    <img src="../img/armenia/sightseeing/img19.jpg" alt=""/>
+                                </div>
+                            </aside>
+                            <article class="armenia-sightseeing__article">
+                                <h4 class="armenia-sightseeing__article__title">caves</h4>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                                <p class="armenia-sightseeing__article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p class="armenia-sightseeing__article__text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- armenia tab entertainments section -->
+            <section id="tab-4" class="armenia-tabs__content">
+                <div class="wrapper-min">
+                    <div class="armenia-entertain">
+                        <figure class="armenia-entertain__figure" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Opera & Ballet</figcaption>
+                        </figure>
+                        <figure class="armenia-entertain__figure">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Theatres</figcaption>
+                        </figure>
+                        <figure class="armenia-entertain__figure">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Ropeway</figcaption>
+                        </figure>
+                        <figure class="armenia-entertain__figure">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Paragliding</figcaption>
+                        </figure>
+                        <figure class="armenia-entertain__figure">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Spa</figcaption>
+                        </figure>
+                        <figure class="armenia-entertain__figure">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Skiing</figcaption>
+                        </figure>
+                        <figure class="armenia-entertain__figure">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Shopping</figcaption>
+                        </figure>
+                        <figure class="armenia-entertain__figure">
+                            <div class="armenia-entertain__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Golf</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- armenia tab food and drink section -->
+            <section id="tab-5" class="armenia-tabs__content">
+                <div class="wrapper-min">
+                    <div class="armenia-food">
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-food__figcaption">Khash</figcaption>
+                        </figure>
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Wines</figcaption>
+                        </figure>
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Dolma</figcaption>
+                        </figure>
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Dried Fruits</figcaption>
+                        </figure>
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Barbecue</figcaption>
+                        </figure>
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Lavash</figcaption>
+                        </figure>
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Kebab</figcaption>
+                        </figure>
+                        <figure class="armenia-food__figure">
+                            <div class="armenia-food__imgBox"></div>
+                            <figcaption class="armenia-entertain__figcaption">Fruits</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- armenia tab tourist info section -->
+            <section id="tab-6" class="armenia-tabs__content">
+                <div class="wrapper-min">
+                    <div class="armenia-tourist__row">
+                        <h5 class="armenia-tourist__title">Visa Support</h5>
+                        <p class="armenia-tourist__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        <p class="armenia-tourist__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="armenia-tourist__row">
+                        <h5 class="armenia-tourist__title">Climate in Armenia</h5>
+                        <p class="armenia-tourist__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p class="armenia-tourist__text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="armenia-tourist__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                    <div class="armenia-tourist__row">
+                        <h5 class="armenia-tourist__title">Currency</h5>
+                        <p class="armenia-tourist__text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <div class="armenia-tourist__row">
+                        <h5 class="armenia-tourist__title">Safety</h5>
+                        <p class="armenia-tourist__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade armenia-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="../img/armenia/entertain/img1.jpg" alt="image"/>
+                </div>
+                <div class="armenia-modal__body">
+                    <h6 class="armenia-modal__title">Opera & Ballet</h6>
+                    <p class="armenia-modal__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p class="armenia-modal__text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partners section -->
+    <section class="partners">
+        <div class="wrapper">
+            <!-- Owl carousel -->
+            <div class="owl-carousel owl-theme carousel2">
+                <div class="item">
+                    <div class="slider">
+                        <a href="http://www.araratbrandy.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/ARARAT%20logo.svg" alt="Ararat brandy"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://www.austrian.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/AUSTRIAN%20logo.svg" alt="Austrian-Airlines"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://busvoyage.am" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/BUSBOYAGE%20logo.svg" alt="BusVoyage"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://epicstudy.org" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/EPIC%20logo.svg"  alt="EPIC"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="http://www.iata.org" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/IATA%20logo.svg"  alt="IATA"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://lufthansa-city-center.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/LUFTHANSA%20CITY%20CENTER%20logo.svg"  alt="Lufthansa"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://pandokyerevan.com" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/TAVERN%20YEREVAN%20logo.svg"  alt="Tavern Yerevan"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider">
+                        <a href="https://touroperator.am" target="_blank" class="partners__carousel">
+                            <div class="partners__img">
+                                <img src="../img/partner/UITO%20logo.svg"  alt="UITO"/>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- footer section -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-top">
+            <div class="footer-top__col">
+                <h5 class="footer__title">About</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Company</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Team</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Portfolio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Your DMC in Armenia</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">For Partner</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Why We?</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">Tours and Products</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Religion-better Pilgrimage</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Cultural – Historical</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Regional</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Wine and cuisine</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Birdwatching and botanic</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Educational</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">Services</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Tour packeges</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Hotel reservation</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Transport</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Excursions and guides</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Restaurants or Food</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Translation services & equipment for conference</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">Armenia</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">About Armenia</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Event Calendar</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">What to see</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Entertainments</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Food and drink</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Tourist info</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top__col">
+                <h5 class="footer__title">contact us</h5>
+                <ul class="footer__list">
+                    <li class="footer__item">4 Vardanants str. Yerevan, Armenia</li>
+                    <li class="footer__item">(+374) 10 56 36 67</li>
+                    <li class="footer__item">info@armeniatravel.am</li>
+                    <li class="footer__item footer-top__social">
+                        <a href="https://www.facebook.com/ArmeniaTravel/" target="_blank" class="footer-top__social__block">
+                            <img src="../img/fb-s.png" alt="facebook"/>
+                        </a>
+                        <a href="https://twitter.com/ArmeniaTravel_" target="_blank" class="footer-top__social__block">
+                            <img src="../img/tw-s.png" alt="twitter"/>
+                        </a>
+                        <a href="https://plus.google.com/b/101216774593900676378/101216774593900676378" target="_blank" class="footer-top__social__block">
+                            <img src="../img/google-s.png" alt="google"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="wrapper footer__wrapper">
+            <p class="footer__copyright">© Copyright 2018. Armenia Travel. All rights reserved.</p>
+            <p class="footer__design">Design created with <img src="../img/heart.png" alt="heart"/> by Braind</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/libs.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
