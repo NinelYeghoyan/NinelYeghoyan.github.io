@@ -12,32 +12,41 @@
 </head>
 <body class="body">
 <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="../index.html">ISX</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="help.html">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <div>
-                <a href="login.html" class="header__btn header__btnLight">Log in</a>
-                <a href="signup.html" class="header__btn" >Sign up</a>
+    <div>
+        <a class="header__logo" href="../index.html">ISX</a>
+    </div>
+    <div class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="../index.html">Home</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="about.html">About</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="help.html">Help</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="header__buttons">
+            <div class="header__btnItem">
+                <a href="login.html" class="button btnLight">Log in</a>
+            </div>
+            <div class="header__btnItem">
+                <a href="signup.html" class="button" >Sign up</a>
             </div>
         </div>
-    </nav>
+        <div class="header-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </header>
 <main class="main">
     <!-- banner section -->
@@ -55,21 +64,27 @@
             </p>
             <form action="">
                 <div class="form-row">
-                    <div class="col-md-4 mb-3">
-                        <input type="text" class="form-control" placeholder="First name" value="">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="contact-form__col">
+                            <input type="text" class="form-control" placeholder="First name" value="">
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <input type="text" class="form-control" placeholder="Last name" value="">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="contact-form__col">
+                            <input type="text" class="form-control" placeholder="Last name" value="">
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <input type="email" class="form-control" placeholder="Email" value="">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="contact-form__col">
+                            <input type="email" class="form-control" placeholder="Email" value="">
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                <div class="contact-form__col">
+                    <textarea class="form-control" id="comment" placeholder="Message"></textarea>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="contact-form__button">send</button>
+                <div class="d-flex justify-content-center contact-form__button">
+                    <button type="submit" class="button">send</button>
                 </div>
             </form>
         </div>
@@ -78,33 +93,39 @@
     <section class="contact-info">
         <div class="container">
             <div class="row">
-                <div class="col-4 d-flex">
-                    <div class="contact-info__imgBox">
-                        <img src="../img/icons/message.png" alt="message"/>
-                    </div>
-                    <div>
-                        <h5 class="contact-info__title">Email</h5>
-                        <p class="contact-info__text">info@cryptodimes.com</p>
-                    </div>
-                </div>
-                <div class="col-4 d-flex">
-                    <div class="contact-info__imgBox">
-                        <img src="../img/icons/phone.png" alt="phone"/>
-                    </div>
-                    <div>
-                        <h5 class="contact-info__title">Phone</h5>
-                        <p class="contact-info__text">+ (882) 5541 1654</p>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="contact-info__col d-flex align-items-center">
+                        <div class="contact-info__imgBox">
+                            <img src="../img/icons/message.png" alt="message"/>
+                        </div>
+                        <div>
+                            <h5 class="contact-info__title">Email</h5>
+                            <p class="contact-info__text">info@cryptodimes.com</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex">
-                    <div class="contact-info__imgBox">
-                        <img src="../img/icons/location.png" alt="location"/>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="contact-info__col d-flex align-items-center">
+                        <div class="contact-info__imgBox">
+                            <img src="../img/icons/phone.png" alt="phone"/>
+                        </div>
+                        <div>
+                            <h5 class="contact-info__title">Phone</h5>
+                            <p class="contact-info__text">+ (882) 5541 1654</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="contact-info__title">address</h5>
-                        <p class="contact-info__text">District 1 1656 Union Street Eureka
-                            <span class="contact-info__span">707-445-6600</span>
-                        </p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="contact-info__col d-flex align-items-center">
+                        <div class="contact-info__imgBox">
+                            <img src="../img/icons/location.png" alt="location"/>
+                        </div>
+                        <div>
+                            <h5 class="contact-info__title">address</h5>
+                            <p class="contact-info__text">District 1 1656 Union Street Eureka
+                                <span class="contact-info__span">707-445-6600</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,66 +140,70 @@
     <section class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <h5 class="footer-top__logo">ISX</h5>
-                    <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
-                        The ISX exchange market is designed with the best possible safety standards and methods.
-                    </p>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__logo">ISX</h5>
+                        <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
+                            The ISX exchange market is designed with the best possible safety standards and methods.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <h5 class="footer-top__title">Info on electronic coins</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">What is Bitcoin?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">What is an electronic coin?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">How do I sign up?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">FAQ</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Info on electronic coins</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is Bitcoin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is an electronic coin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">How do I sign up?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <h5 class="footer-top__title">About</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">About ISX</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Our security</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">News</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Team</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-center">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">About</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="about.html" class="footer-top__link">About ISX</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Our security</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="announcement.html" class="footer-top__link">Announcements</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <h5 class="footer-top__title">Support</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Terms of Service</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Privacy Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">AML / KYC Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Anti fraud Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Contact us</a>
-                        </li>
-                    </ul>
-
+                <div class="col-lg-2 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Support</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="terms.html" class="footer-top__link">Terms of Service</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">AML / KYC Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Anti fraud Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="contact.html" class="footer-top__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

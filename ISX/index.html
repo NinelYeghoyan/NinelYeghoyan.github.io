@@ -12,32 +12,41 @@
 </head>
 <body class="body">
 <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html">ISX</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="partials/about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="partials/help.html">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="partials/contact.html">Contact</a>
-                </li>
-            </ul>
-            <div>
-                <a href="partials/login.html" class="header__btn header__btnLight">Log in</a>
-                <a href="partials/signup.html" class="header__btn" >Sign up</a>
+    <div>
+        <a class="header__logo" href="index.html">ISX</a>
+    </div>
+    <div class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="index.html">Home</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="partials/about.html">About</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="partials/help.html">Help</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="partials/contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="header__buttons">
+            <div class="header__btnItem">
+                <a href="partials/login.html" class="button btnLight">Log in</a>
+            </div>
+            <div class="header__btnItem">
+                <a href="partials/signup.html" class="button" >Sign up</a>
             </div>
         </div>
-    </nav>
+        <div class="header-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </header>
 <main class="main">
     <!-- banner section -->
@@ -48,9 +57,9 @@
                 <span class="banner__span">Customers who want to transfer currency</span>
                 <span class="banner__span">to ISX are asked to check it separately</span>
             </p>
-            <div class="d-lg-flex d-md-flex d-sm-flex">
-                <button class="banner__btn" type="button">Learn more</button>
-                <button class="banner__btn banner__btnLight" type="button">Sign up</button>
+            <div class="d-flex">
+                <a href="partials/about.html" class="banner__btn button">Learn more</a>
+                <a href="partials/signup.html" class="banner__btn button btnLight">Sign up</a>
             </div>
         </div>
     </section>
@@ -63,39 +72,39 @@
             </p>
             <div class="choose__row">
                 <div class="row">
-                    <div class="col">
-                        <div class="card">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="choose-card">
                             <img src="img/icons/icon_1.png" alt="Easy access"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Easy access</h5>
-                                <p class="card-text">We have an array cryptocurrencies to choose from, whilst clients also request altcoins to be ordered.</p>
+                            <div class="choose-card__body">
+                                <h5 class="choose-card__title">Easy access</h5>
+                                <p class="choose-card__text">We have an array cryptocurrencies to choose from, whilst clients also request altcoins to be ordered.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="choose-card">
                             <img src="img/icons/icon_2.png" alt="Secure exchange"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Secure exchange</h5>
-                                <p class="card-text">Sed ut perspiciatis omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                            <div class="choose-card__body">
+                                <h5 class="choose-card__title">Secure exchange</h5>
+                                <p class="choose-card__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="choose-card">
                             <img src="img/icons/icon_3.png" alt="Transparent fees"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Transparent fees</h5>
-                                <p class="card-text">Sed ut perspiciatis omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                            <div class="choose-card__body">
+                                <h5 class="choose-card__title">Transparent fees</h5>
+                                <p class="choose-card__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="choose-card">
                             <img src="img/icons/icon_4.png" alt="Simple registration"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Simple registration</h5>
-                                <p class="card-text">Sed ut perspiciatis omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                            <div class="choose-card__body">
+                                <h5 class="choose-card__title">Simple registration</h5>
+                                <p class="choose-card__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
                             </div>
                         </div>
                     </div>
@@ -106,70 +115,81 @@
     <!-- steps section -->
     <section class="steps">
         <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <h5 class="steps__title">Exchange cryptocurrency in
-                        <span class="steps__span">3 simple steps</span>
-                    </h5>
-                    <ol class="steps__list">
-                        <li class="steps__item">
-                            <span class="steps__listTitle">Sign up</span>
-                            <p class="steps__listText">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                        </li>
-                        <li class="steps__item">
-                            <span class="steps__listTitle">Deposit Crypto or Fiat</span>
-                            <p class="steps__listText">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum atque. </p>
-                        </li>
-                        <li class="steps__item">
-                            <span class="steps__listTitle">Trade</span>
-                            <p class="steps__listText">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi. </p>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-4">
-                    <div class="steps__bgImg"></div>
+            <div class="steps__bgImg">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <h5 class="steps__title">Exchange cryptocurrency in
+                            <span class="steps__span">3 simple steps</span>
+                        </h5>
+                        <div class="steps__list">
+                            <div class="steps__item d-flex ">
+                                <div class="steps__listNumber">1</div>
+                                <div>
+                                    <p class="steps__listTitle">Sign up</p>
+                                    <p class="steps__listText">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                                </div>
+                            </div>
+                            <div class="steps__item d-flex ">
+                                <div class="steps__listNumber">2</div>
+                                <div>
+                                    <p class="steps__listTitle">Deposit Crypto or Fiat</p>
+                                    <p class="steps__listText">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum atque. </p>
+                                </div>
+                            </div>
+                            <div class="steps__item d-flex ">
+                                <div class="steps__listNumber">3</div>
+                                <div>
+                                    <p class="steps__listTitle">Trade</p>
+                                    <p class="steps__listText">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- news section -->
+    <!-- announcements section -->
     <section class="announcements">
         <div class="container">
             <h2 class="announcements__title">Announcements</h2>
             <div class="row">
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="announcements-card">
+                        <div class="announcements-card__body">
+                            <p class="announcements-card__details">27 Jan</p>
                             <a href="partials/announcement.html">
-                                <h5 class="card-title">ISX launches Bitcoin exchange</h5>
+                                <h5 class="announcements-card__title">ISX launches Bitcoin exchange</h5>
                             </a>
-                            <p class="card-text">Transactions were officially opened at Bitcoin on isx.is this weekend.</p>
-                            <p class="card-text">Please take part, bid, buy / sell and help us to create a good market in Iceland for BTC / ISK.</p>
-                            <a href="partials/announcement.html" class="card-link">Read more</a>
+                            <p class="announcements-card__text">Transactions were officially opened at Bitcoin on isx.is this weekend.</p>
+                            <p class="announcements-card__text">Please take part, bid, buy / sell and help us to create a good market in Iceland for BTC / ISK.</p>
+                            <a href="partials/announcement.html" class="announcements-card__link">Read more</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="announcements-card">
+                        <div class="announcements-card__body">
+                            <p class="announcements-card__details">27 Jan</p>
                             <a href="partials/announcement.html">
-                                <h5 class="card-title">ISX has a new bank account</h5>
+                                <h5 class="announcements-card__title">ISX has a new bank account</h5>
                             </a>
-                            <p class="card-text">Transactions were officially opened at Bitcoin on isx.is this weekend.</p>
-                            <p class="card-text">Please take part, bid, buy / sell and help us to create a good market in Iceland for BTC / ISK.</p>
-                            <a href="partials/announcement.html" class="card-link">Read more</a>
+                            <p class="announcements-card__text">Transactions were officially opened at Bitcoin on isx.is this weekend.</p>
+                            <p class="announcements-card__text">Please take part, bid, buy / sell and help us to create a good market in Iceland for BTC / ISK.</p>
+                            <a href="partials/announcement.html" class="announcements-card__link">Read more</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="announcements-card">
+                        <div class="announcements-card__body">
+                            <p class="announcements-card__details">27 Jan</p>
                             <a href="partials/announcement.html">
-                                <h5 class="card-title">Business opened again</h5>
+                                <h5 class="announcements-card__title">Business opened again</h5>
                             </a>
-                            <p class="card-text">Transactions were officially opened at Bitcoin on isx.is this weekend.</p>
-                            <p class="card-text">Please take part, bid, buy / sell and help us to create a good market in Iceland for BTC / ISK.</p>
-                            <a href="partials/announcement.html" class="card-link">Read more</a>
+                            <p class="announcements-card__text">Transactions were officially opened at Bitcoin on isx.is this weekend.</p>
+                            <p class="announcements-card__text">Please take part, bid, buy / sell and help us to create a good market in Iceland for BTC / ISK.</p>
+                            <a href="partials/announcement.html" class="announcements-card__link">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -179,15 +199,17 @@
     <!-- get started section -->
     <section class="getStarted">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-10">
-                    <h6 class="getStarted__title">Open free account</h6>
-                    <p class="getStarted__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum accusamus et odio
-                        <span class="getStarted__span">deleniti atque. Et harum quidem rerum facilis est et expedita distinctio nam libero accusamus et iusto odio</span>
-                    </p>
-                </div>
-                <div class="col-2">
-                    <button class="getStarted__btn getStarted__btnLight" type="button">Get started</button>
+            <div class="row">
+                <div class="col-lg-12 d-flex flex-wrap align-items-center justify-content-between">
+                    <div>
+                        <h6 class="getStarted__title">Open free account</h6>
+                        <p class="getStarted__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum accusamus et odio
+                            <span class="getStarted__span">deleniti atque. Et harum quidem rerum facilis est et expedita distinctio nam libero accusamus et iusto odio</span>
+                        </p>
+                    </div>
+                    <div class="getStarted__btn">
+                        <a href="partials/signup.html" class="button btnLight">Get started</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,66 +219,70 @@
     <section class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <h5 class="footer-top__logo">ISX</h5>
-                    <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
-                        The ISX exchange market is designed with the best possible safety standards and methods.
-                    </p>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__logo">ISX</h5>
+                        <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
+                            The ISX exchange market is designed with the best possible safety standards and methods.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <h5 class="footer-top__title">Info on electronic coins</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">What is Bitcoin?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">What is an electronic coin?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">How do I sign up?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">FAQ</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Info on electronic coins</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is Bitcoin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is an electronic coin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">How do I sign up?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <h5 class="footer-top__title">About</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">About ISX</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Our security</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">News</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Team</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-center">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">About</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="partials/about.html" class="footer-top__link">About ISX</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Our security</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="partials/announcement.html" class="footer-top__link">Announcements</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <h5 class="footer-top__title">Support</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Terms of Service</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Privacy Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">AML / KYC Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Anti fraud Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Contact us</a>
-                        </li>
-                    </ul>
-
+                <div class="col-lg-2 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Support</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="partials/terms.html" class="footer-top__link">Terms of Service</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">AML / KYC Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Anti fraud Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="partials/contact.html" class="footer-top__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -12,32 +12,41 @@
 </head>
 <body class="body">
 <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="../index.html">ISX</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="help.html">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <div>
-                <a href="login.html" class="header__btn header__btnLight">Log in</a>
-                <a href="signup.html" class="header__btn">Sign up</a>
+    <div>
+        <a class="header__logo" href="../index.html">ISX</a>
+    </div>
+    <div class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="../index.html">Home</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="about.html">About</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="help.html">Help</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="header__buttons">
+            <div class="header__btnItem">
+                <a href="login.html" class="button btnLight">Log in</a>
+            </div>
+            <div class="header__btnItem">
+                <a href="signup.html" class="button" >Sign up</a>
             </div>
         </div>
-    </nav>
+        <div class="header-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </header>
 <main class="main">
     <!-- news content section -->
@@ -46,7 +55,7 @@
             <div class="announcement__body">
                 <div class="row">
                     <!-- left aside -->
-                    <aside class="col-8">
+                    <aside class="col-lg-8 col-md-12 col-sm-12">
                         <h5 class="announcement__title">Cryptocurrency Markets Heat Back Up Heading Into the Spring Months of 2018</h5>
                         <div class="d-flex align-items-center">
                             <img src="../img/icons/calendar.png" alt="calendar"/>
@@ -57,7 +66,7 @@
                         <p class="announcement__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque , totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque quisquam est, dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     </aside>
                     <!-- right aside -->
-                    <aside class="col-4">
+                    <aside class="col-lg-4 col-md-12 col-sm-12">
                         <!-- Popular announcements -->
                         <div class="announcement-right">
                             <h5 class="announcement-right__header">Popular announcements</h5>
@@ -88,66 +97,70 @@
     <section class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <h5 class="footer-top__logo">ISX</h5>
-                    <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
-                        The ISX exchange market is designed with the best possible safety standards and methods.
-                    </p>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__logo">ISX</h5>
+                        <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
+                            The ISX exchange market is designed with the best possible safety standards and methods.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <h5 class="footer-top__title">Info on electronic coins</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">What is Bitcoin?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">What is an electronic coin?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">How do I sign up?</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">FAQ</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Info on electronic coins</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is Bitcoin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is an electronic coin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">How do I sign up?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <h5 class="footer-top__title">About</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">About ISX</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Our security</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">News</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Team</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-center">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">About</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="about.html" class="footer-top__link">About ISX</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Our security</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="announcement.html" class="footer-top__link">Announcements</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
-                    <h5 class="footer-top__title">Support</h5>
-                    <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Terms of Service</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Privacy Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">AML / KYC Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Anti fraud Policy</a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a href="#" class="footer-top__link">Contact us</a>
-                        </li>
-                    </ul>
-
+                <div class="col-lg-2 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Support</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="terms.html" class="footer-top__link">Terms of Service</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">AML / KYC Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Anti fraud Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="contact.html" class="footer-top__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
