@@ -48,7 +48,7 @@ table {
 
 /*  Bootstrap reset css */
 a:hover, a:focus {
-  color: initial;
+  outline: none;
   text-decoration: none; }
 
 /* ---------- End of Reset css ----------*/
@@ -209,11 +209,16 @@ a:hover, a:focus {
   padding-top: 80px; }
 
 .button {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 45px;
-  line-height: 40px;
   font-size: 14px;
-  font-weight: normal;
   text-transform: uppercase;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -536,8 +541,7 @@ a:hover, a:focus {
       .announcements-card__text ~ .announcements-card__text {
         margin-top: 25px; }
     .announcements-card__link {
-      display: block;
-      text-align: right;
+      display: inline-block;
       text-transform: capitalize;
       text-decoration: underline;
       color: #01567A;
@@ -563,7 +567,6 @@ a:hover, a:focus {
   .getStarted__span {
     display: block; }
   .getStarted .btnLight {
-    line-height: 45px;
     border: 1px solid #ffffff;
     color: #ffffff; }
     .getStarted .btnLight:hover {
@@ -594,8 +597,6 @@ a:hover, a:focus {
     .footer-top__link:hover {
       color: #d1f1fe;
       opacity: 0.7; }
-    .footer-top__link:focus {
-      color: #a2e2fd; }
 
 .footer-bottom {
   background-color: #002433;
@@ -817,6 +818,10 @@ a:hover, a:focus {
     .help__subtitleLink:hover {
       color: #616161;
       text-decoration: underline; }
+  .help__mobile--close {
+    display: none; }
+    .help__mobile--close .close {
+      outline: none; }
 
 .help-tab--close {
   display: none;
@@ -836,7 +841,7 @@ a:hover, a:focus {
   height: 4px;
   display: block;
   position: absolute;
-  background: #616161;
+  background: #808080;
   opacity: 1;
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
@@ -967,7 +972,7 @@ a:hover, a:focus {
     font-size: 19px;
     text-transform: capitalize;
     color: #616161;
-    margin-bottom: 20px; }
+    margin-bottom: 15px; }
   .contact-info__text {
     line-height: 1.563;
     color: #616161; }
@@ -978,44 +983,43 @@ a:hover, a:focus {
   width: 100%;
   height: 270px; }
 
-.announcement__body {
+.announcement-inside__body {
   padding: 70px 0; }
 
-.announcement__title {
+.announcement-inside__title {
   font-size: 18px;
   line-height: 1.2;
   color: #01567A;
   margin-bottom: 15px; }
 
-.announcement__detail {
+.announcement-inside__detail {
   font-size: 14px;
   color: #8b8b8b;
   margin-left: 20px; }
 
-.announcement__text {
+.announcement-inside__text {
   line-height: 1.875;
   color: dimgray;
   margin-top: 25px; }
 
-.announcement-right__header {
-  font-size: 20px;
-  color: #01567A;
-  margin-bottom: 20px; }
-
-.announcement-right__row {
-  border-bottom: 1px solid #dedede;
-  margin-bottom: 15px;
-  padding-bottom: 15px; }
-
-.announcement-right__title {
-  display: block;
-  line-height: 1.563;
-  color: #616161;
-  margin-bottom: 15px; }
-
-.announcement-right__detail {
-  font-size: 14px;
-  color: #8b8b8b; }
+.announcement-inside-right {
+  padding-left: 40px; }
+  .announcement-inside-right__header {
+    font-size: 20px;
+    color: #01567A;
+    margin-bottom: 20px; }
+  .announcement-inside-right__row {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 15px;
+    padding-bottom: 15px; }
+  .announcement-inside-right__title {
+    display: inline-block;
+    line-height: 1.563;
+    color: #616161;
+    margin-bottom: 15px; }
+  .announcement-inside-right__detail {
+    font-size: 14px;
+    color: #8b8b8b; }
 
 .terms__body {
   padding: 70px 0; }
@@ -1071,6 +1075,7 @@ a:hover, a:focus {
       background-image: none;
       min-height: auto; }
     .steps__title {
+      text-align: center;
       padding-top: 0; }
   .announcements-card {
     padding: 10px;
@@ -1085,12 +1090,14 @@ a:hover, a:focus {
     .announcements-card__link {
       margin-top: 10px; }
   .footer-top__logo {
-    margin-bottom: 5px; }
+    margin-bottom: 18px; }
   .footer-top__title {
     font-size: 18px;
     margin-bottom: 24px; }
+  .footer-top__text {
+    margin-bottom: 50px; }
   .footer-top__col {
-    margin-bottom: 20px; }
+    padding: 0 40px 0 0; }
   /* ========== About style ========== */
   .about-weAre__bgImg {
     -webkit-background-size: 44% 44%;
@@ -1132,6 +1139,11 @@ a:hover, a:focus {
   .help-tab--close {
     display: block;
     margin-top: 10px; }
+  .help__mobile--close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5px; }
   .help__title {
     font-size: 28px;
     margin-bottom: 15px; }
@@ -1163,14 +1175,14 @@ a:hover, a:focus {
   .contact-info__col {
     margin-bottom: 20px; }
   /* ========== Announcement style ========== */
-  .announcement-right {
-    margin-top: 25px; }
-    .announcement-right__header {
+  .announcement-inside-right {
+    padding-left: 0; }
+    .announcement-inside-right__header {
       margin-bottom: 10px; }
-    .announcement-right__row {
+    .announcement-inside-right__row {
       margin-bottom: 10px;
       padding-bottom: 10px; }
-    .announcement-right__title {
+    .announcement-inside-right__title {
       margin-bottom: 0; } }
 
 @media screen and (max-width: 767px) {
@@ -1246,6 +1258,9 @@ a:hover, a:focus {
       margin-bottom: 30px; }
   .contact-info {
     padding-bottom: 30px; }
+  /* ========== Announcement style ========== */
+  .announcement-inside-right {
+    margin-top: 30px; }
   /* ========== Auth style ========== */
   .auth-banner {
     -webkit-background-size: 47% 47%;
@@ -1283,10 +1298,13 @@ a:hover, a:focus {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
+  .header__link {
+    font-size: 16px;
+    text-align: center; }
   .header__item {
     border-bottom: 1px solid #f3f3f3;
     margin-right: 0;
-    padding: 10px 15px; }
+    padding: 20px 15px; }
     .header__item + .header__item {
       margin-left: 0; }
   .banner {
@@ -1317,11 +1335,22 @@ a:hover, a:focus {
   .getStarted__title {
     font-size: 24px; }
   .footer-top {
-    padding: 30px 0; }
+    padding: 30px 0 0 0; }
+    .footer-top__logo {
+      text-align: center; }
     .footer-top__title {
+      text-align: center;
+      font-size: 16px;
       margin-bottom: 5px; }
+    .footer-top__text {
+      margin-bottom: 0;
+      text-align: justify;
+      padding: 0 30px; }
+    .footer-top__item {
+      text-align: center; }
     .footer-top__col {
-      margin-bottom: 10px; }
+      padding: 0;
+      margin: auto auto 30px auto; }
   /* ========== About style ========== */
   .about-banner,
   .help-banner,
