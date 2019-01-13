@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ISX History</title>
+    <link rel="stylesheet" href="../css/libs.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,400,700" rel="stylesheet">
+</head>
+<body class="body">
+<header class="header header__user">
+    <div>
+        <a class="header__logo" href="../index.html">ISX</a>
+    </div>
+    <div class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="#">Dashboard</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="#">buy/sell</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="deposit.html">Deposit</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="withdraw.html">withdraw</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="history.html">history</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="address.html">address</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="settings.html">settings</a>
+            </li>
+        </ul>
+        <div class="header__userMail">
+            <p>jane452@gmail.com</p>
+        </div>
+        <div class="header-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="main__child">
+        <section class="history">
+            <div class="container-fluid">
+                <div class="tbl__container">
+                    <div class="history__header">
+                        <h3 class="tbl__title text-center">history</h3>
+                        <div class="d-flex justify-content-end">
+                            <div class="history__drop">
+                                <div class="drop">
+                                    <div class="drop__buttonBox d-flex align-items-center justify-content-between">
+                                        <span class="drop__button">Transactions</span>
+                                        <img src="../img/icons/arrow_down.png" alt="arrow down">
+                                    </div>
+                                    <ul class="drop__list">
+                                        <li class="drop__item drop__none" data-value="transactions">
+                                            <a href="#" class="drop__link">Transactions</a>
+                                        </li>
+                                        <li class="drop__item" data-value="order">
+                                            <a href="#" class="drop__link">Order</a>
+                                        </li>
+                                        <li class="drop__item" data-value="login">
+                                            <a href="#" class="drop__link">Login</a>
+                                        </li>
+                                        <li class="drop__item" data-value="request">
+                                            <a href="#" class="drop__link">Request</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- History transactions -->
+                    <section id="transactions" class="history-transactions history-table">
+                        <div class="tbl">
+                            <div class="tbl-head d-flex align-items-center">
+                                <div class="tbl-th--30">Date</div>
+                                <div class="tbl-th--20">Market</div>
+                                <div class="tbl-th--20">Type</div>
+                                <div class="tbl-th--15">bid/ask</div>
+                                <div class="tbl-th--20">amount</div>
+                                <div class="tbl-th--20">price</div>
+                                <div class="tbl-th--20">total</div>
+                                <div class="tbl-th--20">fee</div>
+                            </div>
+                            <div class="tbt-body">
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- History order -->
+                    <section id="order" class="history-order history-table">
+                        <div class="tbl">
+                            <div class="tbl-head d-flex align-items-center">
+                                <div class="tbl-th--30">closed Date</div>
+                                <div class="tbl-th--30">opened Date</div>
+                                <div class="tbl-th--20">Market</div>
+                                <div class="tbl-th--20">Type</div>
+                                <div class="tbl-th--15">bid/ask</div>
+                                <div class="tbl-th--20">amount</div>
+                                <div class="tbl-th--20">price</div>
+                                <div class="tbl-th--20">total</div>
+                            </div>
+                            <div class="tbt-body">
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">Best price</div>
+                                    <div class="tbl-th--15">Ask</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">12.35</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">ETH-USD</div>
+                                    <div class="tbl-th--20">limit</div>
+                                    <div class="tbl-th--15">Bid</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                    <div class="tbl-th--20">1254.32</div>
+                                    <div class="tbl-th--20">0.012123</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- History login -->
+                    <section id="login" class="history-login history-table">
+                        <div class="tbl">
+                            <div class="tbl-head d-flex align-items-center">
+                                <div class="tbl-th--30">Date</div>
+                                <div class="tbl-th--20">Type</div>
+                                <div class="tbl-th--30">IP Address</div>
+                                <div class="tbl-th--30">location</div>
+                                <div class="tbl-th--30">Browser</div>
+                            </div>
+                            <div class="tbt-body">
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Sign in</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Yerevan, Armenia</div>
+                                    <div class="tbl-th--30">Google Chrome</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Evaluation</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Los Angeles, USA</div>
+                                    <div class="tbl-th--30">Firefox</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Sign in</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Yerevan, Armenia</div>
+                                    <div class="tbl-th--30">Google Chrome</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Evaluation</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Los Angeles, USA</div>
+                                    <div class="tbl-th--30">Firefox</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Sign in</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Yerevan, Armenia</div>
+                                    <div class="tbl-th--30">Google Chrome</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Evaluation</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Los Angeles, USA</div>
+                                    <div class="tbl-th--30">Firefox</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Sign in</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Yerevan, Armenia</div>
+                                    <div class="tbl-th--30">Google Chrome</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Evaluation</div>
+                                    <div class="tbl-th--30 oe">141.136.87.207</div>
+                                    <div class="tbl-th--30 oe">Los Angeles, USA</div>
+                                    <div class="tbl-th--30">Firefox</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- History request -->
+                    <section id="request" class="history-request history-table">
+                        <div class="tbl">
+                            <div class="tbl-head d-flex align-items-center">
+                                <div class="tbl-th--30">Date</div>
+                                <div class="tbl-th--20">Type</div>
+                                <div class="tbl-th--20">amount</div>
+                                <div class="tbl-th--20">currency</div>
+                                <div class="tbl-th--30">account/Address</div>
+                                <div class="tbl-th--30">status</div>
+                            </div>
+                            <div class="tbt-body">
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Deposit</div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Completed</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">withdraw</div>
+                                    <div class="tbl-th--20">8000</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Pending
+                                        <span class="tbl-status">
+                                        (2 confirmation)
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Deposit</div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Completed</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">withdraw</div>
+                                    <div class="tbl-th--20">8000</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Pending
+                                        <span class="tbl-status">
+                                        (2 confirmation)
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Deposit</div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Completed</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">withdraw</div>
+                                    <div class="tbl-th--20">8000</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Pending
+                                        <span class="tbl-status">
+                                        (2 confirmation)
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--20">Deposit</div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Completed</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30 oe">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">withdraw</div>
+                                    <div class="tbl-th--20">8000</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30 oe">Pending
+                                        <span class="tbl-status">
+                                        (2 confirmation)
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="pagination">
+            <div class="container">
+                <div class="row">
+                    <ul class="pagination__list d-flex align-items-center">
+                        <li class="pagination__item">
+                            <a class="pagination__linkDisable" href="#">
+                                <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">1</a>
+                        </li>
+                        <li class="pagination__item active">
+                            <a class="pagination__link pagination__link--active" href="#">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">5</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__linkDisable" href="#">...</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__link" href="#">20</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a class="pagination__linkDisable" href="#">
+                                <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__logo">ISX</h5>
+                        <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
+                            The ISX exchange market is designed with the best possible safety standards and methods.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Info on electronic coins</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is Bitcoin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is an electronic coin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">How do I sign up?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-center">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">About</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="about.html" class="footer-top__link">About ISX</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Our security</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="announcement.html" class="footer-top__link">Announcements</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Support</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="terms.html" class="footer-top__link">Terms of Service</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">AML / KYC Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Anti fraud Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="contact.html" class="footer-top__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <div class="container">
+            <p class="footer-bottom__text">Copyright Ⓒ 2018. isx.is. All rights reserved</p>
+        </div>
+    </section>
+</footer>
+<script src="../js/libs.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

@@ -207,6 +207,15 @@ a:hover, a:focus {
 
 .main {
   padding-top: 80px; }
+  .main__child {
+    margin-top: 40px;
+    margin-bottom: 70px; }
+
+.oe {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .button {
   display: -webkit-inline-box;
@@ -305,6 +314,15 @@ a:hover, a:focus {
     z-index: 999; }
   .header__btnItem ~ .header__btnItem {
     margin-left: 20px; }
+  .header__user .header__link {
+    color: #616161; }
+  .header__user .header__item:last-child {
+    margin-right: 25px; }
+  .header__userMail {
+    font-size: 14px;
+    border-left: 1px solid #01567A;
+    color: #616161;
+    padding-left: 20px; }
 
 .header-mobile {
   display: none;
@@ -605,6 +623,122 @@ a:hover, a:focus {
   .footer-bottom__text {
     text-align: center;
     color: #a2e2fd; }
+
+.drop {
+  position: relative; }
+  .drop__buttonBox {
+    height: 45px;
+    padding: 0 20px;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    cursor: pointer; }
+  .drop__button {
+    color: #696969; }
+  .drop__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+            box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+    border: 1px solid #dedede;
+    border-top: none;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .drop__item {
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease; }
+    .drop__item:hover {
+      background-color: #F5F9FF; }
+  .drop__link {
+    display: block;
+    color: #696969;
+    padding: 15px 20px; }
+  .drop__rotate {
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg); }
+  .drop__none {
+    display: none; }
+
+.tbl {
+  font-size: 15px;
+  border: 1px solid #E7E9F0;
+  border-top: none; }
+  .tbl__container {
+    max-width: 1187px;
+    margin: auto; }
+  .tbl__title {
+    font-size: 20px;
+    color: #01567A;
+    margin-bottom: 16px; }
+  .tbl-head {
+    height: 55px;
+    border-top: 1px solid #E7E9F0;
+    background-color: #EDF1FD;
+    color: #01567A;
+    text-transform: uppercase; }
+  .tbl-th--15 {
+    width: 15%;
+    padding-left: 50px;
+    padding-right: 34px; }
+  .tbl-th--20 {
+    width: 20%;
+    padding-left: 50px;
+    padding-right: 34px; }
+  .tbl-th--30 {
+    width: 30%;
+    padding-left: 50px;
+    padding-right: 34px; }
+  .tbl-row {
+    height: 40px;
+    background-color: #fff;
+    color: #444444;
+    border-top: 1px solid #E7E9F0; }
+    .tbl-row:nth-child(even) {
+      background-color: #F7F9FF; }
+  .tbl-status {
+    color: #01567A; }
+
+.pagination {
+  margin-top: 30px; }
+  .pagination__list {
+    margin: auto; }
+  .pagination__link {
+    display: block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    color: #696969;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin: 0 1px; }
+    .pagination__link:hover {
+      background-color: #04B578;
+      color: #ffffff; }
+    .pagination__link--active {
+      background-color: #04B578;
+      color: #ffffff; }
+  .pagination__linkDisable {
+    display: block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #696969;
+    margin: 0 1px; }
 
 .auth-banner {
   background-image: url(../img/log-banner-top.png);
@@ -1037,6 +1171,369 @@ a:hover, a:focus {
   color: dimgray; }
   .terms__text ~ .terms__text {
     margin-top: 25px; }
+
+.deposit {
+  margin-bottom: 50px; }
+  .deposit__formGroup {
+    margin-bottom: 30px; }
+  .deposit__label {
+    font-size: 15px;
+    color: #8b8b8b;
+    margin-bottom: 13px; }
+  .deposit__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #616161;
+    margin-bottom: 30px; }
+  .deposit__text {
+    color: #616161;
+    line-height: 1.375; }
+    .deposit__text ~ .deposit__text {
+      margin-top: 26px; }
+  .deposit__infoRow {
+    margin-top: 30px; }
+    .deposit__infoRow--benef {
+      margin-bottom: 20px; }
+  .deposit__info {
+    font-weight: bold;
+    line-height: 1.375;
+    color: #616161; }
+  .deposit__value {
+    font-weight: bold;
+    line-height: 1.375;
+    color: #616161;
+    padding-left: 30px; }
+  .deposit__barCode {
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 20px;
+    margin: auto; }
+    .deposit__barCode img {
+      width: 100%; }
+
+.deposit-history .tbl__title {
+  font-weight: bold; }
+
+.deposit-history .tbl-head {
+  font-weight: bold; }
+
+.inside-header {
+  font-size: 25px;
+  font-weight: bold;
+  color: #01567A;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.withdraw .form-control,
+.deposit .form-control,
+.addresses .form-control,
+.settings .form-control {
+  height: 45px !important;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #616161; }
+
+.colWidth {
+  width: 360px; }
+
+.colLeft {
+  padding-right: 68px; }
+
+.colRight {
+  border-left: 1px solid #dedede;
+  padding-left: 60px; }
+
+.withdraw__text {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #929292; }
+
+.withdraw__value {
+  font-size: 15px;
+  color: #696969; }
+
+.withdraw__row {
+  margin-bottom: 9px; }
+
+.withdraw__result {
+  margin-top: 25px;
+  margin-bottom: 35px; }
+  .withdraw__result__row {
+    margin-bottom: 20px; }
+
+.withdraw .form-group {
+  margin-bottom: 0; }
+  .withdraw .form-group ~ .form-group {
+    margin-top: 30px; }
+
+.withdraw select {
+  background-image: url(../img/icons/arrow_down.png);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  -webkit-appearance: none; }
+
+.withdraw__amountRow {
+  position: relative; }
+
+.withdraw__amountInput {
+  padding-right: 70px !important;
+  color: #696969; }
+
+.withdraw__btn {
+  border: none;
+  background-color: transparent;
+  color: #696969;
+  position: absolute;
+  right: 20px;
+  padding: 0;
+  cursor: pointer; }
+
+.withdraw-history {
+  margin-top: 50px; }
+
+.history__header {
+  margin-bottom: 20px; }
+
+.history__drop {
+  margin-top: -20px; }
+
+.history .tbl__title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 0; }
+
+.history .history-transactions .tbl-th--15,
+.history .history-order .tbl-th--15 {
+  width: 15%;
+  padding-left: 30px;
+  padding-right: 10px; }
+
+.history .history-transactions .tbl-th--20,
+.history .history-order .tbl-th--20 {
+  width: 20%;
+  padding-left: 30px;
+  padding-right: 10px; }
+
+.history .history-transactions .tbl-th--30,
+.history .history-order .tbl-th--30 {
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 10px; }
+
+.history .history-login .tbl-th--15 {
+  width: 15%;
+  padding-left: 60px;
+  padding-right: 60px; }
+
+.history .history-login .tbl-th--20 {
+  width: 20%;
+  padding-left: 60px;
+  padding-right: 60px; }
+
+.history .history-login .tbl-th--30 {
+  width: 30%;
+  padding-left: 60px;
+  padding-right: 60px; }
+
+.history-order, .history-login, .history-request {
+  display: none; }
+
+.history .drop {
+  min-width: 185px; }
+  .history .drop__buttonBox {
+    padding: 0 30px; }
+  .history .drop__link {
+    padding: 15px 30px; }
+
+.addressesMain .main__child {
+  margin-bottom: 50px; }
+
+.addresses__row {
+  margin-bottom: 20px; }
+
+.addresses__title {
+  font-size: 20px;
+  color: #616161;
+  margin-right: 22px; }
+
+.addresses__add {
+  position: relative; }
+  .addresses__add__list {
+    display: none;
+    min-width: 400px;
+    position: absolute;
+    z-index: 99;
+    top: 65px;
+    right: 0;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+            box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+    padding: 30px 20px; }
+
+.addresses-account__row {
+  padding: 25px;
+  border: 1px solid #dedede; }
+
+.addresses-account__title {
+  display: block;
+  font-size: 15px;
+  color: #8b8b8b;
+  margin-bottom: 19px; }
+
+.addresses-account__info {
+  font-size: 20px;
+  color: #616161; }
+
+.addresses-account--delete {
+  text-align: right;
+  cursor: pointer; }
+
+.addresses-account__col_5 {
+  width: 5%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.addresses-account__col_15 {
+  width: 15%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.addresses-account__col_30 {
+  width: 30%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.addresses-account__col_25 {
+  width: 25%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.addresses-account__col_50 {
+  width: 50%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.addresses-crypto {
+  border-top: 1px solid #dedede;
+  padding-top: 40px;
+  margin-top: 70px; }
+
+.settings .colLeft {
+  padding-right: 30px; }
+
+.settings .colRight {
+  padding-left: 55px; }
+
+.settings .colWidth {
+  width: 390px; }
+
+.settings__title {
+  font-size: 18px;
+  color: dimgray;
+  margin-bottom: 30px; }
+
+.settings__text {
+  color: dimgray;
+  line-height: 1.375; }
+  .settings__text ~ .settings__text {
+    margin-top: 28px; }
+
+.settings__row {
+  margin-bottom: 20px; }
+  .settings__row__text {
+    color: dimgray;
+    line-height: 1.375; }
+
+.settings__border {
+  border-top: 1px solid #dedede;
+  margin-top: 40px;
+  padding-top: 40px; }
+
+.settings__API .settings__link {
+  text-decoration: underline; }
+
+.settings__API .settings__btnRow {
+  margin-top: 18px; }
+
+.settings__form {
+  margin-top: 28px; }
+
+.settings__link {
+  color: dimgray;
+  line-height: 1.375; }
+
+.settings__btnRow {
+  margin-top: 40px; }
+
+.settings .checkbox.switcher label,
+.settings .radio.switcher label {
+  padding: 0; }
+  .settings .checkbox.switcher label input,
+  .settings .radio.switcher label input {
+    display: none; }
+    .settings .checkbox.switcher label input + span,
+    .settings .radio.switcher label input + span {
+      width: 37px;
+      height: 20px;
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: #fff;
+      border: 2px solid #D3D3D3;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer; }
+      .settings .checkbox.switcher label input + span small,
+      .settings .radio.switcher label input + span small {
+        width: 12px;
+        height: 12px;
+        display: block;
+        position: absolute;
+        background: #B9B9B9;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        left: 2px; }
+    .settings .checkbox.switcher label input:checked + span,
+    .settings .radio.switcher label input:checked + span {
+      background: #04B578;
+      border-color: #04B578; }
+      .settings .checkbox.switcher label input:checked + span small,
+      .settings .radio.switcher label input:checked + span small {
+        left: 60%;
+        background-color: #fff; }
 
 .auth-banner .custom-control-label {
   margin-top: 3px;

@@ -6,6 +6,27 @@ $(document).ready(function () {
         var winHeight = window.innerHeight;
         $(".auth-banner, .auth-banner-2").height(winHeight);
     });
+    // dropdown open and close
+    $(".drop").click(function() {
+        $(".drop").not(this).find(".drop__list").hide();
+        $(this).find(".drop__list").toggle();
+        $(".drop").not(this).find("img").removeClass("drop__rotate");
+        $(this).find("img").toggleClass("drop__rotate");
+    });
+    // history dropdown option
+    $(".history__drop .drop__item").click(function() {
+        let value = $(this).attr("data-value");
+        let txt = $(this).text();
+        $(".history-table").hide();
+        $("#"+ value).show();
+        $(".drop__button").text(txt);
+        $(".drop__item").removeClass("drop__none");
+        $(this).addClass("drop__none");
+    });
+    // Addresses page add account
+    $(".addresses__add__btn").click(function() {
+        $(this).next(".addresses__add__list").toggle();
+    });
 });
 // ------ header menu part -------
 var funct =  function () {
