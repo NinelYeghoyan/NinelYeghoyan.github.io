@@ -18,7 +18,7 @@
     <div class="header__nav">
         <ul class="header__list">
             <li class="header__item">
-                <a class="header__link" href="#">Dashboard</a>
+                <a class="header__link" href="dashboard.html">Dashboard</a>
             </li>
             <li class="header__item">
                 <a class="header__link" href="#">buy/sell</a>
@@ -29,18 +29,20 @@
             <li class="header__item">
                 <a class="header__link" href="withdraw.html">withdraw</a>
             </li>
-            <li class="header__item">
-                <a class="header__link" href="history.html">history</a>
-            </li>
-            <li class="header__item">
-                <a class="header__link" href="address.html">address</a>
-            </li>
-            <li class="header__item">
-                <a class="header__link" href="settings.html">settings</a>
-            </li>
         </ul>
         <div class="header__userMail">
-            <p>jane452@gmail.com</p>
+            <p class="header__userMail__text">jane452@gmail.com</p>
+            <ul class="header__userMail__list">
+                <li class="header__userMail__item">
+                    <a href="#" class="header__userMail__link">Lorem ipsum dolor</a>
+                </li>
+                <li class="header__userMail__item">
+                    <a href="#" class="header__userMail__link">Lorem ipsum dolor</a>
+                </li>
+                <li class="header__userMail__item">
+                    <a href="#" class="header__userMail__link">Log out</a>
+                </li>
+            </ul>
         </div>
         <div class="header-mobile">
             <span></span>
@@ -64,22 +66,27 @@
                             <form>
                                 <div class="form-group">
                                     <label class="withdraw__text withdraw__row">Currency</label>
-                                    <div class="drop">
-                                        <div class="drop__buttonBox d-flex align-items-center justify-content-between">
-                                            <span class="drop__button">BTC</span>
-                                            <img src="../img/icons/arrow_down.png" alt="arrow down">
+                                    <div class="drop__parent">
+                                        <div class="drop">
+                                            <div class="drop__buttonBox d-flex align-items-center justify-content-between">
+                                                <span class="drop__button">BTC</span>
+                                                <img src="../img/icons/arrow_down.png" alt="arrow down">
+                                            </div>
+                                            <ul class="drop__list">
+                                                <li class="drop__item drop__none">
+                                                    <a href="#" class="drop__link">BTC</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">ETH</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">LTC</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Ripple</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="drop__list">
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">ETH</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">LTC</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">Ripple</a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -108,6 +115,9 @@
                                         <span class="withdraw__value">0.00432365 BTC</span>
                                     </div>
                                 </div>
+                                <div class="text-center">
+                                    <button type="submit" class="button">withdraw</button>
+                                </div>
                             </form>
                         </div>
                     </section>
@@ -116,42 +126,52 @@
                             <form>
                                 <div class="form-group">
                                     <label class="withdraw__text withdraw__row">Currency</label>
-                                    <div class="drop">
-                                        <div class="drop__buttonBox d-flex align-items-center justify-content-between">
-                                            <span class="drop__button">BTC</span>
-                                            <img src="../img/icons/arrow_down.png" alt="arrow down">
+                                    <div class="drop__parent">
+                                        <div class="drop">
+                                            <div class="drop__buttonBox d-flex align-items-center justify-content-between">
+                                                <span class="drop__button">BTC</span>
+                                                <img src="../img/icons/arrow_down.png" alt="arrow down">
+                                            </div>
+                                            <ul class="drop__list">
+                                                <li class="drop__item drop__none">
+                                                    <a href="#" class="drop__link">BTC</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">ETH</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">LTC</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Ripple</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="drop__list">
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">ETH</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">LTC</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">Ripple</a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="withdraw__text withdraw__row">Bank Account</label>
-                                    <div class="drop">
-                                        <div class="drop__buttonBox d-flex align-items-center justify-content-between">
-                                            <span class="drop__button">2562487778646 (JP Morgan Chase)</span>
-                                            <img src="../img/icons/arrow_down.png" alt="arrow down">
+                                    <div class="drop__parent">
+                                        <div class="drop">
+                                            <div class="drop__buttonBox d-flex align-items-center justify-content-between">
+                                                <span class="drop__button">2562487778646 (JP Morgan Chase)</span>
+                                                <img src="../img/icons/arrow_down.png" alt="arrow down">
+                                            </div>
+                                            <ul class="drop__list">
+                                                <li class="drop__item drop__none">
+                                                    <a href="#" class="drop__link">2562487778646 (JP Morgan Chase)</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">2562487778646 (JP Morgan Chase)</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">2562487778646 (JP Morgan)</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">2562487778646 (JP Morgan Chase)</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="drop__list">
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">2562487778646 (JP Morgan Chase)</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">2562487778646 (JP Morgan)</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">2562487778646 (JP Morgan Chase)</a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                                 <div class="form-group">

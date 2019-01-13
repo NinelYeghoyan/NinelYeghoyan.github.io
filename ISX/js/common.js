@@ -13,6 +13,13 @@ $(document).ready(function () {
         $(".drop").not(this).find("img").removeClass("drop__rotate");
         $(this).find("img").toggleClass("drop__rotate");
     });
+    // dropdown select item
+    $(".drop__parent .drop__item").click(function() {
+        let txt = $(this).text();
+        $(this).parents(".drop__parent").find(".drop__button").text(txt);
+        $(this).parents(".drop__parent").find(".drop__item").removeClass("drop__none");
+        $(this).addClass("drop__none");
+    });
     // history dropdown option
     $(".history__drop .drop__item").click(function() {
         let value = $(this).attr("data-value");
@@ -26,6 +33,10 @@ $(document).ready(function () {
     // Addresses page add account
     $(".addresses__add__btn").click(function() {
         $(this).next(".addresses__add__list").toggle();
+    });
+    // log out dropdown
+    $(".header__userMail").click(function() {
+        $(this).find(".header__userMail__list").toggle();
     });
 });
 // ------ header menu part -------
@@ -62,27 +73,43 @@ helpTabMobile.click(function(event) {
     func();
 });
 $(document).click(function (event) {
-    const block = $('.help__accordion');
-    const block1 = $('.header__list');
-    const cards = block[0].childNodes;
-    let eventId = $($(event.target).parent()).attr('id');
-
-    for (let i = 0; i < cards.length; i++) {
-        if ($(cards[i]).children()[0] &&
-            typeof $($(cards[i]).children()[0]).attr('id') !== 'undefined' &&
-            typeof eventId !== 'undefined' &&
-            $($(cards[i]).children()[0]).attr('id') === eventId) {
-            event.stopPropagation();
+    if(event.target.className.search('drop')===-1){
+        $(".drop").find(".drop__list").hide();
+        $(".drop").find("img").removeClass("drop__rotate");
+    }
+    if(event.target.className.search('addresses__add')===-1){
+        if(!$(event.target).parents('.addresses__add__list').length){
+            $(".addresses__add__list").hide();
         }
     }
-    if(block1.hasClass("header__positionRight") ===  true){
-        $('.body').css("overflow","scroll");
-        funct();
+    if(event.target.className.search('header__userMail')===-1){
+        if(!$(event.target).parents('.header__userMail__list').length){
+            $(".header__userMail__list").hide();
+        }
     }
-    if(block.hasClass("help__positionLeft")){
-        $('.body').css("overflow","scroll");
-        if (event.isPropagationStopped()) return;
-        func();
+    const block = $('.help__accordion');
+    const block1 = $('.header__list');
+    if(block.length){
+        const cards = block[0].childNodes;
+        let eventId = $($(event.target).parent()).attr('id');
+
+        for (let i = 0; i < cards.length; i++) {
+            if ($(cards[i]).children()[0] &&
+                typeof $($(cards[i]).children()[0]).attr('id') !== 'undefined' &&
+                typeof eventId !== 'undefined' &&
+                $($(cards[i]).children()[0]).attr('id') === eventId) {
+                event.stopPropagation();
+            }
+        }
+        if(block1.hasClass("header__positionRight") ===  true){
+            $('.body').css("overflow","scroll");
+            funct();
+        }
+        if(block.hasClass("help__positionLeft")){
+            $('.body').css("overflow","scroll");
+            if (event.isPropagationStopped()) return;
+            func();
+        }
     }
 });
 
