@@ -6,9 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ISX Withdraw</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- end of font -->
     <link rel="stylesheet" href="../css/libs.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,400,700" rel="stylesheet">
 </head>
 <body class="body">
 <header class="header header__user">
@@ -21,7 +24,7 @@
                 <a class="header__link" href="dashboard.html">Dashboard</a>
             </li>
             <li class="header__item">
-                <a class="header__link" href="#">buy/sell</a>
+                <a class="header__link" href="buySell.html">buy/sell</a>
             </li>
             <li class="header__item">
                 <a class="header__link" href="deposit.html">Deposit</a>
@@ -61,7 +64,7 @@
             <div class="container">
                 <h3 class="inside-header">Withdraw</h3>
                 <div class="row">
-                    <section class="colLeft col-6 d-flex justify-content-end">
+                    <section class="colLeft col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
                         <div class="colWidth">
                             <form>
                                 <div class="form-group">
@@ -121,7 +124,7 @@
                             </form>
                         </div>
                     </section>
-                    <section class="colRight col-6">
+                    <section class="colRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="colWidth">
                             <form>
                                 <div class="form-group">
@@ -205,129 +208,188 @@
                 </div>
             </div>
         </section>
-        <!-- Withdraw history -->
-        <section class="withdraw-history">
-            <div class="container-fluid">
-                <div class="tbl__container">
-                    <h3 class="tbl__title">Withdrawal history</h3>
-                    <!-- Withdraw table-->
-                    <div class="tbl">
-                        <div class="tbl-head d-flex align-items-center">
-                            <div class="tbl-th--30">Date</div>
-                            <div class="tbl-th--20">amount</div>
-                            <div class="tbl-th--20">currency</div>
-                            <div class="tbl-th--30">account/Address</div>
-                            <div class="tbl-th--30">status</div>
+        <!-- history -->
+        <div class="tbl-pagination">
+            <section class="withdraw-history">
+                <div class="container-fluid">
+                    <div class="tbl__container">
+                        <h3 class="tbl__title">Withdrawal history</h3>
+                        <!-- table-->
+                        <div class="tbl">
+                            <div class="tbl-head d-flex align-items-center">
+                                <div class="tbl-th--30">Date</div>
+                                <div class="tbl-th--20">amount</div>
+                                <div class="tbl-th--20">currency</div>
+                                <div class="tbl-th--30">account/Address</div>
+                                <div class="tbl-th--30">status</div>
+                            </div>
+                            <div class="tbl-body">
+                                <div class="overlay">
+                                    <img src="../img/icons/loader.gif" alt="loader"/>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">2 hours ago</div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30">Completed</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30">Pending
+                                        <span class="tbl-status">
+                                        (2 confirmation)
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">2 hours ago</div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30">Completed</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30">Pending
+                                        <span class="tbl-status">
+                                        (2 confirmation)
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">2 hours ago</div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30">Completed</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">25</div>
+                                    <div class="tbl-th--20">BTC</div>
+                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="tbl-th--30">Pending
+                                        <span class="tbl-status">
+                                        (2 confirmation)
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tbt-body">
-                            <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">2 hours ago</div>
-                                <div class="tbl-th--20">25</div>
-                                <div class="tbl-th--20">BTC</div>
-                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                <div class="tbl-th--30 oe">Completed</div>
+                        <!-- Mobile table-->
+                        <div class="tbl-mobile-box">
+                            <div class="overlay">
+                                <img src="../img/icons/loader.gif" alt="loader"/>
                             </div>
-                            <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">
-                                    <span>Apr 12, 2018,</span>
-                                    <span>10:10</span>
+                            <div class="tbl-mobile">
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Date</div>
+                                    <div class="tbl-mobile__text">2 hours ago</div>
                                 </div>
-                                <div class="tbl-th--20">25</div>
-                                <div class="tbl-th--20">BTC</div>
-                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                <div class="tbl-th--30 oe">Pending
-                                    <span class="tbl-status">
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">amount</div>
+                                    <div class="tbl-mobile__text">25</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">currency</div>
+                                    <div class="tbl-mobile__text">BTC</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">account/Address</div>
+                                    <div class="tbl-mobile__text oe">3J98t1WpEZ73CNmQviec</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">status</div>
+                                    <div class="tbl-mobile__text">Completed</div>
+                                </div>
+                            </div>
+                            <div class="tbl-mobile">
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Date</div>
+                                    <div class="tbl-mobile__text">2 hours ago</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">amount</div>
+                                    <div class="tbl-mobile__text">25</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">currency</div>
+                                    <div class="tbl-mobile__text">BTC</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">account/Address</div>
+                                    <div class="tbl-mobile__text oe">3J98t1WpEZ73CNmQviec</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">status</div>
+                                    <div class="tbl-mobile__text">Pending
+                                        <span class="tbl-status">
                                         (2 confirmation)
                                     </span>
-                                </div>
-                            </div>
-                            <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">2 hours ago</div>
-                                <div class="tbl-th--20">25</div>
-                                <div class="tbl-th--20">BTC</div>
-                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                <div class="tbl-th--30 oe">Completed</div>
-                            </div>
-                            <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">
-                                    <span>Apr 12, 2018,</span>
-                                    <span>10:10</span>
-                                </div>
-                                <div class="tbl-th--20">25</div>
-                                <div class="tbl-th--20">BTC</div>
-                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                <div class="tbl-th--30 oe">Pending
-                                    <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">2 hours ago</div>
-                                <div class="tbl-th--20">25</div>
-                                <div class="tbl-th--20">BTC</div>
-                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                <div class="tbl-th--30 oe">Completed</div>
-                            </div>
-                            <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">
-                                    <span>Apr 12, 2018,</span>
-                                    <span>10:10</span>
-                                </div>
-                                <div class="tbl-th--20">25</div>
-                                <div class="tbl-th--20">BTC</div>
-                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                <div class="tbl-th--30 oe">Pending
-                                    <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Withdraw pagination -->
-        <section class="pagination">
-            <div class="container">
-                <div class="row">
-                    <ul class="pagination__list d-flex align-items-center">
-                        <li class="pagination__item">
-                            <a class="pagination__linkDisable" href="#">
-                                <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                            </a>
-                        </li>
-                        <li class="pagination__item">
-                            <a class="pagination__link" href="#">1</a>
-                        </li>
-                        <li class="pagination__item active">
-                            <a class="pagination__link pagination__link--active" href="#">2</a>
-                        </li>
-                        <li class="pagination__item">
-                            <a class="pagination__link" href="#">3</a>
-                        </li>
-                        <li class="pagination__item">
-                            <a class="pagination__link" href="#">4</a>
-                        </li>
-                        <li class="pagination__item">
-                            <a class="pagination__link" href="#">5</a>
-                        </li>
-                        <li class="pagination__item">
-                            <a class="pagination__linkDisable" href="#">...</a>
-                        </li>
-                        <li class="pagination__item">
-                            <a class="pagination__link" href="#">20</a>
-                        </li>
-                        <li class="pagination__item">
-                            <a class="pagination__linkDisable" href="#">
-                                <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                            </a>
-                        </li>
-                    </ul>
+            </section>
+            <!-- pagination -->
+            <section class="pagination">
+                <div class="container">
+                    <div class="row">
+                        <ul class="pagination__list d-flex align-items-center">
+                            <li class="pagination__linkDisable">
+                                <a href="javascript:void(0)">
+                                    <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="javascript:void(0)">1</a>
+                            </li>
+                            <li class="pagination__item pagination--active">
+                                <a class="pagination__link" href="javascript:void(0)">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="javascript:void(0)">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="javascript:void(0)">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="javascript:void(0)">5</a>
+                            </li>
+                            <li class="">
+                                <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="javascript:void(0)">20</a>
+                            </li>
+                            <li class="pagination__linkDisable">
+                                <a href="javascript:void(0)">
+                                    <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 </main>
 <footer class="footer">

@@ -38,6 +38,30 @@ $(document).ready(function () {
     $(".header__userMail").click(function() {
         $(this).find(".header__userMail__list").toggle();
     });
+    // settings generate Btn
+    $(".settings__generateBtn").click(function() {
+        setTimeout(function(){
+            $(".settings__generateText").toggle();
+        }, 2000);
+    });
+    // loader
+    $(".loader-btn").click(function() {
+        $(".loader").css("display", "flex");
+        $('.body').css("overflow","hidden");
+        setTimeout(function(){
+            $(".loader").css("display", "none");
+            $('.body').css("overflow","auto");
+        }, 2000);
+    });
+    // loader for table
+    $(".pagination__item").click(function() {
+        $(this).parent().find(".pagination__item").removeClass("pagination--active");
+        $(this).addClass("pagination--active");
+        $(this).parents(".tbl-pagination").find(".overlay").css("display", "flex");
+        setTimeout(function(){
+            $(".overlay").css("display", "none");
+        }, 2000);
+    });
 });
 // ------ header menu part -------
 var funct =  function () {

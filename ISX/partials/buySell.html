@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ISX Buy/Sell</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- end of font -->
+    <link rel="stylesheet" href="../css/libs.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body">
+<header class="header header__user">
+    <div>
+        <a class="header__logo" href="../index.html">ISX</a>
+    </div>
+    <div class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="buySell.html">buy/sell</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="deposit.html">Deposit</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="withdraw.html">withdraw</a>
+            </li>
+        </ul>
+        <div class="header__userMail">
+            <p class="header__userMail__text">jane452@gmail.com</p>
+            <ul class="header__userMail__list">
+                <li class="header__userMail__item">
+                    <a href="#" class="header__userMail__link">Lorem ipsum dolor</a>
+                </li>
+                <li class="header__userMail__item">
+                    <a href="#" class="header__userMail__link">Lorem ipsum dolor</a>
+                </li>
+                <li class="header__userMail__item">
+                    <a href="#" class="header__userMail__link">Log out</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="main__child">
+        <section class="buySell">
+            <div class="container">
+                <!-- charters -->
+                <section class="buySell__charters">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <!-- dropdown -->
+                            <div class="drop__parent">
+                                <div class="drop">
+                                    <div class="drop__buttonBox d-flex align-items-center justify-content-between">
+                                        <span class="drop__button">BTC-USD</span>
+                                        <img src="../img/icons/arrow_down-blue.png" alt="arrow down">
+                                    </div>
+                                    <ul class="drop__list" style="display: none;">
+                                        <li class="drop__item drop__none">
+                                            <a href="#" class="drop__link">BTC-USD</a>
+                                        </li>
+                                        <li class="drop__item">
+                                            <a href="#" class="drop__link">BTC-EUR</a>
+                                        </li>
+                                        <li class="drop__item">
+                                            <a href="#" class="drop__link">LTC-USD</a>
+                                        </li>
+                                        <li class="drop__item">
+                                            <a href="#" class="drop__link">BTC-USD</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Statistics -->
+                            <div class="buySell__charters__statistic">
+                                <div class="buySell__charters__statistic__row d-flex align-items-center justify-content-between">
+                                    <h6 class="buySell__charters__statistic__title">Volume</h6>
+                                    <p class="buySell__charters__statistic__text buySell__charters__statistic__textRed">1280.24000000
+                                        <span class="buySell__charters__statistic__value">BTC</span>
+                                    </p>
+                                </div>
+                                <div class="buySell__charters__statistic__row d-flex align-items-center justify-content-between">
+                                    <h6 class="buySell__charters__statistic__title">bid</h6>
+                                    <p class="buySell__charters__statistic__text buySell__charters__statistic__textGreen">0.00187100
+                                        <span class="buySell__charters__statistic__value">BTC</span>
+                                    </p>
+                                </div>
+                                <div class="buySell__charters__statistic__row d-flex align-items-center justify-content-between">
+                                    <h6 class="buySell__charters__statistic__title">ask</h6>
+                                    <p class="buySell__charters__statistic__text buySell__charters__statistic__textRed">0.00187100
+                                        <span class="buySell__charters__statistic__value">BTC</span>
+                                    </p>
+                                </div>
+                                <div class="buySell__charters__statistic__row d-flex align-items-center justify-content-between">
+                                    <h6 class="buySell__charters__statistic__title">24h high</h6>
+                                    <p class="buySell__charters__statistic__text">0.00187100
+                                        <span class="buySell__charters__statistic__value">BTC</span>
+                                    </p>
+                                </div>
+                                <div class="buySell__charters__statistic__row d-flex align-items-center justify-content-between">
+                                    <h6 class="buySell__charters__statistic__title">24h low</h6>
+                                    <p class="buySell__charters__statistic__text">0.00187100
+                                        <span class="buySell__charters__statistic__value">BTC</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#timeline">Timeline</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#marketDepth">Market depth</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <!-- =============== Timeline tab =============== -->
+                                <div id="timeline" class="tab-pane active">
+
+                                </div>
+                                <!-- =============== Market depth tab =============== -->
+                                <div id="marketDepth" class="tab-pane fade">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- limit and market -->
+                <section class="buySell__limit">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#limit">Limit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#market">Market</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!-- =============== limit tab =============== -->
+                        <div id="limit" class="tab-pane active">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="buySell__limit__box">
+                                        <div class="buySell__limit__box__row d-flex align-items-center justify-content-between">
+                                            <h6 class="buySell__limit__box__title">Available</h6>
+                                            <p class="buySell__limit__box__text">0.00187100
+                                                <span class="buySell__limit__box__value">BTC</span>
+                                            </p>
+                                        </div>
+                                        <div class="buySell__limit__box__row d-flex justify-content-end">
+                                            <p class="buySell__limit__box__text">10,740.00
+                                                <span class="buySell__limit__box__value">USD</span>
+                                            </p>
+                                        </div>
+                                        <form action="">
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Amount">
+                                                <button class="buySell__limit__btn">BTC</button>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Price">
+                                                <button class="buySell__limit__btn">USD</button>
+                                            </div>
+                                            <div class="custom-control custom-checkbox d-flex align-items-center">
+                                                <input type="checkbox" class="custom-control-input" id="marketBest">
+                                                <label class="custom-control-label auth__details" for="marketBest">Market best price</label>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total</h6>
+                                                <p class="buySell__limit__value">200.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Fee</h6>
+                                                <p class="buySell__limit__value">50.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total + Fee</h6>
+                                                <p class="buySell__limit__value">250.00 USD</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">buy</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="buySell__limit__box">
+                                        <div class="buySell__limit__box__row d-flex align-items-center justify-content-between">
+                                            <h6 class="buySell__limit__box__title">Available</h6>
+                                            <p class="buySell__limit__box__text">0.00187100
+                                                <span class="buySell__limit__box__value">BTC</span>
+                                            </p>
+                                        </div>
+                                        <div class="buySell__limit__box__row d-flex justify-content-end">
+                                            <p class="buySell__limit__box__text">10,740.00
+                                                <span class="buySell__limit__box__value">USD</span>
+                                            </p>
+                                        </div>
+                                        <form action="">
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Amount">
+                                                <button class="buySell__limit__btn">BTC</button>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Price">
+                                                <button class="buySell__limit__btn">USD</button>
+                                            </div>
+                                            <div class="custom-control custom-checkbox d-flex align-items-center">
+                                                <input type="checkbox" class="custom-control-input" id="marketBest-2">
+                                                <label class="custom-control-label auth__details" for="marketBest-2">Market best price</label>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total</h6>
+                                                <p class="buySell__limit__value">200.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Fee</h6>
+                                                <p class="buySell__limit__value">50.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total + Fee</h6>
+                                                <p class="buySell__limit__value">250.00 USD</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">Sell</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- =============== market tab =============== -->
+                        <div id="market" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="buySell__limit__box">
+                                        <div class="buySell__limit__box__row d-flex align-items-center justify-content-between">
+                                            <h6 class="buySell__limit__box__title">Available</h6>
+                                            <p class="buySell__limit__box__text">0.00187100
+                                                <span class="buySell__limit__box__value">BTC</span>
+                                            </p>
+                                        </div>
+                                        <div class="buySell__limit__box__row d-flex justify-content-end">
+                                            <p class="buySell__limit__box__text">10,740.00
+                                                <span class="buySell__limit__box__value">USD</span>
+                                            </p>
+                                        </div>
+                                        <form action="">
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Amount">
+                                                <button class="buySell__limit__btn">BTC</button>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Price">
+                                                <button class="buySell__limit__btn">USD</button>
+                                            </div>
+                                            <div class="custom-control custom-checkbox d-flex align-items-center">
+                                                <input type="checkbox" class="custom-control-input" id="marketBest-3">
+                                                <label class="custom-control-label auth__details" for="marketBest-3">Market best price</label>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total</h6>
+                                                <p class="buySell__limit__value">200.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Fee</h6>
+                                                <p class="buySell__limit__value">50.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total + Fee</h6>
+                                                <p class="buySell__limit__value">250.00 USD</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">buy</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="buySell__limit__box">
+                                        <div class="buySell__limit__box__row d-flex align-items-center justify-content-between">
+                                            <h6 class="buySell__limit__box__title">Available</h6>
+                                            <p class="buySell__limit__box__text">0.00187100
+                                                <span class="buySell__limit__box__value">BTC</span>
+                                            </p>
+                                        </div>
+                                        <div class="buySell__limit__box__row d-flex justify-content-end">
+                                            <p class="buySell__limit__box__text">10,740.00
+                                                <span class="buySell__limit__box__value">USD</span>
+                                            </p>
+                                        </div>
+                                        <form action="">
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Amount">
+                                                <button class="buySell__limit__btn">BTC</button>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between buySell__limit__inputRow">
+                                                <input type="text" class="form-control buySell__limit__input" placeholder="Price">
+                                                <button class="buySell__limit__btn">USD</button>
+                                            </div>
+                                            <div class="custom-control custom-checkbox d-flex align-items-center">
+                                                <input type="checkbox" class="custom-control-input" id="marketBest-4">
+                                                <label class="custom-control-label auth__details" for="marketBest-4">Market best price</label>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total</h6>
+                                                <p class="buySell__limit__value">200.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Fee</h6>
+                                                <p class="buySell__limit__value">50.00 USD</p>
+                                            </div>
+                                            <div class="buySell__limit__row d-flex align-items-center justify-content-between">
+                                                <h6 class="buySell__limit__title">Total + Fee</h6>
+                                                <p class="buySell__limit__value">250.00 USD</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">Sell</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- order book -->
+                <section class="buySell__order">
+                    <h3 class="buySell__order__title">Order Book</h3>
+                    <div class="row">
+                        <div class="buySell__order__board col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="tbl-pagination">
+                                <h6 class="buySell__order__subTitle">Bids</h6>
+                                <!-- Bids table -->
+                                <div class="tbl">
+                                    <div class="tbl-head d-flex align-items-center">
+                                        <div class="tbl-th--30">amount</div>
+                                        <div class="tbl-th--30">Price</div>
+                                        <div class="tbl-th--30">total</div>
+                                    </div>
+                                    <div class="tbl-body">
+                                        <div class="overlay">
+                                            <img src="../img/icons/loader.gif" alt="loader"/>
+                                        </div>
+                                        <div class="tbl-row d-flex align-items-center">
+                                            <div class="tbl-th--30">0.1038</div>
+                                            <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
+                                            <div class="tbl-th--30">0.00760004</div>
+                                        </div>
+                                        <div class="tbl-row d-flex align-items-center">
+                                            <div class="tbl-th--30">0.1038</div>
+                                            <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
+                                            <div class="tbl-th--30">0.00760004</div>
+                                        </div>
+                                        <div class="tbl-row d-flex align-items-center">
+                                            <div class="tbl-th--30">0.1038</div>
+                                            <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
+                                            <div class="tbl-th--30">0.00760004</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bids Mobile table-->
+                                <div class="tbl-mobile-box">
+                                    <div class="overlay">
+                                        <img src="../img/icons/loader.gif" alt="loader"/>
+                                    </div>
+                                    <div class="tbl-mobile">
+                                        <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                            <div class="tbl-mobile__head">amount</div>
+                                            <div class="tbl-mobile__text">0.1038</div>
+                                        </div>
+                                        <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                            <div class="tbl-mobile__head">price</div>
+                                            <div class="tbl-mobile__text buySell__order__board__priceGreen">0.00760004</div>
+                                        </div>
+                                        <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                            <div class="tbl-mobile__head">total</div>
+                                            <div class="tbl-mobile__text oe">0.00760004</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buySell__order__board__textRow d-flex align-items-center justify-content-between">
+                                    <p class="buySell__order__board__text">590538.234 USD</p>
+                                    <p class="buySell__order__board__text">39.050 BTC</p>
+                                </div>
+                                <!-- pagination -->
+                                <section class="pagination">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="pagination__list d-flex align-items-center">
+                                                <li class="pagination__linkDisable">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">1</a>
+                                                </li>
+                                                <li class="pagination__item pagination--active">
+                                                    <a class="pagination__link" href="javascript:void(0)">2</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">3</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">4</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">5</a>
+                                                </li>
+                                                <li class="">
+                                                    <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">20</a>
+                                                </li>
+                                                <li class="pagination__linkDisable">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="buySell__order__board col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="tbl-pagination">
+                                <h6 class="buySell__order__subTitle">asks</h6>
+                                <!-- asks table -->
+                                <div class="tbl">
+                                    <div class="tbl-head d-flex align-items-center">
+                                        <div class="tbl-th--30">amount</div>
+                                        <div class="tbl-th--30">Price</div>
+                                        <div class="tbl-th--30">total</div>
+                                    </div>
+                                    <div class="tbl-body">
+                                        <div class="overlay">
+                                            <img src="../img/icons/loader.gif" alt="loader"/>
+                                        </div>
+                                        <div class="tbl-row d-flex align-items-center">
+                                            <div class="tbl-th--30">0.1038</div>
+                                            <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
+                                            <div class="tbl-th--30">0.00760004</div>
+                                        </div>
+                                        <div class="tbl-row d-flex align-items-center">
+                                            <div class="tbl-th--30">0.1038</div>
+                                            <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
+                                            <div class="tbl-th--30">0.00760004</div>
+                                        </div>
+                                        <div class="tbl-row d-flex align-items-center">
+                                            <div class="tbl-th--30">0.1038</div>
+                                            <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
+                                            <div class="tbl-th--30">0.00760004</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- asks Mobile table-->
+                                <div class="tbl-mobile-box">
+                                    <div class="overlay">
+                                        <img src="../img/icons/loader.gif" alt="loader"/>
+                                    </div>
+                                    <div class="tbl-mobile">
+                                        <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                            <div class="tbl-mobile__head">amount</div>
+                                            <div class="tbl-mobile__text">0.1038</div>
+                                        </div>
+                                        <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                            <div class="tbl-mobile__head">price</div>
+                                            <div class="tbl-mobile__text buySell__order__board__priceRed">0.00760004</div>
+                                        </div>
+                                        <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                            <div class="tbl-mobile__head">total</div>
+                                            <div class="tbl-mobile__text oe">0.00760004</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buySell__order__board__textRow d-flex align-items-center justify-content-between">
+                                    <p class="buySell__order__board__text">590538.234 BTC</p>
+                                    <p class="buySell__order__board__text">39.050 USD</p>
+                                </div>
+                                <!-- pagination -->
+                                <section class="pagination">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="pagination__list d-flex align-items-center">
+                                                <li class="pagination__linkDisable">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">1</a>
+                                                </li>
+                                                <li class="pagination__item pagination--active">
+                                                    <a class="pagination__link" href="javascript:void(0)">2</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">3</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">4</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">5</a>
+                                                </li>
+                                                <li class="">
+                                                    <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="javascript:void(0)">20</a>
+                                                </li>
+                                                <li class="pagination__linkDisable">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Latest transactions -->
+                <section class="buySell__transactions tbl-pagination">
+                    <h3 class="buySell__order__title">Latest transactions</h3>
+                    <div class="tbl__container">
+                        <!-- table -->
+                        <div class="tbl">
+                            <div class="tbl-head d-flex align-items-center">
+                                <div class="tbl-th--30">Date</div>
+                                <div class="tbl-th--20">type</div>
+                                <div class="tbl-th--20">price</div>
+                                <div class="tbl-th--30">total units(USD)</div>
+                                <div class="tbl-th--30">total cost(BTC)</div>
+                            </div>
+                            <div class="tbl-body">
+                                <div class="overlay">
+                                    <img src="../img/icons/loader.gif" alt="loader"/>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">2 hours ago</div>
+                                    <div class="tbl-th--20">Buy</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Sell</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">2 hours ago</div>
+                                    <div class="tbl-th--20">Buy</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Sell</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">2 hours ago</div>
+                                    <div class="tbl-th--20">Buy</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Sell</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">2 hours ago</div>
+                                    <div class="tbl-th--20">Buy</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                                <div class="tbl-row d-flex align-items-center">
+                                    <div class="tbl-th--30">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
+                                    <div class="tbl-th--20">Sell</div>
+                                    <div class="tbl-th--20">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile table-->
+                        <div class="tbl-mobile-box">
+                            <div class="overlay">
+                                <img src="../img/icons/loader.gif" alt="loader"/>
+                            </div>
+                            <div class="tbl-mobile">
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Date</div>
+                                    <div class="tbl-mobile__text">2 hours ago</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Type</div>
+                                    <div class="tbl-mobile__text">Buy</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Price</div>
+                                    <div class="tbl-mobile__text oe">0.00781450</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">total units(USD)</div>
+                                    <div class="tbl-mobile__text oe">86.20689655</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">total cost(BTC)</div>
+                                    <div class="tbl-mobile__text oe">0.00781450</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <section class="pagination">
+                            <div class="container">
+                                <div class="row">
+                                    <ul class="pagination__list d-flex align-items-center">
+                                        <li class="pagination__linkDisable">
+                                            <a href="javascript:void(0)">
+                                                <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                            </a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a class="pagination__link" href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li class="pagination__item pagination--active">
+                                            <a class="pagination__link" href="javascript:void(0)">2</a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a class="pagination__link" href="javascript:void(0)">3</a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a class="pagination__link" href="javascript:void(0)">4</a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a class="pagination__link" href="javascript:void(0)">5</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a class="pagination__link" href="javascript:void(0)">20</a>
+                                        </li>
+                                        <li class="pagination__linkDisable">
+                                            <a href="javascript:void(0)">
+                                                <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!-- My trade history -->
+                <section class="buySell__tradeHistory">
+                    <h3 class="buySell__order__title">My trade history</h3>
+                    <!-- table -->
+                    <div class="tbl">
+                        <div class="tbl-head d-flex align-items-center">
+                            <div class="tbl-th--30">Date</div>
+                            <div class="tbl-th--20">type</div>
+                            <div class="tbl-th--20">price</div>
+                            <div class="tbl-th--30">total units(USD)</div>
+                            <div class="tbl-th--30">total cost(BTC)</div>
+                        </div>
+                        <div class="tbl-body">
+                            <div class="tbl-row d-flex align-items-center">
+                                <div class="tbl-th--30">2 hours ago</div>
+                                <div class="tbl-th--20">Buy</div>
+                                <div class="tbl-th--20">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
+                            </div>
+                            <div class="tbl-row d-flex align-items-center">
+                                <div class="tbl-th--30">
+                                    <span>Apr 12, 2018,</span>
+                                    <span>10:10</span>
+                                </div>
+                                <div class="tbl-th--20">Sell</div>
+                                <div class="tbl-th--20">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
+                            </div>
+                            <div class="tbl-row d-flex align-items-center">
+                                <div class="tbl-th--30">2 hours ago</div>
+                                <div class="tbl-th--20">Buy</div>
+                                <div class="tbl-th--20">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile table-->
+                    <div class="tbl-mobile-box">
+                        <div class="overlay">
+                            <img src="../img/icons/loader.gif" alt="loader"/>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">2 hours ago</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">
+                                    <span>Apr 12, 2018,</span>
+                                    <span>10:10</span>
+                                </div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- My open orders -->
+                <section class="buySell__openOrders">
+                    <h3 class="buySell__order__title">My open orders</h3>
+                    <!-- table -->
+                    <div class="tbl">
+                        <div class="tbl-head d-flex align-items-center">
+                            <div class="tbl-th--30">Date</div>
+                            <div class="tbl-th--20">type</div>
+                            <div class="tbl-th--20">price</div>
+                            <div class="tbl-th--30">total units(USD)</div>
+                            <div class="tbl-th--30">total cost(BTC)</div>
+                        </div>
+                        <div class="tbl-body">
+                            <div class="tbl-row d-flex align-items-center">
+                                <div class="tbl-th--30">2 hours ago</div>
+                                <div class="tbl-th--20">Buy</div>
+                                <div class="tbl-th--20">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
+                                <div class="buySell__openOrders__close">
+                                    <img src="../img/icons/close.png" alt="close"/>
+                                </div>
+                            </div>
+                            <div class="tbl-row d-flex align-items-center">
+                                <div class="tbl-th--30">
+                                    <span>Apr 12, 2018,</span>
+                                    <span>10:10</span>
+                                </div>
+                                <div class="tbl-th--20">Sell</div>
+                                <div class="tbl-th--20">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
+                                <div class="buySell__openOrders__close">
+                                    <img src="../img/icons/close.png" alt="close"/>
+                                </div>
+                            </div>
+                            <div class="tbl-row d-flex align-items-center">
+                                <div class="tbl-th--30">2 hours ago</div>
+                                <div class="tbl-th--20">Buy</div>
+                                <div class="tbl-th--20">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
+                                <div class="buySell__openOrders__close">
+                                    <img src="../img/icons/close.png" alt="close"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile table-->
+                    <div class="tbl-mobile-box">
+                        <div class="overlay">
+                            <img src="../img/icons/loader.gif" alt="loader"/>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="buySell__openOrders__close">
+                                    <img src="../img/icons/close.png" alt="close"/>
+                                </div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">2 hours ago</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="buySell__openOrders__close">
+                                    <img src="../img/icons/close.png" alt="close"/>
+                                </div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">2 hours ago</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__logo">ISX</h5>
+                        <p class="footer-top__text">ISX is the first Icelandic exchange market that offers trade in electronic coins, such as Auroracoin and Bitcoin for Icelandic krónur.
+                            The ISX exchange market is designed with the best possible safety standards and methods.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Info on electronic coins</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is Bitcoin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">What is an electronic coin?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">How do I sign up?</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-lg-center">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">About</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="about.html" class="footer-top__link">About ISX</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Our security</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="announcement.html" class="footer-top__link">Announcements</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 d-flex justify-content-lg-end">
+                    <div class="footer-top__col">
+                        <h5 class="footer-top__title">Support</h5>
+                        <ul class="footer-top__list">
+                            <li class="footer-top__item">
+                                <a href="terms.html" class="footer-top__link">Terms of Service</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">AML / KYC Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="#" class="footer-top__link">Anti fraud Policy</a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a href="contact.html" class="footer-top__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <div class="container">
+            <p class="footer-bottom__text">Copyright Ⓒ 2018. isx.is. All rights reserved</p>
+        </div>
+    </section>
+</footer>
+<script src="../js/libs.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

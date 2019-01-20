@@ -6,11 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ISX Dashboard</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- end of font -->
     <link rel="stylesheet" href="../css/libs.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,400,700" rel="stylesheet">
 </head>
 <body class="body">
+<div class="loader">
+    <img src="../img/icons/loader.gif" alt="loader"/>
+</div>
 <header class="header header__user">
     <div>
         <a class="header__logo" href="../index.html">ISX</a>
@@ -21,7 +27,7 @@
                 <a class="header__link" href="dashboard.html">Dashboard</a>
             </li>
             <li class="header__item">
-                <a class="header__link" href="#">buy/sell</a>
+                <a class="header__link" href="buySell.html">buy/sell</a>
             </li>
             <li class="header__item">
                 <a class="header__link" href="deposit.html">Deposit</a>
@@ -75,8 +81,239 @@
         </div>
         <!-- Tab panes -->
         <div class="tab-content">
+            <!-- =============== dashboard tab =============== -->
             <div id="dashboard" class="container tab-pane active">
                 <h3 class="inside-header">Dashboard</h3>
+                <!-- dashboard balance -->
+                <section class="dashboard-balance">
+                    <div class="dashboard-balance__head d-flex align-items-center">
+                        <div class="dashboard-balance__col_25">
+                            <h6 class="dashboard__title">Balance</h6>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <h6 class="dashboard__title">Total</h6>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <h6 class="dashboard__title">On hold</h6>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <h6 class="dashboard__title">ISK Estimate</h6>
+                        </div>
+                    </div>
+                    <div class="dashboard-balance__row d-flex align-items-center">
+                        <div class="dashboard-balance__col_25 d-flex align-items-center">
+                            <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
+                            <div class="dashboard-balance__box">
+                                <h6 class="dashboard-balance__title">Bitcoin</h6>
+                                <p class="dashboard-balance__text">BTC</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 BTC</p>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 BTC</p>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 BTC</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-balance__row d-flex align-items-center">
+                        <div class="dashboard-balance__col_25 d-flex align-items-center">
+                            <img src="../img/icons/litecoin.png" alt="litecoin"/>
+                            <div class="dashboard-balance__box">
+                                <h6 class="dashboard-balance__title">Litecoin</h6>
+                                <p class="dashboard-balance__text">LTC</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 LTC</p>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 LTC</p>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 LTC</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-balance__row d-flex align-items-center">
+                        <div class="dashboard-balance__col_25 d-flex align-items-center">
+                            <img src="../img/icons/dollar.png" alt="dollar"/>
+                            <div class="dashboard-balance__box">
+                                <h6 class="dashboard-balance__title">US Dollars</h6>
+                                <p class="dashboard-balance__text">USD</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 USD</p>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 USD</p>
+                        </div>
+                        <div class="dashboard-balance__col_25">
+                            <p class="dashboard-balance__value">0.95412178 USD</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- dashboard balance mobile -->
+                <section class="dashboard-balance-md">
+                    <div class="dashboard-balance-md__block d-flex align-items-center">
+                        <div>
+                            <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
+                        </div>
+                        <div class="dashboard-balance-md__box">
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">Total</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">On hold</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">ISK Estimate</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-balance-md__block d-flex align-items-center">
+                        <div>
+                            <img src="../img/icons/litecoin.png" alt="litecoin"/>
+                        </div>
+                        <div class="dashboard-balance-md__box">
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">Total</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">On hold</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">ISK Estimate</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-balance-md__block d-flex align-items-center">
+                        <div>
+                            <img src="../img/icons/dollar.png" alt="dollar"/>
+                        </div>
+                        <div class="dashboard-balance-md__box">
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">Total</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">On hold</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                            <div class="dashboard-balance-md__row d-flex justify-content-between">
+                                <h6 class="dashboard__title">ISK Estimate</h6>
+                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- dashboard -->
+                <section class="dashboard">
+                    <div class="row">
+                        <div class="dashboard__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="dashboard__box">
+                                <div class="dashboard__rowTitle d-flex align-items-center justify-content-between">
+                                    <h6 class="dashboard__title">Recent activity</h6>
+                                    <div class="drop__parent">
+                                        <div class="drop">
+                                            <div class="drop__buttonBox d-flex align-items-center">
+                                                <span class="drop__button">Requests</span>
+                                                <img src="../img/icons/arrow_down.png" alt="arrow down" class="">
+                                            </div>
+                                            <ul class="drop__list">
+                                                <li class="drop__item drop__none">
+                                                    <a href="#" class="drop__link">Requests</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Requests_1</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Requests_2</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Requests_3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="dashboard__date">Apr 16</p>
+                                        <p class="dashboard__text">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="dashboard__info">Pending (2 confirmation)</p>
+                                        <p class="dashboard__valueDeposit text-right">Deposit</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="dashboard__date">Apr 10</p>
+                                        <p class="dashboard__text">0.95412178 BTC</p>
+
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="dashboard__info">confirmed</p>
+                                        <p class="dashboard__valueWithdraw text-right">withdraw</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="dashboard__date">Apr 16</p>
+                                        <p class="dashboard__text">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="dashboard__info">Pending (2 confirmation)</p>
+                                        <p class="dashboard__valueDeposit text-right">Deposit</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row d-flex align-items-center justify-content-center">
+                                    <p class="dashboard__viewAll">view all</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="dashboard__box">
+                                <div class="dashboard__rowTitle d-flex">
+                                    <h6 class="dashboard__title">Announcements</h6>
+                                </div>
+                                <div class="dashboard__announceRow">
+                                    <div class="dashboard__announce">
+                                        <a href="announcement.html" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
+                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                    </div>
+                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
+                                </div>
+                                <div class="dashboard__announceRow">
+                                    <div class="dashboard__announce">
+                                        <a href="announcement.html" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
+                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                    </div>
+                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
+                                </div>
+                                <div class="dashboard__announceRow">
+                                    <div class="dashboard__announce">
+                                        <a href="announcement.html" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
+                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                    </div>
+                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
+                                </div>
+                                <div class="dashboard__row d-flex align-items-center justify-content-center">
+                                    <p class="dashboard__viewAll">view all</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <!-- =============== address tab =============== -->
             <div id="address" class="tab-pane fade">
@@ -84,33 +321,31 @@
                     <h3 class="inside-header">Addresses</h3>
                     <!-- addresses header -->
                     <section class="addresses">
-                        <div class="row">
-                            <div class="col-12 addresses__row d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <h6 class="addresses__title">Bank accounts</h6>
-                                    <img src="../img/icons/info.png" alt="info"/>
-                                </div>
-                                <div class="addresses__add">
-                                    <a href="#" class="addresses__add__btn banner__btn button btnLight">add account</a>
-                                    <div class="addresses__add__list">
-                                        <form>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Account name">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Account number">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Bank name">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Routing number">
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="" class="button">Add</a>
-                                            </div>
-                                        </form>
-                                    </div>
+                        <div class="addresses__row d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <h6 class="addresses__title">Bank accounts</h6>
+                                <img src="../img/icons/info.png" alt="info"/>
+                            </div>
+                            <div class="addresses__add">
+                                <button class="addresses__add__btn button btnLight">add account</button>
+                                <div class="addresses__add__list">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Account name">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Account number">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Bank name">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Routing number">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button class="button">Add</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -243,462 +478,716 @@
                             </div>
                             <!-- History transactions -->
                             <section id="transactions" class="history-transactions history-table">
-                                <div class="tbl">
-                                    <div class="tbl-head d-flex align-items-center">
-                                        <div class="tbl-th--30">Date</div>
-                                        <div class="tbl-th--20">Market</div>
-                                        <div class="tbl-th--20">Type</div>
-                                        <div class="tbl-th--15">bid/ask</div>
-                                        <div class="tbl-th--20">amount</div>
-                                        <div class="tbl-th--20">price</div>
-                                        <div class="tbl-th--20">total</div>
-                                        <div class="tbl-th--20">fee</div>
+                                <div class="tbl-pagination">
+                                    <!-- table -->
+                                    <div class="tbl">
+                                        <div class="tbl-head d-flex align-items-center">
+                                            <div class="tbl-th--30">Date</div>
+                                            <div class="tbl-th--20">Market</div>
+                                            <div class="tbl-th--20">Type</div>
+                                            <div class="tbl-th--15">bid/ask</div>
+                                            <div class="tbl-th--20">amount</div>
+                                            <div class="tbl-th--20">price</div>
+                                            <div class="tbl-th--20">total</div>
+                                            <div class="tbl-th--20">fee</div>
+                                        </div>
+                                        <div class="tbl-body">
+                                            <div class="overlay">
+                                                <img src="../img/icons/loader.gif" alt="loader"/>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="tbt-body">
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
+                                    <!-- Mobile table-->
+                                    <div class="tbl-mobile-box">
+                                        <div class="overlay">
+                                            <img src="../img/icons/loader.gif" alt="loader"/>
                                         </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                        <div class="tbl-mobile">
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Date</div>
+                                                <div class="tbl-mobile__text">2 hours ago</div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Market</div>
+                                                <div class="tbl-mobile__text">ETH-USD</div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">TYPE</div>
+                                                <div class="tbl-mobile__text">Best price</div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">BID/ASK</div>
+                                                <div class="tbl-mobile__text oe">Ask</div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">AMOUNT</div>
+                                                <div class="tbl-mobile__text">0.012123</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">PRICE</div>
+                                                <div class="tbl-mobile__text">1254.32</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head"> TOTAL</div>
+                                                <div class="tbl-mobile__text">0.012123</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">FEE</div>
+                                                <div class="tbl-mobile__text">1254.32</div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- pagination -->
+                                    <section class="pagination">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="pagination__list d-flex align-items-center">
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                                    </li>
+                                                    <li class="pagination__item pagination--active">
+                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                                    </li>
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                             </section>
                             <!-- History order -->
                             <section id="order" class="history-order history-table">
-                                <div class="tbl">
-                                    <div class="tbl-head d-flex align-items-center">
-                                        <div class="tbl-th--30">closed Date</div>
-                                        <div class="tbl-th--30">opened Date</div>
-                                        <div class="tbl-th--20">Market</div>
-                                        <div class="tbl-th--20">Type</div>
-                                        <div class="tbl-th--15">bid/ask</div>
-                                        <div class="tbl-th--20">amount</div>
-                                        <div class="tbl-th--20">price</div>
-                                        <div class="tbl-th--20">total</div>
+                                <div class="tbl-pagination">
+                                    <!-- table -->
+                                    <div class="tbl">
+                                        <div class="tbl-head d-flex align-items-center">
+                                            <div class="tbl-th--30">closed Date</div>
+                                            <div class="tbl-th--30">opened Date</div>
+                                            <div class="tbl-th--20">Market</div>
+                                            <div class="tbl-th--20">Type</div>
+                                            <div class="tbl-th--15">bid/ask</div>
+                                            <div class="tbl-th--20">amount</div>
+                                            <div class="tbl-th--20">price</div>
+                                            <div class="tbl-th--20">total</div>
+                                        </div>
+                                        <div class="tbl-body">
+                                            <div class="overlay">
+                                                <img src="../img/icons/loader.gif" alt="loader"/>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">Best price</div>
+                                                <div class="tbl-th--15">Ask</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">12.35</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">ETH-USD</div>
+                                                <div class="tbl-th--20">limit</div>
+                                                <div class="tbl-th--15">Bid</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="tbl-th--20">0.012123</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="tbt-body">
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
+                                    <!-- Mobile table-->
+                                    <div class="tbl-mobile-box">
+                                        <div class="overlay">
+                                            <img src="../img/icons/loader.gif" alt="loader"/>
                                         </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                        <div class="tbl-mobile">
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">closed Date</div>
+                                                <div class="tbl-mobile__text">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
                                             </div>
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">opened Date</div>
+                                                <div class="tbl-mobile__text">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Market</div>
+                                                <div class="tbl-mobile__text">ETH-USD</div>
                                             </div>
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">TYPE</div>
+                                                <div class="tbl-mobile__text">Best price</div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">BID/ASK</div>
+                                                <div class="tbl-mobile__text oe">Ask</div>
                                             </div>
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">AMOUNT</div>
+                                                <div class="tbl-mobile__text">0.012123</div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">Best price</div>
-                                            <div class="tbl-th--15">Ask</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">12.35</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">PRICE</div>
+                                                <div class="tbl-mobile__text">1254.32</div>
                                             </div>
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">TOTAL</div>
+                                                <div class="tbl-mobile__text">0.012123</div>
                                             </div>
-                                            <div class="tbl-th--20">ETH-USD</div>
-                                            <div class="tbl-th--20">limit</div>
-                                            <div class="tbl-th--15">Bid</div>
-                                            <div class="tbl-th--20">0.012123</div>
-                                            <div class="tbl-th--20">1254.32</div>
-                                            <div class="tbl-th--20">0.012123</div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">FEE</div>
+                                                <div class="tbl-mobile__text">1254.32</div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- pagination -->
+                                    <section class="pagination">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="pagination__list d-flex align-items-center">
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                                    </li>
+                                                    <li class="pagination__item pagination--active">
+                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                                    </li>
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                             </section>
                             <!-- History login -->
                             <section id="login" class="history-login history-table">
-                                <div class="tbl">
-                                    <div class="tbl-head d-flex align-items-center">
-                                        <div class="tbl-th--30">Date</div>
-                                        <div class="tbl-th--20">Type</div>
-                                        <div class="tbl-th--30">IP Address</div>
-                                        <div class="tbl-th--30">location</div>
-                                        <div class="tbl-th--30">Browser</div>
-                                    </div>
-                                    <div class="tbt-body">
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Sign in</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Yerevan, Armenia</div>
-                                            <div class="tbl-th--30">Google Chrome</div>
+                                <div class="tbl-pagination">
+                                    <div class="tbl">
+                                        <div class="tbl-head d-flex align-items-center">
+                                            <div class="tbl-th--30">Date</div>
+                                            <div class="tbl-th--20">Type</div>
+                                            <div class="tbl-th--30">IP Address</div>
+                                            <div class="tbl-th--30">location</div>
+                                            <div class="tbl-th--30">Browser</div>
                                         </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                        <div class="tbl-body">
+                                            <div class="overlay">
+                                                <img src="../img/icons/loader.gif" alt="loader"/>
                                             </div>
-                                            <div class="tbl-th--20">Evaluation</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Los Angeles, USA</div>
-                                            <div class="tbl-th--30">Firefox</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Sign in</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Yerevan, Armenia</div>
-                                            <div class="tbl-th--30">Google Chrome</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">Sign in</div>
+                                                <div class="tbl-th--30 oe">141.136.87.207</div>
+                                                <div class="tbl-th--30 oe">Yerevan, Armenia</div>
+                                                <div class="tbl-th--30">Google Chrome</div>
                                             </div>
-                                            <div class="tbl-th--20">Evaluation</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Los Angeles, USA</div>
-                                            <div class="tbl-th--30">Firefox</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Sign in</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Yerevan, Armenia</div>
-                                            <div class="tbl-th--30">Google Chrome</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">Evaluation</div>
+                                                <div class="tbl-th--30 oe">141.136.87.207</div>
+                                                <div class="tbl-th--30 oe">Los Angeles, USA</div>
+                                                <div class="tbl-th--30">Firefox</div>
                                             </div>
-                                            <div class="tbl-th--20">Evaluation</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Los Angeles, USA</div>
-                                            <div class="tbl-th--30">Firefox</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Sign in</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Yerevan, Armenia</div>
-                                            <div class="tbl-th--30">Google Chrome</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">Sign in</div>
+                                                <div class="tbl-th--30 oe">141.136.87.207</div>
+                                                <div class="tbl-th--30 oe">Yerevan, Armenia</div>
+                                                <div class="tbl-th--30">Google Chrome</div>
                                             </div>
-                                            <div class="tbl-th--20">Evaluation</div>
-                                            <div class="tbl-th--30 oe">141.136.87.207</div>
-                                            <div class="tbl-th--30 oe">Los Angeles, USA</div>
-                                            <div class="tbl-th--30">Firefox</div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">Evaluation</div>
+                                                <div class="tbl-th--30 oe">141.136.87.207</div>
+                                                <div class="tbl-th--30 oe">Los Angeles, USA</div>
+                                                <div class="tbl-th--30">Firefox</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">Sign in</div>
+                                                <div class="tbl-th--30 oe">141.136.87.207</div>
+                                                <div class="tbl-th--30 oe">Yerevan, Armenia</div>
+                                                <div class="tbl-th--30">Google Chrome</div>
+                                            </div>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">Evaluation</div>
+                                                <div class="tbl-th--30 oe">141.136.87.207</div>
+                                                <div class="tbl-th--30 oe">Los Angeles, USA</div>
+                                                <div class="tbl-th--30">Firefox</div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- Mobile table-->
+                                    <div class="tbl-mobile-box">
+                                        <div class="overlay">
+                                            <img src="../img/icons/loader.gif" alt="loader"/>
+                                        </div>
+                                        <div class="tbl-mobile">
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Date</div>
+                                                <div class="tbl-mobile__text">2 hours ago</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Type</div>
+                                                <div class="tbl-mobile__text">Sign in</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">IP Address</div>
+                                                <div class="tbl-mobile__text oe">141.136.87.207</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">location</div>
+                                                <div class="tbl-mobile__text oe">Yerevan, Armenia</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Browser</div>
+                                                <div class="tbl-mobile__text oe">Google Chrome</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- pagination -->
+                                    <!-- pagination -->
+                                    <section class="pagination">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="pagination__list d-flex align-items-center">
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                                    </li>
+                                                    <li class="pagination__item pagination--active">
+                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                                    </li>
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                             </section>
                             <!-- History request -->
                             <section id="request" class="history-request history-table">
-                                <div class="tbl">
-                                    <div class="tbl-head d-flex align-items-center">
-                                        <div class="tbl-th--30">Date</div>
-                                        <div class="tbl-th--20">Type</div>
-                                        <div class="tbl-th--20">amount</div>
-                                        <div class="tbl-th--20">currency</div>
-                                        <div class="tbl-th--30">account/Address</div>
-                                        <div class="tbl-th--30">status</div>
-                                    </div>
-                                    <div class="tbt-body">
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Deposit</div>
-                                            <div class="tbl-th--20">25</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Completed</div>
+                                <div class="tbl-pagination">
+                                    <div class="tbl">
+                                        <div class="tbl-head d-flex align-items-center">
+                                            <div class="tbl-th--30">Date</div>
+                                            <div class="tbl-th--20">Type</div>
+                                            <div class="tbl-th--20">amount</div>
+                                            <div class="tbl-th--20">currency</div>
+                                            <div class="tbl-th--30">account/Address</div>
+                                            <div class="tbl-th--30">status</div>
                                         </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                        <div class="tbl-body">
+                                            <div class="overlay">
+                                                <img src="../img/icons/loader.gif" alt="loader"/>
                                             </div>
-                                            <div class="tbl-th--20">withdraw</div>
-                                            <div class="tbl-th--20">8000</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Pending
-                                                <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">Deposit</div>
+                                                <div class="tbl-th--20">25</div>
+                                                <div class="tbl-th--20">BTC</div>
+                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="tbl-th--30">Completed</div>
                                             </div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Deposit</div>
-                                            <div class="tbl-th--20">25</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Completed</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">withdraw</div>
+                                                <div class="tbl-th--20">8000</div>
+                                                <div class="tbl-th--20">BTC</div>
+                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="tbl-th--30">Pending
+                                                    <span class="tbl-status">
+                                                    (2 confirmation)
+                                                </span>
+                                                </div>
                                             </div>
-                                            <div class="tbl-th--20">withdraw</div>
-                                            <div class="tbl-th--20">8000</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Pending
-                                                <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">Deposit</div>
+                                                <div class="tbl-th--20">25</div>
+                                                <div class="tbl-th--20">BTC</div>
+                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="tbl-th--30">Completed</div>
                                             </div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Deposit</div>
-                                            <div class="tbl-th--20">25</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Completed</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">withdraw</div>
+                                                <div class="tbl-th--20">8000</div>
+                                                <div class="tbl-th--20">BTC</div>
+                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="tbl-th--30">Pending
+                                                    <span class="tbl-status">
+                                                    (2 confirmation)
+                                                </span>
+                                                </div>
                                             </div>
-                                            <div class="tbl-th--20">withdraw</div>
-                                            <div class="tbl-th--20">8000</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Pending
-                                                <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">2 hours ago</div>
+                                                <div class="tbl-th--20">Deposit</div>
+                                                <div class="tbl-th--20">25</div>
+                                                <div class="tbl-th--20">BTC</div>
+                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="tbl-th--30">Completed</div>
                                             </div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">2 hours ago</div>
-                                            <div class="tbl-th--20">Deposit</div>
-                                            <div class="tbl-th--20">25</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Completed</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">
-                                                <span>Apr 12, 2018,</span>
-                                                <span>10:10</span>
-                                            </div>
-                                            <div class="tbl-th--20">withdraw</div>
-                                            <div class="tbl-th--20">8000</div>
-                                            <div class="tbl-th--20">BTC</div>
-                                            <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                            <div class="tbl-th--30 oe">Pending
-                                                <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
+                                            <div class="tbl-row d-flex align-items-center">
+                                                <div class="tbl-th--30">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                                <div class="tbl-th--20">withdraw</div>
+                                                <div class="tbl-th--20">8000</div>
+                                                <div class="tbl-th--20">BTC</div>
+                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="tbl-th--30">Pending
+                                                    <span class="tbl-status">
+                                                    (2 confirmation)
+                                                </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Mobile table-->
+                                    <div class="tbl-mobile-box">
+                                        <div class="overlay">
+                                            <img src="../img/icons/loader.gif" alt="loader"/>
+                                        </div>
+                                        <div class="tbl-mobile">
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Date</div>
+                                                <div class="tbl-mobile__text">2 hours ago</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">Type</div>
+                                                <div class="tbl-mobile__text">Deposit</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">amount</div>
+                                                <div class="tbl-mobile__text">25</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">currency</div>
+                                                <div class="tbl-mobile__text">BTC</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">account/Address</div>
+                                                <div class="tbl-mobile__text oe">3J98t1WpEZ73CNmQviec</div>
+                                            </div>
+                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                                <div class="tbl-mobile__head">status</div>
+                                                <div class="tbl-mobile__text">Completed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- pagination -->
+                                    <section class="pagination">
+                                        <div class="container">
+                                            <div class="row">
+                                                <ul class="pagination__list d-flex align-items-center">
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                                    </li>
+                                                    <li class="pagination__item pagination--active">
+                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
+                                                    </li>
+                                                    <li class="pagination__item">
+                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                                    </li>
+                                                    <li class="pagination__linkDisable">
+                                                        <a href="javascript:void(0)">
+                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                             </section>
-                        </div>
-                    </div>
-                </section>
-                <section class="pagination">
-                    <div class="container">
-                        <div class="row">
-                            <ul class="pagination__list d-flex align-items-center">
-                                <li class="pagination__item">
-                                    <a class="pagination__linkDisable" href="#">
-                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                    </a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">1</a>
-                                </li>
-                                <li class="pagination__item active">
-                                    <a class="pagination__link pagination__link--active" href="#">2</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">3</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">4</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">5</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__linkDisable" href="#">...</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">20</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__linkDisable" href="#">
-                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </section>
@@ -709,7 +1198,7 @@
                     <h3 class="inside-header">Settings</h3>
                     <section class="settings">
                         <div class="row">
-                            <section class="delete-padding--right col-6">
+                            <section class="delete-padding--right col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <!-- Security and warnings -->
                                 <div class="colLeft">
                                     <h6 class="settings__title">Security and warnings</h6>
@@ -777,7 +1266,7 @@
                                         </div>
                                     </div>
                                     <div class="settings__btnRow d-flex justify-content-center">
-                                        <a href="#" class="banner__btn button btnLight">update</a>
+                                        <button class="loader-btn button btnLight">update</button>
                                     </div>
                                 </div>
                                 <!-- API Access -->
@@ -790,7 +1279,10 @@
                                         </p>
                                     </div>
                                     <div class="settings__btnRow d-flex justify-content-center">
-                                        <a href="#" class="banner__btn button btnLight">generate key</a>
+                                        <button class="loader-btn settings__generateBtn button btnLight">generate key</button>
+                                    </div>
+                                    <div class="colWidth settings__generateText">
+                                        <p class="settings__text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                                     </div>
                                 </div>
                                 <!-- Disable account -->
@@ -800,24 +1292,26 @@
                                         <p class="settings__text">Clicking this button will disable your account. If you change your mind, you can reactivate it by logging in.</p>
                                     </div>
                                     <div class="settings__btnRow d-flex justify-content-center">
-                                        <a href="#" class="banner__btn button btnLight">disable</a>
+                                        <button class="loader-btn button btnLight">disable</button>
                                     </div>
                                 </div>
                             </section>
-                            <section class="colRight col-6">
-                                <div class="colWidth">
-                                    <div class="padding--left">
-                                        <h6 class="settings__title">Double-sided authentication (2FA)</h6>
-                                        <p class="settings__text">It is very important to know that isx.is will never ask you to send information about your account via email, such as a password or username or two-way authentication number from the Google Authenticator. The Exchange Market will never send a link to you by email, requesting user information.</p>
-                                        <p class="settings__text">Be sure to always use secure login through</p>
-                                        <a href="#" class="settings__link">http://www.fvzdfv.is/login.php </a>
-                                        <div class="settings__btnRow d-flex justify-content-center">
-                                            <a href="#" class="banner__btn button btnLight">Enable</a>
+                            <section class="colRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="settings__doubleBorder">
+                                    <div class="colWidth">
+                                        <div class="padding--left">
+                                            <h6 class="settings__title">Double-sided authentication (2FA)</h6>
+                                            <p class="settings__text">It is very important to know that isx.is will never ask you to send information about your account via email, such as a password or username or two-way authentication number from the Google Authenticator. The Exchange Market will never send a link to you by email, requesting user information.</p>
+                                            <p class="settings__text">Be sure to always use secure login through</p>
+                                            <a href="#" class="settings__link">http://www.fvzdfv.is/login.php </a>
+                                            <div class="settings__btnRow d-flex justify-content-center">
+                                                <button class="loader-btn button btnLight">Enable</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Change Password -->
-                                <div class="settings__border settings__changePass">
+                                <div class="settings__border">
                                     <div class="colWidth">
                                         <div class="padding--left">
                                             <h6 class="settings__title">Change Password</h6>
@@ -830,7 +1324,7 @@
                                                     <input type="password" class="form-control" placeholder="Confirm password">
                                                 </div>
                                                 <div class="settings__btnRow d-flex justify-content-center">
-                                                    <button class="banner__btn button btnLight">Save changes</button>
+                                                    <button type="submit" class="button btnLight">Save changes</button>
                                                 </div>
                                             </form>
                                         </div>
