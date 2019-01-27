@@ -82,265 +82,266 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <!-- =============== dashboard tab =============== -->
-            <div id="dashboard" class="container tab-pane active">
-                <h3 class="inside-header">Dashboard</h3>
-                <!-- dashboard balance -->
-                <section class="dashboard-balance">
-                    <div class="dashboard-balance__head d-flex align-items-center">
-                        <div class="dashboard-balance__col_25">
-                            <h6 class="dashboard__title">Balance</h6>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <h6 class="dashboard__title">Total</h6>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <h6 class="dashboard__title">On hold</h6>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <h6 class="dashboard__title">ISK Estimate</h6>
-                        </div>
-                    </div>
-                    <div class="dashboard-balance__row d-flex align-items-center">
-                        <div class="dashboard-balance__col_25 d-flex align-items-center">
-                            <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
-                            <div class="dashboard-balance__box">
-                                <h6 class="dashboard-balance__title">Bitcoin</h6>
-                                <p class="dashboard-balance__text">BTC</p>
+            <div id="dashboard" class="tab-pane fade active show">
+                <div class="container">
+                    <h3 class="top-header">Dashboard</h3>
+                    <div class="dashboard">
+                        <!-- dashboard balance -->
+                        <section class="dashboard__balance">
+                            <div class="dashboard__balance__head d-flex align-items-center">
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">Balance</h6>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">Total</h6>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">On hold</h6>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">ISK Estimate</h6>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 BTC</p>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 BTC</p>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 BTC</p>
-                        </div>
-                    </div>
-                    <div class="dashboard-balance__row d-flex align-items-center">
-                        <div class="dashboard-balance__col_25 d-flex align-items-center">
-                            <img src="../img/icons/litecoin.png" alt="litecoin"/>
-                            <div class="dashboard-balance__box">
-                                <h6 class="dashboard-balance__title">Litecoin</h6>
-                                <p class="dashboard-balance__text">LTC</p>
+                            <div class="dashboard__balance__row d-flex align-items-center">
+                                <div class="dashboard__balance__col25 d-flex align-items-center">
+                                    <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
+                                    <div class="dashboard__balance__box">
+                                        <h6 class="dashboard__balance__title">Bitcoin</h6>
+                                        <p class="dashboard__balance__text">BTC</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 LTC</p>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 LTC</p>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 LTC</p>
-                        </div>
-                    </div>
-                    <div class="dashboard-balance__row d-flex align-items-center">
-                        <div class="dashboard-balance__col_25 d-flex align-items-center">
-                            <img src="../img/icons/dollar.png" alt="dollar"/>
-                            <div class="dashboard-balance__box">
-                                <h6 class="dashboard-balance__title">US Dollars</h6>
-                                <p class="dashboard-balance__text">USD</p>
+                            <div class="dashboard__balance__row d-flex align-items-center">
+                                <div class="dashboard__balance__col25 d-flex align-items-center">
+                                    <img src="../img/icons/litecoin.png" alt="litecoin"/>
+                                    <div class="dashboard__balance__box">
+                                        <h6 class="dashboard__balance__title">Litecoin</h6>
+                                        <p class="dashboard__balance__text">LTC</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 USD</p>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 USD</p>
-                        </div>
-                        <div class="dashboard-balance__col_25">
-                            <p class="dashboard-balance__value">0.95412178 USD</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- dashboard balance mobile -->
-                <section class="dashboard-balance-md">
-                    <div class="dashboard-balance-md__block d-flex align-items-center">
-                        <div>
-                            <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
-                        </div>
-                        <div class="dashboard-balance-md__box">
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">Total</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            <div class="dashboard__balance__row d-flex align-items-center">
+                                <div class="dashboard__balance__col25 d-flex align-items-center">
+                                    <img src="../img/icons/dollar.png" alt="dollar"/>
+                                    <div class="dashboard__balance__box">
+                                        <h6 class="dashboard__balance__title">US Dollars</h6>
+                                        <p class="dashboard__balance__text">USD</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
                             </div>
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">On hold</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                        </section>
+                        <!-- dashboard balance mobile -->
+                        <section class="dashboard__balance-sm">
+                            <div class="dashboard__balance-sm__block d-flex align-items-center">
+                                <div>
+                                    <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
+                                    <p class="dashboard__balance__text text-center">BTC</p>
+                                </div>
+                                <div class="dashboard__balance-sm__box">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">Total</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">On hold</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">ISK Estimate</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">ISK Estimate</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            <div class="dashboard__balance-sm__block d-flex align-items-center">
+                                <div>
+                                    <img src="../img/icons/litecoin.png" alt="litecoin"/>
+                                    <p class="dashboard__balance__text text-center">LTC</p>
+                                </div>
+                                <div class="dashboard__balance-sm__box">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">Total</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">On hold</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">ISK Estimate</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="dashboard-balance-md__block d-flex align-items-center">
-                        <div>
-                            <img src="../img/icons/litecoin.png" alt="litecoin"/>
-                        </div>
-                        <div class="dashboard-balance-md__box">
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">Total</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
+                            <div class="dashboard__balance-sm__block d-flex align-items-center">
+                                <div>
+                                    <img src="../img/icons/dollar.png" alt="dollar"/>
+                                    <p class="dashboard__balance__text text-center">USD</p>
+                                </div>
+                                <div class="dashboard__balance-sm__box">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">Total</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">On hold</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">ISK Estimate</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">On hold</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
-                            </div>
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">ISK Estimate</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dashboard-balance-md__block d-flex align-items-center">
-                        <div>
-                            <img src="../img/icons/dollar.png" alt="dollar"/>
-                        </div>
-                        <div class="dashboard-balance-md__box">
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">Total</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
-                            </div>
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">On hold</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
-                            </div>
-                            <div class="dashboard-balance-md__row d-flex justify-content-between">
-                                <h6 class="dashboard__title">ISK Estimate</h6>
-                                <p class="dashboard-balance__value">0.95412178 BTC</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- dashboard -->
-                <section class="dashboard">
-                    <div class="row">
-                        <div class="dashboard__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="dashboard__box">
-                                <div class="dashboard__rowTitle d-flex align-items-center justify-content-between">
-                                    <h6 class="dashboard__title">Recent activity</h6>
-                                    <div class="drop__parent">
-                                        <div class="drop">
-                                            <div class="drop__buttonBox d-flex align-items-center">
-                                                <span class="drop__button">Requests</span>
-                                                <img src="../img/icons/arrow_down.png" alt="arrow down" class="">
+                        </section>
+                        <!-- dashboard activity and announcements -->
+                        <section class="dashboard__activity">
+                            <div class="row">
+                                <aside class="dashboard__activity__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="dashboard__activity__box">
+                                        <div class="dashboard__activity__rowTitle d-flex align-items-center justify-content-between">
+                                            <h6 class="dashboard__title">Recent activity</h6>
+                                            <div class="dashboard__drop">
+                                                <div class="drop">
+                                                    <button type="button" class="drop__box d-flex align-items-center justify-content-between">
+                                                        <span class="drop__value">Request</span>
+                                                        <img src="../img/icons/arrow_down.png" alt="arrow down"/>
+                                                    </button>
+                                                    <ul class="drop__list">
+                                                        <li class="drop__item drop__none">Request</li>
+                                                        <li class="drop__item">Request-1</li>
+                                                        <li class="drop__item">Request-2</li>
+                                                        <li class="drop__item">Request-3</li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <ul class="drop__list">
-                                                <li class="drop__item drop__none">
-                                                    <a href="#" class="drop__link">Requests</a>
-                                                </li>
-                                                <li class="drop__item">
-                                                    <a href="#" class="drop__link">Requests_1</a>
-                                                </li>
-                                                <li class="drop__item">
-                                                    <a href="#" class="drop__link">Requests_2</a>
-                                                </li>
-                                                <li class="drop__item">
-                                                    <a href="#" class="drop__link">Requests_3</a>
-                                                </li>
-                                            </ul>
+                                        </div>
+                                        <div class="dashboard__activity__row">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__date">Apr 16</p>
+                                                <p class="dashboard__activity__text">0.95412178 BTC</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__info">Pending (2 confirmation)</p>
+                                                <p class="dashboard__activity__valueDeposit text-right">Deposit</p>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard__activity__row">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__date">Apr 10</p>
+                                                <p class="dashboard__activity__text">0.95412178 BTC</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__info">Confirmed</p>
+                                                <p class="dashboard__activity__valueWithdraw text-right">Withdraw</p>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard__activity__row">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__date">Apr 16</p>
+                                                <p class="dashboard__activity__text">0.95412178 BTC</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__info">Pending (2 confirmation)</p>
+                                                <p class="dashboard__activity__valueDeposit text-right">Deposit</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="dashboard__activity__row dashboard__activity__viewAll">view all</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="dashboard__row">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="dashboard__date">Apr 16</p>
-                                        <p class="dashboard__text">0.95412178 BTC</p>
+                                </aside>
+                                <aside class="dashboard__activity__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="dashboard__activity__box">
+                                        <div class="dashboard__activity__rowTitle">
+                                            <h6 class="dashboard__title">Announcements</h6>
+                                        </div>
+                                        <div class="dashboard__announcement__row">
+                                            <div class="dashboard__announce">
+                                                <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
+                                                <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                            </div>
+                                            <p class="dashboard__announcement__date">Apr 11, 2018</p>
+                                        </div>
+                                        <div class="dashboard__announcement__row">
+                                            <div class="dashboard__announce">
+                                                <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
+                                                <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                            </div>
+                                            <p class="dashboard__announcement__date">Apr 11, 2018</p>
+                                        </div>
+                                        <div class="dashboard__announcement__row">
+                                            <div class="dashboard__announce">
+                                                <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
+                                                <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                            </div>
+                                            <p class="dashboard__announcement__date">Apr 11, 2018</p>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="dashboard__activity__row dashboard__activity__viewAll">view all</a>
+                                        </div>
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="dashboard__info">Pending (2 confirmation)</p>
-                                        <p class="dashboard__valueDeposit text-right">Deposit</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard__row">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="dashboard__date">Apr 10</p>
-                                        <p class="dashboard__text">0.95412178 BTC</p>
-
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="dashboard__info">confirmed</p>
-                                        <p class="dashboard__valueWithdraw text-right">withdraw</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard__row">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="dashboard__date">Apr 16</p>
-                                        <p class="dashboard__text">0.95412178 BTC</p>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <p class="dashboard__info">Pending (2 confirmation)</p>
-                                        <p class="dashboard__valueDeposit text-right">Deposit</p>
-                                    </div>
-                                </div>
-                                <div class="dashboard__row d-flex align-items-center justify-content-center">
-                                    <p class="dashboard__viewAll">view all</p>
-                                </div>
+                                </aside>
                             </div>
-                        </div>
-                        <div class="dashboard__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="dashboard__box">
-                                <div class="dashboard__rowTitle d-flex">
-                                    <h6 class="dashboard__title">Announcements</h6>
-                                </div>
-                                <div class="dashboard__announceRow">
-                                    <div class="dashboard__announce">
-                                        <a href="announcement.html" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
-                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
-                                    </div>
-                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
-                                </div>
-                                <div class="dashboard__announceRow">
-                                    <div class="dashboard__announce">
-                                        <a href="announcement.html" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
-                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
-                                    </div>
-                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
-                                </div>
-                                <div class="dashboard__announceRow">
-                                    <div class="dashboard__announce">
-                                        <a href="announcement.html" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
-                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
-                                    </div>
-                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
-                                </div>
-                                <div class="dashboard__row d-flex align-items-center justify-content-center">
-                                    <p class="dashboard__viewAll">view all</p>
-                                </div>
-                            </div>
-                        </div>
+                        </section>
                     </div>
-                </section>
+                </div>
             </div>
             <!-- =============== address tab =============== -->
             <div id="address" class="tab-pane fade">
                 <div class="container">
-                    <h3 class="inside-header">Addresses</h3>
+                    <h3 class="top-header">Addresses</h3>
                     <!-- addresses header -->
                     <section class="addresses">
                         <div class="addresses__row d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <h6 class="addresses__title">Bank accounts</h6>
-                                <img src="../img/icons/info.png" alt="info"/>
+                                <div class="tooltip__box">
+                                    <img src="../img/icons/info.png" alt="info"/>
+                                    <span class="tooltip__text">Lorem ipsum dolor sit amet</span>
+                                </div>
                             </div>
-                            <div class="addresses__add">
+                            <div class="dropdown-btn">
                                 <button class="addresses__add__btn button btnLight">add account</button>
-                                <div class="addresses__add__list">
+                                <div class="dropdown-btn__list">
                                     <form>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Account name">
+                                        <div class="form__row">
+                                            <input type="text" class="input" placeholder="Account name">
                                         </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Account number">
+                                        <div class="form__row">
+                                            <input type="text" class="input" placeholder="Account number">
                                         </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Bank name">
+                                        <div class="form__row">
+                                            <input type="text" class="input" placeholder="Bank name">
                                         </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Routing number">
+                                        <div class="form__row">
+                                            <input type="text" class="input" placeholder="Routing number">
                                         </div>
                                         <div class="d-flex justify-content-center">
                                             <button class="button">Add</button>
@@ -351,91 +352,166 @@
                         </div>
                     </section>
                     <!-- addresses account row -->
-                    <section class="addresses-account">
-                        <div class="addresses-account__row addresses__row d-flex align-items-center">
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Account name</span>
-                                <p class="addresses-account__info">My Arion bank N1</p>
+                    <section class="addresses__account">
+                        <div class="addresses__account__row addresses__row d-flex align-items-center">
+                            <div class="addresses__account__col addresses__account__col24">
+                                <span class="addresses__account__title">Account name</span>
+                                <p class="addresses__account__info">My Arion bank N1</p>
                             </div>
-                            <div class="addresses-account__col_30">
-                                <span class="addresses-account__title">Account number</span>
-                                <p class="addresses-account__info oe">125 45684 5854 5458 5642</p>
+                            <div class="addresses__account__col addresses__account__col30">
+                                <span class="addresses__account__title">Account number</span>
+                                <p class="addresses__account__info oe">125 45684 5854 5458 5642</p>
                             </div>
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Bank name</span>
-                                <p class="addresses-account__info oe">JPMorgan Chase & Co.</p>
+                            <div class="addresses__account__col addresses__account__col25">
+                                <span class="addresses__account__title">Bank name</span>
+                                <p class="addresses__account__info oe">JPMorgan Chase & Co.</p>
                             </div>
-                            <div class="addresses-account__col_15">
-                                <span class="addresses-account__title">Routing number</span>
-                                <p class="addresses-account__info">125 2563</p>
+                            <div class="addresses__account__col addresses__account__col15">
+                                <span class="addresses__account__title">Routing number</span>
+                                <p class="addresses__account__info">125 2563</p>
                             </div>
-                            <div class="addresses-account__col_5 addresses-account--delete">
+                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete">
+                                <div class="dropdown-btn">
+                                    <img src="../img/icons/delete.png" class="addresses__account--edit" alt="edit"/>
+                                    <div class="dropdown-btn__list">
+                                        <form>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="My Arion bank N1" placeholder="Account name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="125 45684 5854 5458 5642" placeholder="Account number">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="JPMorgan Chase & Co." placeholder="Bank name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="125 2563" placeholder="Routing number">
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">Edit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete" data-toggle="modal" data-target="#myModal">
                                 <img src="../img/icons/delete.png" alt="delete"/>
                             </div>
                         </div>
-                        <div class="addresses-account__row addresses__row d-flex align-items-center">
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Account name</span>
-                                <p class="addresses-account__info">My Arion bank N1</p>
+                        <div class="addresses__account__row addresses__row d-flex align-items-center">
+                            <div class="addresses__account__col addresses__account__col24">
+                                <span class="addresses__account__title">Account name</span>
+                                <p class="addresses__account__info">My Arion bank N1</p>
                             </div>
-                            <div class="addresses-account__col_30">
-                                <span class="addresses-account__title">Account number</span>
-                                <p class="addresses-account__info oe">125 45684 5854 5458 5642</p>
+                            <div class="addresses__account__col addresses__account__col30">
+                                <span class="addresses__account__title">Account number</span>
+                                <p class="addresses__account__info oe">125 45684 5854 5458 5642</p>
                             </div>
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Bank name</span>
-                                <p class="addresses-account__info oe">JPMorgan Chase & Co.</p>
+                            <div class="addresses__account__col addresses__account__col25">
+                                <span class="addresses__account__title">Bank name</span>
+                                <p class="addresses__account__info oe">JPMorgan Chase & Co.</p>
                             </div>
-                            <div class="addresses-account__col_15">
-                                <span class="addresses-account__title">Routing number</span>
-                                <p class="addresses-account__info">125 2563</p>
+                            <div class="addresses__account__col addresses__account__col15">
+                                <span class="addresses__account__title">Routing number</span>
+                                <p class="addresses__account__info">125 2563</p>
                             </div>
-                            <div class="addresses-account__col_5 addresses-account--delete">
+                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete">
+                                <div class="dropdown-btn">
+                                    <img src="../img/icons/delete.png" class="addresses__account--edit" alt="edit"/>
+                                    <div class="dropdown-btn__list">
+                                        <form>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="My Arion bank N1" placeholder="Account name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="125 45684 5854 5458 5642" placeholder="Account number">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="JPMorgan Chase & Co." placeholder="Bank name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="125 2563" placeholder="Routing number">
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">Edit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete" data-toggle="modal" data-target="#myModal">
                                 <img src="../img/icons/delete.png" alt="delete"/>
                             </div>
                         </div>
-                        <div class="addresses-account__row addresses__row d-flex align-items-center">
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Account name</span>
-                                <p class="addresses-account__info">My Arion bank N1</p>
+                        <div class="addresses__account__row addresses__row d-flex align-items-center">
+                            <div class="addresses__account__col addresses__account__col24">
+                                <span class="addresses__account__title">Account name</span>
+                                <p class="addresses__account__info">My Arion bank N1</p>
                             </div>
-                            <div class="addresses-account__col_30">
-                                <span class="addresses-account__title">Account number</span>
-                                <p class="addresses-account__info oe">125 45684 5854 5458 5642</p>
+                            <div class="addresses__account__col addresses__account__col30">
+                                <span class="addresses__account__title">Account number</span>
+                                <p class="addresses__account__info oe">125 45684 5854 5458 5642</p>
                             </div>
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Bank name</span>
-                                <p class="addresses-account__info oe">JPMorgan Chase & Co.</p>
+                            <div class="addresses__account__col addresses__account__col25">
+                                <span class="addresses__account__title">Bank name</span>
+                                <p class="addresses__account__info oe">JPMorgan Chase & Co.</p>
                             </div>
-                            <div class="addresses-account__col_15">
-                                <span class="addresses-account__title">Routing number</span>
-                                <p class="addresses-account__info">125 2563</p>
+                            <div class="addresses__account__col addresses__account__col15">
+                                <span class="addresses__account__title">Routing number</span>
+                                <p class="addresses__account__info">125 2563</p>
                             </div>
-                            <div class="addresses-account__col_5 addresses-account--delete">
+                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete">
+                                <div class="dropdown-btn">
+                                    <img src="../img/icons/delete.png" class="addresses__account--edit" alt="edit"/>
+                                    <div class="dropdown-btn__list">
+                                        <form>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="My Arion bank N1" placeholder="Account name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="125 45684 5854 5458 5642" placeholder="Account number">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="JPMorgan Chase & Co." placeholder="Bank name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" value="125 2563" placeholder="Routing number">
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">Edit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete" data-toggle="modal" data-target="#myModal">
                                 <img src="../img/icons/delete.png" alt="delete"/>
                             </div>
                         </div>
                     </section>
                 </div>
                 <!-- crypto addresses row -->
-                <section class="addresses-crypto">
+                <section class="addresses__crypto">
                     <div class="container">
                         <div class="addresses__row d-flex align-items-center">
                             <h6 class="addresses__title">Crypto addresses</h6>
-                            <img src="../img/icons/info.png" alt="info"/>
+                            <div class="tooltip__box">
+                                <img src="../img/icons/info.png" alt="info"/>
+                                <span class="tooltip__text">Lorem ipsum dolor sit amet</span>
+                            </div>
                         </div>
-                        <div class="addresses-account__row addresses__row d-flex align-items-center">
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Currency</span>
-                                <p class="addresses-account__info">ETH</p>
+                        <div class="addresses__account__row addresses__row d-flex align-items-center">
+                            <div class="addresses__account__col25">
+                                <span class="addresses__account__title">Currency</span>
+                                <p class="addresses__account__info">ETH</p>
                             </div>
-                            <div class="addresses-account__col_50">
-                                <span class="addresses-account__title">Account number</span>
-                                <p class="addresses-account__info oe">WXkmHEN4kLXEJyc8DASzPsYiu95o</p>
+                            <div class="addresses__account__col50">
+                                <span class="addresses__account__title">Account number</span>
+                                <p class="addresses__account__info oe">WXkmHEN4kLXEJyc8DASzPsYiu95o</p>
                             </div>
-                            <div class="addresses-account__col_25">
-                                <span class="addresses-account__title">Date</span>
-                                <p class="addresses-account__info oe">
+                            <div class="addresses__account__col25">
+                                <span class="addresses__account__title">Date</span>
+                                <p class="addresses__account__info">
                                     <span> Apr 04, 2018,</span>
                                     <span>10:10</span>
                                 </p>
@@ -443,749 +519,571 @@
                         </div>
                     </div>
                 </section>
+                <!-- Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal__body">
+                                <p class="modal__text">
+                                    Are you sure you want to delete the Bank Account?
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <button class="button btnLight" data-dismiss="modal">Yes</button>
+                                    <button class="button" data-dismiss="modal">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- =============== History tab =============== -->
             <div id="history" class="tab-pane fade">
                 <section class="history">
                     <div class="container-fluid">
-                        <div class="tbl__container">
+                        <div class="container-md">
+                            <!-- history header-->
                             <div class="history__header">
-                                <h3 class="tbl__title text-center">history</h3>
+                                <h3 class="top-header">History</h3>
                                 <div class="d-flex justify-content-end">
                                     <div class="history__drop">
                                         <div class="drop">
-                                            <div class="drop__buttonBox d-flex align-items-center justify-content-between">
-                                                <span class="drop__button">Transactions</span>
-                                                <img src="../img/icons/arrow_down.png" alt="arrow down">
-                                            </div>
+                                            <button type="button" class="drop__box d-flex align-items-center justify-content-between">
+                                                <span class="drop__value">Transactions</span>
+                                                <img src="../img/icons/arrow_down.png" alt="arrow down"/>
+                                            </button>
                                             <ul class="drop__list">
-                                                <li class="drop__item drop__none" data-value="transactions">
-                                                    <a href="#" class="drop__link">Transactions</a>
-                                                </li>
-                                                <li class="drop__item" data-value="order">
-                                                    <a href="#" class="drop__link">Order</a>
-                                                </li>
-                                                <li class="drop__item" data-value="login">
-                                                    <a href="#" class="drop__link">Login</a>
-                                                </li>
-                                                <li class="drop__item" data-value="request">
-                                                    <a href="#" class="drop__link">Request</a>
-                                                </li>
+                                                <li class="drop__item drop__none" data-value="transactions">Transactions</li>
+                                                <li class="drop__item" data-value="order">Order</li>
+                                                <li class="drop__item" data-value="login">Login</li>
+                                                <li class="drop__item" data-value="request">Request</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- History transactions -->
+                            <!-- history transactions -->
                             <section id="transactions" class="history-transactions history-table">
-                                <div class="tbl-pagination">
-                                    <!-- table -->
-                                    <div class="tbl">
-                                        <div class="tbl-head d-flex align-items-center">
-                                            <div class="tbl-th--30">Date</div>
-                                            <div class="tbl-th--20">Market</div>
-                                            <div class="tbl-th--20">Type</div>
-                                            <div class="tbl-th--15">bid/ask</div>
-                                            <div class="tbl-th--20">amount</div>
-                                            <div class="tbl-th--20">price</div>
-                                            <div class="tbl-th--20">total</div>
-                                            <div class="tbl-th--20">fee</div>
+                                <!-- table and pagination-->
+                                <div class="table-pagination">
+                                    <!-- table-->
+                                    <div class="table-lg">
+                                        <div class="table-lg-head d-flex align-items-center">
+                                            <div class="table-lg-th--30">Date</div>
+                                            <div class="table-lg-th--20">market</div>
+                                            <div class="table-lg-th--20">type</div>
+                                            <div class="table-lg-th--15">BID/Ask</div>
+                                            <div class="table-lg-th--20">amount</div>
+                                            <div class="table-lg-th--20">price</div>
+                                            <div class="table-lg-th--20">total</div>
+                                            <div class="table-lg-th--20">fee</div>
                                         </div>
-                                        <div class="tbl-body">
-                                            <div class="overlay">
+                                        <!-- table body -->
+                                        <div class="table-lg-body">
+                                            <div class="overlay-md">
                                                 <img src="../img/icons/loader.gif" alt="loader"/>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">2 hours ago</div>
+                                                <div class="table-lg-th--20">ETH-USD</div>
+                                                <div class="table-lg-th--20">Best price</div>
+                                                <div class="table-lg-th--15">Ask</div>
+                                                <div class="table-lg-th--20">0.012123</div>
+                                                <div class="table-lg-th--20">12.35</div>
+                                                <div class="table-lg-th--20">0.012123</div>
+                                                <div class="table-lg-th--20">12.35</div>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">
                                                     <span>Apr 12, 2018,</span>
                                                     <span>10:10</span>
                                                 </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
+                                                <div class="table-lg-th--20">ETH-USD</div>
+                                                <div class="table-lg-th--20">limit</div>
+                                                <div class="table-lg-th--15">bid</div>
+                                                <div class="table-lg-th--20">0.012123</div>
+                                                <div class="table-lg-th--20">12.35</div>
+                                                <div class="table-lg-th--20">0.012123</div>
+                                                <div class="table-lg-th--20">12.35</div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Mobile table-->
-                                    <div class="tbl-mobile-box">
-                                        <div class="overlay">
+                                    <div class="table-sm">
+                                        <div class="overlay-md">
                                             <img src="../img/icons/loader.gif" alt="loader"/>
                                         </div>
-                                        <div class="tbl-mobile">
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Date</div>
-                                                <div class="tbl-mobile__text">2 hours ago</div>
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">Date</div>
+                                                <div class="table-sm__text">2 hours ago</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Market</div>
-                                                <div class="tbl-mobile__text">ETH-USD</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">market</div>
+                                                <div class="table-sm__text">ETH-USD</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">TYPE</div>
-                                                <div class="tbl-mobile__text">Best price</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">Best price</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">BID/ASK</div>
-                                                <div class="tbl-mobile__text oe">Ask</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">BID/Ask</div>
+                                                <div class="table-sm__text">Ask</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">AMOUNT</div>
-                                                <div class="tbl-mobile__text">0.012123</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">amount</div>
+                                                <div class="table-sm__text">0.012123</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">PRICE</div>
-                                                <div class="tbl-mobile__text">1254.32</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">price</div>
+                                                <div class="table-sm__text">12.35</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head"> TOTAL</div>
-                                                <div class="tbl-mobile__text">0.012123</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">total</div>
+                                                <div class="table-sm__text">0.012123</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">FEE</div>
-                                                <div class="tbl-mobile__text">1254.32</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">fee</div>
+                                                <div class="table-sm__text">12.35</div>
                                             </div>
+                                        </div>
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">Date</div>
+                                                <div class="table-sm__text">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">market</div>
+                                                <div class="table-sm__text">ETH-USD</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">limit</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">BID/Ask</div>
+                                                <div class="table-sm__text">bid</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">amount</div>
+                                                <div class="table-sm__text">0.012123</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">price</div>
+                                                <div class="table-sm__text">12.35</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">total</div>
+                                                <div class="table-sm__text">0.012123</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">fee</div>
+                                                <div class="table-sm__text">12.35</div>
+                                            </div>
+
                                         </div>
                                     </div>
                                     <!-- pagination -->
-                                    <section class="pagination">
-                                        <div class="container">
-                                            <div class="row">
-                                                <ul class="pagination__list d-flex align-items-center">
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
-                                                    </li>
-                                                    <li class="pagination__item pagination--active">
-                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
-                                                    </li>
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section>
+                                    <div class="pagination d-flex align-items-center justify-content-center">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                        </a>
+                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                        <a class="pagination__link pagination--active" href="javascript:void(0)">2</a>
+                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                        </a>
+                                    </div>
                                 </div>
                             </section>
-                            <!-- History order -->
+                            <!-- history order -->
                             <section id="order" class="history-order history-table">
-                                <div class="tbl-pagination">
-                                    <!-- table -->
-                                    <div class="tbl">
-                                        <div class="tbl-head d-flex align-items-center">
-                                            <div class="tbl-th--30">closed Date</div>
-                                            <div class="tbl-th--30">opened Date</div>
-                                            <div class="tbl-th--20">Market</div>
-                                            <div class="tbl-th--20">Type</div>
-                                            <div class="tbl-th--15">bid/ask</div>
-                                            <div class="tbl-th--20">amount</div>
-                                            <div class="tbl-th--20">price</div>
-                                            <div class="tbl-th--20">total</div>
+                                <!-- table and pagination-->
+                                <div class="table-pagination">
+                                    <!-- table-->
+                                    <div class="table-lg">
+                                        <div class="table-lg-head d-flex align-items-center">
+                                            <div class="table-lg-th--30">CLOSED DATE</div>
+                                            <div class="table-lg-th--30">opened Date</div>
+                                            <div class="table-lg-th--20">market</div>
+                                            <div class="table-lg-th--20">type</div>
+                                            <div class="table-lg-th--15">BID/Ask</div>
+                                            <div class="table-lg-th--20">amount</div>
+                                            <div class="table-lg-th--20">price</div>
+                                            <div class="table-lg-th--20">total</div>
                                         </div>
-                                        <div class="tbl-body">
-                                            <div class="overlay">
+                                        <!-- table body -->
+                                        <div class="table-lg-body">
+                                            <div class="overlay-md">
                                                 <img src="../img/icons/loader.gif" alt="loader"/>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">2 hours ago</div>
+                                                <div class="table-lg-th--30">2 hours ago</div>
+                                                <div class="table-lg-th--20">ETH-USD</div>
+                                                <div class="table-lg-th--20">Best price</div>
+                                                <div class="table-lg-th--15">Ask</div>
+                                                <div class="table-lg-th--20">0.012123</div>
+                                                <div class="table-lg-th--20">12.35</div>
+                                                <div class="table-lg-th--20">0.012123</div>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">
                                                     <span>Apr 12, 2018,</span>
                                                     <span>10:10</span>
                                                 </div>
-                                                <div class="tbl-th--30">
+                                                <div class="table-lg-th--30">
                                                     <span>Apr 12, 2018,</span>
                                                     <span>10:10</span>
                                                 </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">Best price</div>
-                                                <div class="tbl-th--15">Ask</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">12.35</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">ETH-USD</div>
-                                                <div class="tbl-th--20">limit</div>
-                                                <div class="tbl-th--15">Bid</div>
-                                                <div class="tbl-th--20">0.012123</div>
-                                                <div class="tbl-th--20">1254.32</div>
-                                                <div class="tbl-th--20">0.012123</div>
+                                                <div class="table-lg-th--20">ETH-USD</div>
+                                                <div class="table-lg-th--20">limit</div>
+                                                <div class="table-lg-th--15">bid</div>
+                                                <div class="table-lg-th--20">0.012123</div>
+                                                <div class="table-lg-th--20">12.35</div>
+                                                <div class="table-lg-th--20">0.012123</div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Mobile table-->
-                                    <div class="tbl-mobile-box">
-                                        <div class="overlay">
+                                    <div class="table-sm">
+                                        <div class="overlay-md">
                                             <img src="../img/icons/loader.gif" alt="loader"/>
                                         </div>
-                                        <div class="tbl-mobile">
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">closed Date</div>
-                                                <div class="tbl-mobile__text">
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">closed Date</div>
+                                                <div class="table-sm__text">2 hours ago</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">opened Date</div>
+                                                <div class="table-sm__text">2 hours ago</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">market</div>
+                                                <div class="table-sm__text">ETH-USD</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">Best price</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">BID/Ask</div>
+                                                <div class="table-sm__text">Ask</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">amount</div>
+                                                <div class="table-sm__text">0.012123</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">price</div>
+                                                <div class="table-sm__text">12.35</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">total</div>
+                                                <div class="table-sm__text">0.012123</div>
+                                            </div>
+                                        </div>
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">closed Date</div>
+                                                <div class="table-sm__text">
                                                     <span>Apr 12, 2018,</span>
                                                     <span>10:10</span>
                                                 </div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">opened Date</div>
-                                                <div class="tbl-mobile__text">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">opened Date</div>
+                                                <div class="table-sm__text">
                                                     <span>Apr 12, 2018,</span>
                                                     <span>10:10</span>
                                                 </div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Market</div>
-                                                <div class="tbl-mobile__text">ETH-USD</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">market</div>
+                                                <div class="table-sm__text">ETH-USD</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">TYPE</div>
-                                                <div class="tbl-mobile__text">Best price</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">limit</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">BID/ASK</div>
-                                                <div class="tbl-mobile__text oe">Ask</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">BID/Ask</div>
+                                                <div class="table-sm__text">bid</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">AMOUNT</div>
-                                                <div class="tbl-mobile__text">0.012123</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">amount</div>
+                                                <div class="table-sm__text">0.012123</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">PRICE</div>
-                                                <div class="tbl-mobile__text">1254.32</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">price</div>
+                                                <div class="table-sm__text">12.35</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">TOTAL</div>
-                                                <div class="tbl-mobile__text">0.012123</div>
-                                            </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">FEE</div>
-                                                <div class="tbl-mobile__text">1254.32</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">total</div>
+                                                <div class="table-sm__text">0.012123</div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- pagination -->
-                                    <section class="pagination">
-                                        <div class="container">
-                                            <div class="row">
-                                                <ul class="pagination__list d-flex align-items-center">
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
-                                                    </li>
-                                                    <li class="pagination__item pagination--active">
-                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
-                                                    </li>
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section>
+                                    <div class="pagination d-flex align-items-center justify-content-center">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                        </a>
+                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                        <a class="pagination__link pagination--active" href="javascript:void(0)">2</a>
+                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                        </a>
+                                    </div>
                                 </div>
                             </section>
                             <!-- History login -->
                             <section id="login" class="history-login history-table">
-                                <div class="tbl-pagination">
-                                    <div class="tbl">
-                                        <div class="tbl-head d-flex align-items-center">
-                                            <div class="tbl-th--30">Date</div>
-                                            <div class="tbl-th--20">Type</div>
-                                            <div class="tbl-th--30">IP Address</div>
-                                            <div class="tbl-th--30">location</div>
-                                            <div class="tbl-th--30">Browser</div>
+                                <!-- table and pagination-->
+                                <div class="table-pagination">
+                                    <!-- table-->
+                                    <div class="table-lg">
+                                        <div class="table-lg-head d-flex align-items-center">
+                                            <div class="table-lg-th--30">DATE</div>
+                                            <div class="table-lg-th--20">type</div>
+                                            <div class="table-lg-th--30">IP ADDRESS</div>
+                                            <div class="table-lg-th--30">LOCATION</div>
+                                            <div class="table-lg-th--30">BROWSER</div>
                                         </div>
-                                        <div class="tbl-body">
-                                            <div class="overlay">
+                                        <!-- table body -->
+                                        <div class="table-lg-body">
+                                            <div class="overlay-md">
                                                 <img src="../img/icons/loader.gif" alt="loader"/>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">Sign in</div>
-                                                <div class="tbl-th--30 oe">141.136.87.207</div>
-                                                <div class="tbl-th--30 oe">Yerevan, Armenia</div>
-                                                <div class="tbl-th--30">Google Chrome</div>
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">2 hours ago</div>
+                                                <div class="table-lg-th--20">Sign in</div>
+                                                <div class="table-lg-th--30 oe">141.136.87.207</div>
+                                                <div class="table-lg-th--30 oe">Yerevan, Armenia</div>
+                                                <div class="table-lg-th--30">Google Chrome</div>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">
                                                     <span>Apr 12, 2018,</span>
                                                     <span>10:10</span>
                                                 </div>
-                                                <div class="tbl-th--20">Evaluation</div>
-                                                <div class="tbl-th--30 oe">141.136.87.207</div>
-                                                <div class="tbl-th--30 oe">Los Angeles, USA</div>
-                                                <div class="tbl-th--30">Firefox</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">Sign in</div>
-                                                <div class="tbl-th--30 oe">141.136.87.207</div>
-                                                <div class="tbl-th--30 oe">Yerevan, Armenia</div>
-                                                <div class="tbl-th--30">Google Chrome</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">Evaluation</div>
-                                                <div class="tbl-th--30 oe">141.136.87.207</div>
-                                                <div class="tbl-th--30 oe">Los Angeles, USA</div>
-                                                <div class="tbl-th--30">Firefox</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">Sign in</div>
-                                                <div class="tbl-th--30 oe">141.136.87.207</div>
-                                                <div class="tbl-th--30 oe">Yerevan, Armenia</div>
-                                                <div class="tbl-th--30">Google Chrome</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">Evaluation</div>
-                                                <div class="tbl-th--30 oe">141.136.87.207</div>
-                                                <div class="tbl-th--30 oe">Los Angeles, USA</div>
-                                                <div class="tbl-th--30">Firefox</div>
+                                                <div class="table-lg-th--20">Evaluation</div>
+                                                <div class="table-lg-th--30 oe">141.136.87.207</div>
+                                                <div class="table-lg-th--30 oe">Los Angeles, USA</div>
+                                                <div class="table-lg-th--30">Firefox</div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Mobile table-->
-                                    <div class="tbl-mobile-box">
-                                        <div class="overlay">
+                                    <div class="table-sm">
+                                        <div class="overlay-md">
                                             <img src="../img/icons/loader.gif" alt="loader"/>
                                         </div>
-                                        <div class="tbl-mobile">
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Date</div>
-                                                <div class="tbl-mobile__text">2 hours ago</div>
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">Date</div>
+                                                <div class="table-sm__text">2 hours ago</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Type</div>
-                                                <div class="tbl-mobile__text">Sign in</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">Sign in</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">IP Address</div>
-                                                <div class="tbl-mobile__text oe">141.136.87.207</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">IP ADDRESS</div>
+                                                <div class="table-sm__text oe">141.136.87.207</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">location</div>
-                                                <div class="tbl-mobile__text oe">Yerevan, Armenia</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">LOCATION</div>
+                                                <div class="table-sm__text oe">Yerevan, Armenia</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Browser</div>
-                                                <div class="tbl-mobile__text oe">Google Chrome</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">BROWSER</div>
+                                                <div class="table-sm__text">Google Chrome</div>
+                                            </div>
+                                        </div>
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">Date</div>
+                                                <div class="table-sm__text">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">Evaluation</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">IP ADDRESS</div>
+                                                <div class="table-sm__text oe">141.136.87.207</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">LOCATION</div>
+                                                <div class="table-sm__text oe">Los Angeles, USA</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">BROWSER</div>
+                                                <div class="table-sm__text">Firefox</div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- pagination -->
-                                    <!-- pagination -->
-                                    <section class="pagination">
-                                        <div class="container">
-                                            <div class="row">
-                                                <ul class="pagination__list d-flex align-items-center">
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
-                                                    </li>
-                                                    <li class="pagination__item pagination--active">
-                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
-                                                    </li>
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section>
+                                    <div class="pagination d-flex align-items-center justify-content-center">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                        </a>
+                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                        <a class="pagination__link pagination--active" href="javascript:void(0)">2</a>
+                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                        </a>
+                                    </div>
                                 </div>
                             </section>
                             <!-- History request -->
                             <section id="request" class="history-request history-table">
-                                <div class="tbl-pagination">
-                                    <div class="tbl">
-                                        <div class="tbl-head d-flex align-items-center">
-                                            <div class="tbl-th--30">Date</div>
-                                            <div class="tbl-th--20">Type</div>
-                                            <div class="tbl-th--20">amount</div>
-                                            <div class="tbl-th--20">currency</div>
-                                            <div class="tbl-th--30">account/Address</div>
-                                            <div class="tbl-th--30">status</div>
+                                <!-- table and pagination-->
+                                <div class="table-pagination">
+                                    <!-- table-->
+                                    <div class="table-lg">
+                                        <div class="table-lg-head d-flex align-items-center">
+                                            <div class="table-lg-th--30">Date</div>
+                                            <div class="table-lg-th--20">Type</div>
+                                            <div class="table-lg-th--20">amount</div>
+                                            <div class="table-lg-th--20">currency</div>
+                                            <div class="table-lg-th--30">account/Address</div>
+                                            <div class="table-lg-th--30">status</div>
                                         </div>
-                                        <div class="tbl-body">
-                                            <div class="overlay">
+                                        <!-- table body -->
+                                        <div class="table-lg-body">
+                                            <div class="overlay-md">
                                                 <img src="../img/icons/loader.gif" alt="loader"/>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">Deposit</div>
-                                                <div class="tbl-th--20">25</div>
-                                                <div class="tbl-th--20">BTC</div>
-                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                                <div class="tbl-th--30">Completed</div>
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">2 hours ago</div>
+                                                <div class="table-lg-th--20">Deposit</div>
+                                                <div class="table-lg-th--20">25</div>
+                                                <div class="table-lg-th--20">BTC</div>
+                                                <div class="table-lg-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="table-lg-th--30">Completed</div>
                                             </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
+                                            <div class="table-lg-row d-flex align-items-center">
+                                                <div class="table-lg-th--30">
                                                     <span>Apr 12, 2018,</span>
                                                     <span>10:10</span>
                                                 </div>
-                                                <div class="tbl-th--20">withdraw</div>
-                                                <div class="tbl-th--20">8000</div>
-                                                <div class="tbl-th--20">BTC</div>
-                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                                <div class="tbl-th--30">Pending
-                                                    <span class="tbl-status">
-                                                    (2 confirmation)
-                                                </span>
-                                                </div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">Deposit</div>
-                                                <div class="tbl-th--20">25</div>
-                                                <div class="tbl-th--20">BTC</div>
-                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                                <div class="tbl-th--30">Completed</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">withdraw</div>
-                                                <div class="tbl-th--20">8000</div>
-                                                <div class="tbl-th--20">BTC</div>
-                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                                <div class="tbl-th--30">Pending
-                                                    <span class="tbl-status">
-                                                    (2 confirmation)
-                                                </span>
-                                                </div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">2 hours ago</div>
-                                                <div class="tbl-th--20">Deposit</div>
-                                                <div class="tbl-th--20">25</div>
-                                                <div class="tbl-th--20">BTC</div>
-                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                                <div class="tbl-th--30">Completed</div>
-                                            </div>
-                                            <div class="tbl-row d-flex align-items-center">
-                                                <div class="tbl-th--30">
-                                                    <span>Apr 12, 2018,</span>
-                                                    <span>10:10</span>
-                                                </div>
-                                                <div class="tbl-th--20">withdraw</div>
-                                                <div class="tbl-th--20">8000</div>
-                                                <div class="tbl-th--20">BTC</div>
-                                                <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                                <div class="tbl-th--30">Pending
-                                                    <span class="tbl-status">
-                                                    (2 confirmation)
-                                                </span>
+                                                <div class="table-lg-th--20">Withdraw</div>
+                                                <div class="table-lg-th--20">25</div>
+                                                <div class="table-lg-th--20">BTC</div>
+                                                <div class="table-lg-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                                <div class="table-lg-th--30">Pending
+                                                    <a href="#" class="table-lg-link">
+                                                        (2 confirmation)
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Mobile table-->
-                                    <div class="tbl-mobile-box">
-                                        <div class="overlay">
+                                    <div class="table-sm">
+                                        <div class="overlay-md">
                                             <img src="../img/icons/loader.gif" alt="loader"/>
                                         </div>
-                                        <div class="tbl-mobile">
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Date</div>
-                                                <div class="tbl-mobile__text">2 hours ago</div>
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">Date</div>
+                                                <div class="table-sm__text">2 hours ago</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">Type</div>
-                                                <div class="tbl-mobile__text">Deposit</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">Deposit</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">amount</div>
-                                                <div class="tbl-mobile__text">25</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">amount</div>
+                                                <div class="table-sm__text">25</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">currency</div>
-                                                <div class="tbl-mobile__text">BTC</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">currency</div>
+                                                <div class="table-sm__text">BTC</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">account/Address</div>
-                                                <div class="tbl-mobile__text oe">3J98t1WpEZ73CNmQviec</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">account/Address</div>
+                                                <div class="table-sm__text oe">3J98t1WpEZ73CNmQviec</div>
                                             </div>
-                                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                                <div class="tbl-mobile__head">status</div>
-                                                <div class="tbl-mobile__text">Completed</div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">status</div>
+                                                <div class="table-sm__text">Completed</div>
+                                            </div>
+                                        </div>
+                                        <div class="table-sm__box">
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">Date</div>
+                                                <div class="table-sm__text">
+                                                    <span>Apr 12, 2018,</span>
+                                                    <span>10:10</span>
+                                                </div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">type</div>
+                                                <div class="table-sm__text">withdraw</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">amount</div>
+                                                <div class="table-sm__text">25</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">currency</div>
+                                                <div class="table-sm__text">BTC</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">account/Address</div>
+                                                <div class="table-sm__text oe">3J98t1WpEZ73CNmQviec</div>
+                                            </div>
+                                            <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                                <div class="table-sm__head">status</div>
+                                                <div class="table-sm__text">Pending
+                                                    <a href="#" class="table-lg-link">
+                                                        (2 confirmation)
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- pagination -->
-                                    <section class="pagination">
-                                        <div class="container">
-                                            <div class="row">
-                                                <ul class="pagination__list d-flex align-items-center">
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">1</a>
-                                                    </li>
-                                                    <li class="pagination__item pagination--active">
-                                                        <a class="pagination__link" href="javascript:void(0)">2</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">3</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">4</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">5</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
-                                                    </li>
-                                                    <li class="pagination__item">
-                                                        <a class="pagination__link" href="javascript:void(0)">20</a>
-                                                    </li>
-                                                    <li class="pagination__linkDisable">
-                                                        <a href="javascript:void(0)">
-                                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section>
+                                    <div class="pagination d-flex align-items-center justify-content-center">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                        </a>
+                                        <a class="pagination__link" href="javascript:void(0)">1</a>
+                                        <a class="pagination__link pagination--active" href="javascript:void(0)">2</a>
+                                        <a class="pagination__link" href="javascript:void(0)">3</a>
+                                        <a class="pagination__link" href="javascript:void(0)">4</a>
+                                        <a class="pagination__link" href="javascript:void(0)">5</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__link" href="javascript:void(0)">20</a>
+                                        <a class="pagination__arrow" href="javascript:void(0)">
+                                            <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                        </a>
+                                    </div>
                                 </div>
                             </section>
                         </div>
@@ -1195,12 +1093,12 @@
             <!-- =============== settings tab =============== -->
             <div id="settings" class="tab-pane fade">
                 <div class="container">
-                    <h3 class="inside-header">Settings</h3>
+                    <h3 class="top-header">Settings</h3>
                     <section class="settings">
                         <div class="row">
-                            <section class="delete-padding--right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <aside class="delete-padding--right col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <!-- Security and warnings -->
-                                <div class="colLeft">
+                                <div class="padding--right">
                                     <h6 class="settings__title">Security and warnings</h6>
                                     <div class="settings__row d-flex align-items-center justify-content-between">
                                         <span class="settings__row__text">Confirm electronic receipt by email.</span>
@@ -1295,42 +1193,38 @@
                                         <button class="loader-btn button btnLight">disable</button>
                                     </div>
                                 </div>
-                            </section>
-                            <section class="colRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            </aside>
+                            <aside class="delete-padding--left col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="settings__doubleBorder">
-                                    <div class="colWidth">
-                                        <div class="padding--left">
-                                            <h6 class="settings__title">Double-sided authentication (2FA)</h6>
-                                            <p class="settings__text">It is very important to know that isx.is will never ask you to send information about your account via email, such as a password or username or two-way authentication number from the Google Authenticator. The Exchange Market will never send a link to you by email, requesting user information.</p>
-                                            <p class="settings__text">Be sure to always use secure login through</p>
-                                            <a href="#" class="settings__link">http://www.fvzdfv.is/login.php </a>
-                                            <div class="settings__btnRow d-flex justify-content-center">
-                                                <button class="loader-btn button btnLight">Enable</button>
-                                            </div>
+                                    <div class="colWidth padding--left">
+                                        <h6 class="settings__title">Double-sided authentication (2FA)</h6>
+                                        <p class="settings__text">It is very important to know that isx.is will never ask you to send information about your account via email, such as a password or username or two-way authentication number from the Google Authenticator. The Exchange Market will never send a link to you by email, requesting user information.</p>
+                                        <p class="settings__text">Be sure to always use secure login through</p>
+                                        <a href="#" class="settings__link">http://www.fvzdfv.is/login.php </a>
+                                        <div class="settings__btnRow d-flex justify-content-center">
+                                            <button class="loader-btn button btnLight">Enable</button>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Change Password -->
                                 <div class="settings__border">
-                                    <div class="colWidth">
-                                        <div class="padding--left">
-                                            <h6 class="settings__title">Change Password</h6>
-                                            <p class="settings__text">It's a good idea to use a strong password that you don't use elsewhere.</p>
-                                            <form action="" class="settings__form">
-                                                <div class="form-group">
-                                                    <input type="password" class="form-control" placeholder="New password">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="password" class="form-control" placeholder="Confirm password">
-                                                </div>
-                                                <div class="settings__btnRow d-flex justify-content-center">
-                                                    <button type="submit" class="button btnLight">Save changes</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                    <div class="colWidth padding--left">
+                                        <h6 class="settings__title">Change Password</h6>
+                                        <p class="settings__text">It's a good idea to use a strong password that you don't use elsewhere.</p>
+                                        <form action="" class="settings__form">
+                                            <div class="form__row">
+                                                <input type="password" class="input" placeholder="New password">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="password" class="input" placeholder="Confirm password">
+                                            </div>
+                                            <div class="settings__btnRow d-flex justify-content-center">
+                                                <button type="submit" class="button btnLight">Save changes</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            </section>
+                            </aside>
                         </div>
                     </section>
                 </div>

@@ -62,249 +62,180 @@
         <!-- deposit -->
         <section class="deposit">
             <div class="container">
-                <h3 class="inside-header">Deposit</h3>
+                <h3 class="top-header">Deposit</h3>
                 <div class="row">
-                    <section class="colLeft col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
+                    <aside class="colLeft col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
                         <div class="colWidth">
                             <h5 class="deposit__title">Fiat deposit</h5>
                             <p class="deposit__text">Now you can add the amount that suits you to the following account number, but it's very important to enter the 6-digit reference number below in the short "Reference" and / or "Short-term" fields in your home bank to separate your transfer.</p>
                             <p class="deposit__text">In Landsbankinn, Sparisjóður og Kviku, reference number shall be placed in "Reference" at Arion Bank and Íslandsbanki shall insert the reference number in the "Short-term" box.</p>
                             <p class="deposit__text">Once a transfer is completed, the reference number will disappear and you will need to make new payments for each transfer you make.</p>
-                            <div class="deposit__infoRow">
-                                <div class="d-flex deposit__infoRow--benef">
-                                    <span class="deposit__info">Beneficiary:</span>
-                                    <span class="deposit__value">4810140500</span>
+                            <div class="deposit__info">
+                                <div class="d-flex align-items-center deposit__info__row">
+                                    <span class="deposit__info__title">Beneficiary:</span>
+                                    <span class="deposit__info__value">4810140500</span>
                                 </div>
-                                <div class="d-flex">
-                                    <span class="deposit__info">Account number:</span>
-                                    <span class="deposit__value">0133-26-481014</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="deposit__info__title">Account number:</span>
+                                    <span class="deposit__info__value">0133-26-481014</span>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <section class="colRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="colWidth">
+                    </aside>
+                    <aside class="colRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="colWidth deposit__borderTop">
                             <form>
                                 <h5 class="deposit__title">Cryptocurrency deposit</h5>
-                                <div class="drop__parent">
-                                    <div class="drop deposit__formGroup">
-                                        <div class="drop__buttonBox d-flex align-items-center justify-content-between">
-                                            <span class="drop__button">BTC</span>
-                                            <img src="../img/icons/arrow_down.png" alt="arrow down">
-                                        </div>
+                                <div class="form__row">
+                                    <div class="drop">
+                                        <button type="button" class="drop__box d-flex align-items-center justify-content-between">
+                                            <span class="drop__value">BTC</span>
+                                            <img src="../img/icons/arrow_down.png" alt="arrow down"/>
+                                        </button>
                                         <ul class="drop__list">
-                                            <li class="drop__item drop__none">
-                                                <a href="#" class="drop__link">BTC</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">ETH</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">LTC</a>
-                                            </li>
-                                            <li class="drop__item">
-                                                <a href="#" class="drop__link">Ripple</a>
-                                            </li>
+                                            <li class="drop__item drop__none">BTC</li>
+                                            <li class="drop__item">ETH</li>
+                                            <li class="drop__item">LTC</li>
+                                            <li class="drop__item">Ripple</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="deposit__formGroup form-group">
-                                    <label for="accountNumber" class="deposit__label">Send to this account number</label>
-                                    <input type="text" id="accountNumber" class="form-control">
+                                <div class="form__row">
+                                    <label for="depositSend" class="label">Send to this account number</label>
+                                    <input type="text" id="depositSend" class="input">
                                 </div>
                             </form>
-                            <div class="d-flex">
-                                <div class="deposit__barCode">
+                            <div class="d-flex justify-content-center">
+                                <div class="deposit__barCode text-center">
                                     <img src="../img/bar-code.png" alt="bar code"/>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </aside>
                 </div>
             </div>
         </section>
         <!-- history -->
-        <div class="tbl-pagination">
-            <section class="deposit-history">
-                <div class="container-fluid">
-                    <div class="tbl__container">
-                        <h3 class="tbl__title">Deposit history</h3>
+        <section class="deposit-history">
+            <div class="container-fluid">
+                <div class="container-md">
+                    <h3 class="container-md__title">Deposit history</h3>
+                    <!-- table and pagination-->
+                    <div class="table-pagination">
                         <!-- table-->
-                        <div class="tbl">
-                            <div class="tbl-head d-flex align-items-center">
-                                <div class="tbl-th--30">Date</div>
-                                <div class="tbl-th--20">amount</div>
-                                <div class="tbl-th--20">currency</div>
-                                <div class="tbl-th--30">account/Address</div>
-                                <div class="tbl-th--30">status</div>
+                        <div class="table-lg">
+                            <div class="table-lg-head d-flex align-items-center">
+                                <div class="table-lg-th--30">Date</div>
+                                <div class="table-lg-th--20">amount</div>
+                                <div class="table-lg-th--20">currency</div>
+                                <div class="table-lg-th--30">account/Address</div>
+                                <div class="table-lg-th--30">status</div>
                             </div>
-                            <div class="tbl-body">
-                                <div class="overlay">
+                            <!-- table body -->
+                            <div class="table-lg-body">
+                                <div class="overlay-md">
                                     <img src="../img/icons/loader.gif" alt="loader"/>
                                 </div>
-                                <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30">2 hours ago</div>
-                                    <div class="tbl-th--20">25</div>
-                                    <div class="tbl-th--20">BTC</div>
-                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                    <div class="tbl-th--30">Completed</div>
+                                <div class="table-lg-row d-flex align-items-center">
+                                    <div class="table-lg-th--30">2 hours ago</div>
+                                    <div class="table-lg-th--20">25</div>
+                                    <div class="table-lg-th--20">BTC</div>
+                                    <div class="table-lg-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="table-lg-th--30">Completed</div>
                                 </div>
-                                <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30">
+                                <div class="table-lg-row d-flex align-items-center">
+                                    <div class="table-lg-th--30">
                                         <span>Apr 12, 2018,</span>
                                         <span>10:10</span>
                                     </div>
-                                    <div class="tbl-th--20">25</div>
-                                    <div class="tbl-th--20">BTC</div>
-                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                    <div class="tbl-th--30">Pending
-                                        <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30">2 hours ago</div>
-                                    <div class="tbl-th--20">25</div>
-                                    <div class="tbl-th--20">BTC</div>
-                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                    <div class="tbl-th--30">Completed</div>
-                                </div>
-                                <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30">
-                                        <span>Apr 12, 2018,</span>
-                                        <span>10:10</span>
-                                    </div>
-                                    <div class="tbl-th--20">25</div>
-                                    <div class="tbl-th--20">BTC</div>
-                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                    <div class="tbl-th--30">Pending
-                                        <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30">2 hours ago</div>
-                                    <div class="tbl-th--20">25</div>
-                                    <div class="tbl-th--20">BTC</div>
-                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                    <div class="tbl-th--30">Completed</div>
-                                </div>
-                                <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30">
-                                        <span>Apr 12, 2018,</span>
-                                        <span>10:10</span>
-                                    </div>
-                                    <div class="tbl-th--20">25</div>
-                                    <div class="tbl-th--20">BTC</div>
-                                    <div class="tbl-th--30 oe">3J98t1WpEZ73CNmQviec</div>
-                                    <div class="tbl-th--30">Pending
-                                        <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
+                                    <div class="table-lg-th--20">25</div>
+                                    <div class="table-lg-th--20">BTC</div>
+                                    <div class="table-lg-th--30 oe">3J98t1WpEZ73CNmQviec</div>
+                                    <div class="table-lg-th--30">Pending
+                                        <a href="#" class="table-lg-link">
+                                            (2 confirmation)
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Mobile table-->
-                        <div class="tbl-mobile-box">
-                            <div class="overlay">
+                        <div class="table-sm">
+                            <div class="overlay-md">
                                 <img src="../img/icons/loader.gif" alt="loader"/>
                             </div>
-                            <div class="tbl-mobile">
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">Date</div>
-                                    <div class="tbl-mobile__text">2 hours ago</div>
+                            <div class="table-sm__box">
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">Date</div>
+                                    <div class="table-sm__text">2 hours ago</div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">amount</div>
-                                    <div class="tbl-mobile__text">25</div>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">amount</div>
+                                    <div class="table-sm__text">25</div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">currency</div>
-                                    <div class="tbl-mobile__text">BTC</div>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">currency</div>
+                                    <div class="table-sm__text">BTC</div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">account/Address</div>
-                                    <div class="tbl-mobile__text oe">3J98t1WpEZ73CNmQviec</div>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">account/Address</div>
+                                    <div class="table-sm__text oe">3J98t1WpEZ73CNmQviec</div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">status</div>
-                                    <div class="tbl-mobile__text">Completed</div>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">status</div>
+                                    <div class="table-sm__text">Completed</div>
                                 </div>
                             </div>
-                            <div class="tbl-mobile">
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">Date</div>
-                                    <div class="tbl-mobile__text">2 hours ago</div>
+                            <div class="table-sm__box">
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">Date</div>
+                                    <div class="table-sm__text">
+                                        <span>Apr 12, 2018,</span>
+                                        <span>10:10</span>
+                                    </div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">amount</div>
-                                    <div class="tbl-mobile__text">25</div>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">amount</div>
+                                    <div class="table-sm__text">25</div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">currency</div>
-                                    <div class="tbl-mobile__text">BTC</div>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">currency</div>
+                                    <div class="table-sm__text">BTC</div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">account/Address</div>
-                                    <div class="tbl-mobile__text oe">3J98t1WpEZ73CNmQviec</div>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">account/Address</div>
+                                    <div class="table-sm__text oe">3J98t1WpEZ73CNmQviec</div>
                                 </div>
-                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
-                                    <div class="tbl-mobile__head">status</div>
-                                    <div class="tbl-mobile__text">Pending
-                                        <span class="tbl-status">
-                                        (2 confirmation)
-                                    </span>
+                                <div class="table-sm__row d-flex align-items-center justify-content-between">
+                                    <div class="table-sm__head">status</div>
+                                    <div class="table-sm__text">Pending
+                                        <a href="#" class="table-lg-link">
+                                            (2 confirmation)
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- pagination -->
+                        <div class="pagination d-flex align-items-center justify-content-center">
+                            <a class="pagination__arrow" href="javascript:void(0)">
+                                <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                            </a>
+                            <a class="pagination__link" href="javascript:void(0)">1</a>
+                            <a class="pagination__link pagination--active" href="javascript:void(0)">2</a>
+                            <a class="pagination__link" href="javascript:void(0)">3</a>
+                            <a class="pagination__link" href="javascript:void(0)">4</a>
+                            <a class="pagination__link" href="javascript:void(0)">5</a>
+                            <a class="pagination__disable" href="javascript:void(0)">...</a>
+                            <a class="pagination__link" href="javascript:void(0)">20</a>
+                            <a class="pagination__arrow" href="javascript:void(0)">
+                                <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <!-- pagination -->
-            <section class="pagination">
-                <div class="container">
-                    <div class="row">
-                        <ul class="pagination__list d-flex align-items-center">
-                            <li class="pagination__linkDisable">
-                                <a href="javascript:void(0)">
-                                    <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                </a>
-                            </li>
-                            <li class="pagination__item">
-                                <a class="pagination__link" href="javascript:void(0)">1</a>
-                            </li>
-                            <li class="pagination__item pagination--active">
-                                <a class="pagination__link" href="javascript:void(0)">2</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a class="pagination__link" href="javascript:void(0)">3</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a class="pagination__link" href="javascript:void(0)">4</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a class="pagination__link" href="javascript:void(0)">5</a>
-                            </li>
-                            <li class="">
-                                <a class="pagination__linkDisable" href="javascript:void(0)">...</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a class="pagination__link" href="javascript:void(0)">20</a>
-                            </li>
-                            <li class="pagination__linkDisable">
-                                <a href="javascript:void(0)">
-                                    <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </div>
 </main>
 <footer class="footer">
