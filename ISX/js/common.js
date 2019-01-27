@@ -35,6 +35,13 @@ $(document).ready(function () {
             $(".overlay-md").css("display", "none");
         }, 2000);
     });
+    // Dashboard activity dropdown loader
+    $(".dashboard__drop .drop__item").click(function() {
+        $(".dashboard__activity__block .overlay-md").css("display", "flex");
+        setTimeout(function(){
+            $(".overlay-md").css("display", "none");
+        }, 2000);
+    });
     // Addresses page add account
     $(".addresses__add__btn").click(function() {
         $(".addresses__account--edit").next(".dropdown-btn__list").hide();

@@ -1250,6 +1250,9 @@ a:hover, a:focus {
     cursor: pointer; }
     .drop__item:hover {
       background-color: #F5F9FF; }
+  .drop__link {
+    display: block;
+    color: #696969; }
   .drop__rotate {
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
@@ -1520,6 +1523,9 @@ a:hover, a:focus {
   transition: all .3s ease; }
   .dashboard__activity__viewAll:hover {
     background-color: #F7F9FF; }
+
+.dashboard__activity__block {
+  position: relative; }
 
 .dashboard__announcement__row {
   padding: 10px 20px;
@@ -1873,7 +1879,25 @@ a:hover, a:focus {
 @media screen and (max-width: 1200px) {
   /* ========== Home style ========== */
   .getStarted__btn {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  /* ========== dashboard tab ========== */
+  .dashboard__balance__col25 {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .dashboard__balance__box {
+    margin-left: 15px; }
+  .dashboard__balance__title {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .dashboard__balance__value {
+    font-size: 16px; }
+  /* ========== addresses tab ========== */
+  .addresses__account__row {
+    padding: 20px 15px; }
+  .addresses__account__title {
+    margin-bottom: 10px; }
+  .addresses__account__info {
+    font-size: 16px; } }
 
 @media screen and (max-width: 992px) {
   /* ========== Home style ========== */
@@ -1998,7 +2022,120 @@ a:hover, a:focus {
       margin-bottom: 10px;
       padding-bottom: 10px; }
     .announcement-inside-right__title {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  /* ========== Buy/Sell ========== */
+  .buySell__orderBook__row {
+    font-size: 13px; }
+  .buySell__limitMarket__col {
+    margin: 0; }
+  .buySell__drop {
+    margin-bottom: 30px; }
+  .buySell__statistic {
+    padding-right: 0;
+    margin-bottom: 60px; }
+  /* ========== dashboard tab ========== */
+  .dashboard__activity__date, .dashboard__activity__text {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .dashboard__activity__info, .dashboard__activity__valueWithdraw, .dashboard__activity__valueDeposit {
+    font-size: 13px; }
+  .dashboard__activity__row {
+    padding: 21px 10px; }
+  .dashboard__announcement__row {
+    padding: 10px; }
+  .dashboard__announcement__title {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .dashboard__announcement__text {
+    font-size: 13px; }
+  .dashboard__announcement__date {
+    font-size: 13px;
+    margin-top: 5px; }
+  /* ========== addresses tab ========== */
+  .addresses__account__row {
+    padding: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .addresses__account__col6 {
+    width: 100%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .addresses__account__col15, .addresses__account__col24, .addresses__account__col25, .addresses__account__col30, .addresses__account__col50 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .addresses__account__title {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+  .addresses__account__info {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    min-width: 1px;
+    text-align: right;
+    margin-left: 15px; }
+  .addresses__account .dropdown-btn__list {
+    top: 23px; }
+  /* ========== settings tab ========== */
+  .settings .colWidth {
+    width: 100%; }
+  .settings .padding--left {
+    padding-left: 30px; }
+  .settings .padding--right {
+    padding-right: 30px; }
+  /* ************* Global style ************* */
+  /* ========== col left and right style ========== */
+  .colWidth {
+    width: 100%; }
+  .colLeft {
+    padding-right: 30px; }
+  .colRight {
+    padding-left: 30px; }
+  /* ========== Container for table style ========== */
+  .container-md {
+    max-width: 100%; }
+    .container-md__title {
+      font-size: 18px;
+      margin-bottom: 10px; }
+  /* ========== Table lg style ========== */
+  .table-lg-head {
+    height: 45px;
+    font-size: 13px; }
+  .table-lg-row {
+    height: 35px;
+    font-size: 13px; }
+  .table-lg-th--15, .table-lg-th--20, .table-lg-th--30 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* ========== Table md style ========== */
+  .table-md-head {
+    height: 35px;
+    font-size: 13px; }
+  .table-md-row {
+    height: 35px;
+    font-size: 13px; }
+  .table-md-th--33 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  /* ========== Pagination ========== */
+  .pagination__link, .pagination__disable, .pagination__arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 13px; }
+  /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 767px) {
   /* ========== Home style ========== */
@@ -2089,7 +2226,76 @@ a:hover, a:focus {
     -webkit-background-size: 47% 47%;
             background-size: 47%; }
   .auth__span {
-    display: inline-block; } }
+    display: inline-block; }
+  /* ========== Deposit ========== */
+  .deposit__borderTop {
+    border-top: 1px solid #dedede;
+    padding-top: 50px; }
+  /* ========== Buy/Sell ========== */
+  .buySell__orderBook__col {
+    margin-bottom: 30px; }
+  /* ========== dashboard tab ========== */
+  .dashboard__balance__box {
+    margin-left: 10px; }
+  .dashboard__balance__title {
+    font-size: 13px;
+    margin-bottom: 5px; }
+  .dashboard__balance__text {
+    font-size: 12px; }
+  .dashboard__balance__value {
+    font-size: 13px; }
+  .dashboard__balance__col25 img {
+    width: 40px; }
+  .dashboard__activity__boxCol ~ .dashboard__activity__boxCol {
+    margin-top: 30px; }
+  .dashboard__activity__rowTitle {
+    padding: 15px 10px; }
+  .dashboard__activity__row {
+    padding: 10px; }
+  .dashboard__activity__viewAll {
+    font-size: 13px; }
+  .dashboard__activity__date, .dashboard__activity__text {
+    font-size: 14px; }
+  .dashboard__announcement__title {
+    font-size: 14px;
+    margin-bottom: 5px; }
+  /* ========== settings tab ========== */
+  .settings .padding--left {
+    padding-left: 0; }
+  .settings .padding--right {
+    padding-right: 0; }
+  .settings .delete-padding--left {
+    padding-left: 15px;
+    border-left: none; }
+  .settings .delete-padding--right {
+    padding-right: 15px; }
+  .settings__doubleBorder {
+    border-top: 1px solid #dedede;
+    padding-top: 40px;
+    margin-top: 40px; }
+  /* ************* Global style ************* */
+  /* ========== col left and right style ========== */
+  .colLeft {
+    padding-right: 15px; }
+  .colRight {
+    padding-left: 15px;
+    border-left: none;
+    margin-top: 50px; }
+  /* ========== Table lg and sm style ========== */
+  .table-lg {
+    display: none; }
+  .table-sm {
+    display: block; }
+  /* ========== Tabs style ========== */
+  .main__child .nav-link {
+    font-size: 16px;
+    padding: 8px 10px; }
+  /* ========== dropdown btn ========== */
+  .dropdown-btn__list {
+    min-width: 300px;
+    top: 54px;
+    padding: 20px 10px; }
+  /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 576px) {
   .body {
@@ -2246,193 +2452,7 @@ a:hover, a:focus {
     font-size: 13px; }
   .auth__pass {
     border-left: 0;
-    padding-left: 0; } }
-
-@media screen and (max-width: 380px) {
-  /* ========== Home style ========== */
-  .choose__title {
-    font-size: 20px; }
-  .choose-card__title {
-    font-size: 16px; }
-  .steps__title {
-    font-size: 20px; }
-  .steps__listTitle {
-    font-size: 16px; }
-  .announcements-card__title {
-    font-size: 16px; }
-  .announcements__title {
-    font-size: 20px; }
-  .getStarted__title {
-    font-size: 20px; }
-  /* ========== About style ========== */
-  .about-weAre {
-    padding: 30px 0; }
-    .about-weAre__title {
-      font-size: 20px; }
-  .about-secure {
-    padding: 30px 0; }
-    .about-secure__title {
-      font-size: 20px; }
-  /* ========== Contact style ========== */
-  .contact-form__title {
-    font-size: 18px; }
-  /* ========== Auth style ========== */
-  .auth__form {
-    width: 100%; }
-  .auth__title {
-    font-size: 18px; } }
-
-@media screen and (max-width: 330px) {
-  .button {
-    height: 30px;
-    line-height: 27px;
-    font-size: 12px;
-    padding: 0 15px; } }
-
-@media screen and (max-width: 1200px) {
-  /* ========== dashboard tab ========== */
-  .dashboard__balance__col25 {
-    padding-left: 10px;
-    padding-right: 10px; }
-  .dashboard__balance__box {
-    margin-left: 15px; }
-  .dashboard__balance__title {
-    font-size: 16px;
-    margin-bottom: 10px; }
-  .dashboard__balance__value {
-    font-size: 16px; }
-  /* ========== addresses tab ========== */
-  .addresses__account__row {
-    padding: 20px 15px; }
-  .addresses__account__title {
-    margin-bottom: 10px; }
-  .addresses__account__info {
-    font-size: 16px; } }
-
-@media screen and (max-width: 992px) {
-  /* ========== Buy/Sell ========== */
-  .buySell__orderBook__row {
-    font-size: 13px; }
-  .buySell__limitMarket__col {
-    margin: 0; }
-  .buySell__drop {
-    margin-bottom: 30px; }
-  .buySell__statistic {
-    padding-right: 0;
-    margin-bottom: 60px; }
-  /* ========== dashboard tab ========== */
-  .dashboard__activity__date, .dashboard__activity__text {
-    font-size: 16px;
-    margin-bottom: 5px; }
-  .dashboard__activity__info, .dashboard__activity__valueWithdraw, .dashboard__activity__valueDeposit {
-    font-size: 13px; }
-  .dashboard__activity__row {
-    padding: 21px 10px; }
-  .dashboard__announcement__row {
-    padding: 10px; }
-  .dashboard__announcement__title {
-    font-size: 16px;
-    margin-bottom: 5px; }
-  .dashboard__announcement__text {
-    font-size: 13px; }
-  .dashboard__announcement__date {
-    font-size: 13px;
-    margin-top: 5px; }
-  /* ========== addresses tab ========== */
-  .addresses__account__row {
-    padding: 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .addresses__account__col6 {
-    width: 100%;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-  .addresses__account__col15, .addresses__account__col24, .addresses__account__col25, .addresses__account__col30, .addresses__account__col50 {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .addresses__account__title {
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0; }
-  .addresses__account__info {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    min-width: 1px;
-    text-align: right;
-    margin-left: 15px; }
-  .addresses__account .dropdown-btn__list {
-    top: 23px; }
-  /* ========== settings tab ========== */
-  .settings .colWidth {
-    width: 100%; }
-  .settings .padding--left {
-    padding-left: 30px; }
-  .settings .padding--right {
-    padding-right: 30px; } }
-
-@media screen and (max-width: 767px) {
-  /* ========== Deposit ========== */
-  .deposit__borderTop {
-    border-top: 1px solid #dedede;
-    padding-top: 50px; }
-  /* ========== Buy/Sell ========== */
-  .buySell__orderBook__col {
-    margin-bottom: 30px; }
-  /* ========== dashboard tab ========== */
-  .dashboard__balance__box {
-    margin-left: 10px; }
-  .dashboard__balance__title {
-    font-size: 13px;
-    margin-bottom: 5px; }
-  .dashboard__balance__text {
-    font-size: 12px; }
-  .dashboard__balance__value {
-    font-size: 13px; }
-  .dashboard__balance__col25 img {
-    width: 40px; }
-  .dashboard__activity__boxCol ~ .dashboard__activity__boxCol {
-    margin-top: 30px; }
-  .dashboard__activity__rowTitle {
-    padding: 15px 10px; }
-  .dashboard__activity__row {
-    padding: 10px; }
-  .dashboard__activity__viewAll {
-    font-size: 13px; }
-  .dashboard__activity__date, .dashboard__activity__text {
-    font-size: 14px; }
-  .dashboard__announcement__title {
-    font-size: 14px;
-    margin-bottom: 5px; }
-  /* ========== settings tab ========== */
-  .settings .padding--left {
     padding-left: 0; }
-  .settings .padding--right {
-    padding-right: 0; }
-  .settings .delete-padding--left {
-    padding-left: 15px;
-    border-left: none; }
-  .settings .delete-padding--right {
-    padding-right: 15px; }
-  .settings__doubleBorder {
-    border-top: 1px solid #dedede;
-    padding-top: 40px;
-    margin-top: 40px; } }
-
-@media screen and (max-width: 576px) {
   /* ========== Withdraw ========== */
   .withdraw__text, .withdraw__value {
     font-size: 13px; }
@@ -2497,76 +2517,7 @@ a:hover, a:focus {
   .settings__text ~ .settings__text {
     margin-top: 10px; }
   .settings__generateText {
-    margin-top: 20px; } }
-
-@media screen and (max-width: 992px) {
-  /* ************* Global style ************* */
-  /* ========== col left and right style ========== */
-  .colWidth {
-    width: 100%; }
-  .colLeft {
-    padding-right: 30px; }
-  .colRight {
-    padding-left: 30px; }
-  /* ========== Container for table style ========== */
-  .container-md {
-    max-width: 100%; }
-    .container-md__title {
-      font-size: 18px;
-      margin-bottom: 10px; }
-  /* ========== Table lg style ========== */
-  .table-lg-head {
-    height: 45px;
-    font-size: 13px; }
-  .table-lg-row {
-    height: 35px;
-    font-size: 13px; }
-  .table-lg-th--15, .table-lg-th--20, .table-lg-th--30 {
-    padding-left: 15px;
-    padding-right: 15px; }
-  /* ========== Table md style ========== */
-  .table-md-head {
-    height: 35px;
-    font-size: 13px; }
-  .table-md-row {
-    height: 35px;
-    font-size: 13px; }
-  .table-md-th--33 {
-    padding-left: 15px;
-    padding-right: 15px; }
-  /* ========== Pagination ========== */
-  .pagination__link, .pagination__disable, .pagination__arrow {
-    width: 35px;
-    height: 35px;
-    font-size: 13px; }
-  /* ************* End of global style ************* */ }
-
-@media screen and (max-width: 767px) {
-  /* ************* Global style ************* */
-  /* ========== col left and right style ========== */
-  .colLeft {
-    padding-right: 15px; }
-  .colRight {
-    padding-left: 15px;
-    border-left: none;
-    margin-top: 50px; }
-  /* ========== Table lg and sm style ========== */
-  .table-lg {
-    display: none; }
-  .table-sm {
-    display: block; }
-  /* ========== Tabs style ========== */
-  .main__child .nav-link {
-    font-size: 16px;
-    padding: 8px 10px; }
-  /* ========== dropdown btn ========== */
-  .dropdown-btn__list {
-    min-width: 300px;
-    top: 54px;
-    padding: 20px 10px; }
-  /* ************* End of global style ************* */ }
-
-@media screen and (max-width: 576px) {
+    margin-top: 20px; }
   /* ************* Global style ************* */
   /* ========== Inside pages header style ========== */
   .top-header {
@@ -2614,6 +2565,38 @@ a:hover, a:focus {
   /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 380px) {
+  /* ========== Home style ========== */
+  .choose__title {
+    font-size: 20px; }
+  .choose-card__title {
+    font-size: 16px; }
+  .steps__title {
+    font-size: 20px; }
+  .steps__listTitle {
+    font-size: 16px; }
+  .announcements-card__title {
+    font-size: 16px; }
+  .announcements__title {
+    font-size: 20px; }
+  .getStarted__title {
+    font-size: 20px; }
+  /* ========== About style ========== */
+  .about-weAre {
+    padding: 30px 0; }
+    .about-weAre__title {
+      font-size: 20px; }
+  .about-secure {
+    padding: 30px 0; }
+    .about-secure__title {
+      font-size: 20px; }
+  /* ========== Contact style ========== */
+  .contact-form__title {
+    font-size: 18px; }
+  /* ========== Auth style ========== */
+  .auth__form {
+    width: 100%; }
+  .auth__title {
+    font-size: 18px; }
   /* ************* Global style ************* */
   /* ========== Pagination ========== */
   .pagination__link, .pagination__disable, .pagination__arrow {
@@ -2633,6 +2616,11 @@ a:hover, a:focus {
   /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 330px) {
+  .button {
+    height: 30px;
+    line-height: 27px;
+    font-size: 12px;
+    padding: 0 15px; }
   /* ************* Global style ************* */
   /* ========== Tabs style ========== */
   .main__child .nav-link {
