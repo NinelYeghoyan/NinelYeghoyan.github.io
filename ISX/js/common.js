@@ -30,6 +30,7 @@ $(document).ready(function () {
         $(".history__drop .drop__item").removeClass("drop__none");
         $(this).addClass("drop__none");
         $(".table-lg-body .overlay-md").css("display", "flex");
+        $(".table-sm .overlay-md").css("display", "flex");
         setTimeout(function(){
             $(".overlay-md").css("display", "none");
         }, 2000);
