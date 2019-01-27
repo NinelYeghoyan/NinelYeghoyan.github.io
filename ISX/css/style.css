@@ -1207,7 +1207,7 @@ a:hover, a:focus {
     background-color: #04B578;
     color: #ffffff; }
   .pagination__arrow:hover {
-    background-color: #b7b7b7; }
+    border: 1px solid #b7b7b7; }
   .pagination--active {
     background-color: #04B578;
     color: #ffffff; }
@@ -1696,9 +1696,9 @@ a:hover, a:focus {
   font-size: 20px;
   color: #616161; }
 
-.addresses__account--delete {
-  text-align: right;
-  cursor: pointer; }
+.addresses__account--cursor {
+  cursor: pointer;
+  margin: 0 5px; }
 
 .addresses__account__col {
   -webkit-flex-shrink: 0;
@@ -1707,8 +1707,8 @@ a:hover, a:focus {
   padding-left: 5px;
   padding-right: 5px; }
 
-.addresses__account__col3 {
-  width: 3%; }
+.addresses__account__col6 {
+  width: 6%; }
 
 .addresses__account__col15 {
   width: 15%; }
@@ -2346,8 +2346,12 @@ a:hover, a:focus {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .addresses__account__col3 {
-    width: 100%; }
+  .addresses__account__col6 {
+    width: 100%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .addresses__account__col15, .addresses__account__col24, .addresses__account__col25, .addresses__account__col30, .addresses__account__col50 {
     width: 100%;
     display: -webkit-box;
@@ -2624,7 +2628,7 @@ a:hover, a:focus {
     padding: 8px; }
   /* ========== dropdown btn ========== */
   .dropdown-btn__list {
-    min-width: 260px;
+    min-width: 240px;
     top: 50px; }
   /* ************* End of global style ************* */ }
 
