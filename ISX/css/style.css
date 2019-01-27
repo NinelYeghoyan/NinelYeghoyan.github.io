@@ -1195,6 +1195,7 @@ a:hover, a:focus {
             justify-content: center;
     -webkit-border-radius: 100%;
             border-radius: 100%;
+    border: 1px solid transparent;
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
     transition: .2s ease;
@@ -1203,14 +1204,13 @@ a:hover, a:focus {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
-  .pagination__link:hover {
-    background-color: #04B578;
-    color: #ffffff; }
-  .pagination__arrow:hover {
-    border: 1px solid #b7b7b7; }
+    .pagination__link:hover, .pagination__disable:hover, .pagination__arrow:hover {
+      border: 1px solid #b7b7b7; }
   .pagination--active {
     background-color: #04B578;
     color: #ffffff; }
+    .pagination--active:hover {
+      border-color: #04B578; }
 
 /* ========== Dropdown ========== */
 .drop {
