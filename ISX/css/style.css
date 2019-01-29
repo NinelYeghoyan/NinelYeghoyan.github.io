@@ -109,7 +109,7 @@ a:hover, a:focus {
     display: block;
     font-size: 14px;
     text-transform: uppercase;
-    color: #8b8b8b; }
+    color: #616161; }
     .header__link:hover {
       color: #01567A; }
   .header__buttons {
@@ -128,8 +128,8 @@ a:hover, a:focus {
     z-index: 99; }
     .header__userMail__text {
       font-size: 14px;
-      border-left: 1px solid #dedede;
-      color: #8b8b8b;
+      border-left: 1px solid #616161;
+      color: #616161;
       padding-left: 20px;
       cursor: pointer; }
     .header__userMail__list {
@@ -1027,6 +1027,7 @@ a:hover, a:focus {
 
 /* ========== Inside pages header ========== */
 .top-header {
+  display: none;
   font-size: 25px;
   font-weight: bold;
   color: #01567A;
@@ -1280,9 +1281,9 @@ a:hover, a:focus {
 .main__child .nav-link {
   font-size: 18px;
   color: #616161;
-  background-color: #F7F9FF;
+  background-color: #f9f9f9;
   border-color: #dedede;
-  padding: 10px 30px; }
+  padding: 15px 35px; }
   .main__child .nav-link:hover {
     color: #01567A; }
 
@@ -1745,7 +1746,7 @@ a:hover, a:focus {
     margin-bottom: 0; }
 
 .history__drop {
-  margin-top: -20px; }
+  /*margin-top: -20px;*/ }
 
 .history .drop {
   min-width: 185px; }
@@ -2135,6 +2136,10 @@ a:hover, a:focus {
     width: 35px;
     height: 35px;
     font-size: 13px; }
+  /* ========== Tabs style ========== */
+  .main__child .nav-link {
+    font-size: 16px;
+    padding: 10px 30px; }
   /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 767px) {
