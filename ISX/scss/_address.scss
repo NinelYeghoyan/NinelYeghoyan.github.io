@@ -1,0 +1,70 @@
+@import "_variables";
+// addresses
+.addresses{
+  &__row{
+    margin-bottom: 20px;
+  }
+  &__title{
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+    margin-right: 22px;
+  }
+  // addresses account
+  &__account{
+    &__row{
+      padding: 25px;
+      border: 1px solid #dedede;
+    }
+    &__title{
+      display: block;
+      font-size: 15px;
+      color: rgb(139, 139, 139);
+      margin-bottom: 19px;
+    }
+    &__info{
+      font-size: 20px;
+      color: rgb(97, 97, 97);
+    }
+    &--cursor{
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    &__col{
+      flex-shrink: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &__col6{
+      width: 6%;
+    }
+    &__col15{
+      width: 15%;
+    }
+    &__col24{
+      width: 24%;
+    }
+    &__col25{
+      width: 25%;
+    }
+    &__col30{
+      width: 30%;
+    }
+    &__col50{
+      width: 50%;
+    }
+    .dropdown-btn__list{
+      top: 30px;
+    }
+  }
+  // addresses crypto
+  &__crypto{
+    border-top: 1px solid #dedede;
+    padding-top: 40px;
+    margin-top: 70px;
+  }
+}
+
+
+
+
+

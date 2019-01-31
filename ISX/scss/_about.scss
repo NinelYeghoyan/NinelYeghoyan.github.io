@@ -1,0 +1,61 @@
+@import "_variables";
+@import "_mixins";
+// banner style
+.about-banner{
+  @include insideBanner;
+}
+// who we are style
+.about-weAre{
+  padding: 50px 0;
+  &__bgImg{
+    background-image: url(../img/about/about-who_we-are.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 413px;
+  }
+  &__block{
+    margin-right: 55px;
+    margin-top: 53px;
+  }
+  &__title{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: $blue;
+    margin-bottom: 40px;
+  }
+  &__text{
+    line-height: 1.563;
+    color: $darkGrey;
+    & ~ .about-weAre__text{
+      margin-top: 45px;
+    }
+  }
+  &__btn{
+    margin-top: 30px;
+  }
+}
+// Secure exchange style
+.about-secure{
+  background-color: $bg_lightPink;
+  padding: 40px 0;
+  &__bgImg{
+    background-image: url(../img/about/about-secure.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 345px;
+  }
+  &__block{
+    margin-left: 83px;
+    margin-top: 83px;
+  }
+  &__title{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: $blue;
+    margin-bottom: 40px;
+  }
+  &__text{
+    line-height: 1.563;
+    color: $darkGrey;
+  }
+}

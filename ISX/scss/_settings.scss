@@ -1,0 +1,106 @@
+@import "_variables";
+.settings{
+  &__title{
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+    margin-bottom: 30px;
+  }
+  &__text{
+    color: rgb(105, 105, 105);
+    line-height: 1.375;
+    & ~ .settings__text{
+      margin-top: 28px;
+    }
+  }
+  &__row{
+    margin-bottom: 20px;
+    &__text{
+      color: rgb(105, 105, 105);
+      line-height: 1.375;
+    }
+  }
+  &__link{
+    color: rgb(105, 105, 105);
+    line-height: 1.375;
+  }
+  &__btnRow{
+    margin-top: 40px;
+  }
+  &__generateText{
+    display: none;
+    margin-top: 30px;
+  }
+  &__API{
+    .settings__link{
+      text-decoration: underline;
+    }
+  }
+  &__border{
+    border-top: 1px solid #dedede;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+  &__form {
+    margin-top: 28px;
+  }
+  // switcher style
+  .checkbox.switcher{
+    margin-left: 10px;
+  }
+  .checkbox.switcher,
+  .radio.switcher{
+    label {
+      padding: 0;
+      input {
+        display: none;
+        &+span {
+          width: 37px;
+          height: 20px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          background:  #fff;
+          border: 2px solid #D3D3D3;
+          border-radius: 50px;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          small {
+            width: 12px;
+            height: 12px;
+            display: block;
+            position: absolute;
+            background: #B9B9B9;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+            left: 2px;
+          }
+        }
+        &:checked+span {
+          background: #04B578;
+          border-color: #04B578;
+          small {
+            left: 60%;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  // padding remove and style
+  .colWidth{
+    width: 390px;
+  }
+  .padding--left{
+    padding-left: 55px;
+  }
+  .padding--right{
+    padding-right: 55px;
+  }
+  .delete-padding--right{
+    padding-right: 0;
+  }
+  .delete-padding--left{
+    padding-left: 0;
+    border-left: 1px solid #dedede;
+  }
+}

@@ -1,0 +1,61 @@
+@import "_variables";
+@import "_mixins";
+// banner style
+.contact-banner{
+  @include insideBanner;
+}
+// contact form style
+.contact-form{
+  padding: 60px 0 40px 0;
+  &__title{
+    font-size: 20px;
+    text-align: center;
+    color: $blue;
+    margin-bottom: 20px;
+  }
+  &__text{
+    line-height: 1.563;
+    text-align: center;
+    color: $darkGrey;
+    margin-bottom: 60px;
+  }
+  &__span{
+    display: block;
+  }
+}
+// contact info style
+.contact-info{
+  padding-bottom: 62px;
+  &__imgBox{
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 18px;
+  }
+  &__title{
+    font-size: 19px;
+    text-transform: capitalize;
+    color: $darkGrey;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  &__text{
+    line-height: 1.563;
+    color: $darkGrey;
+  }
+  &__span{
+    display: block;
+  }
+}
+// contact map
+.contact-map{
+  iframe{
+    width: 100%;
+    height: 270px;
+  }
+}

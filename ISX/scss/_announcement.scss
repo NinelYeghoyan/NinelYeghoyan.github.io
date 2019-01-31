@@ -1,0 +1,47 @@
+@import "_variables";
+@import "_mixins";
+.announcement-inside{
+  &__body{
+    padding: 70px 0;
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 1.2;
+    color: $blue;
+    margin-bottom: 15px;
+  }
+  &__detail{
+    font-size: 14px;
+    color: $grey;
+    margin-left: 20px;
+  }
+  &__text{
+    line-height: 1.875;
+    color: $dimGray;
+    margin-top: 25px;
+  }
+  &-right{
+    padding-left: 40px;
+    &__header{
+      font-size: 20px;
+      color: $blue;
+      margin-bottom: 20px;
+    }
+    &__row{
+      border-bottom: 1px solid rgb(222, 222, 222);
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+    &__title{
+      display: inline-block;
+      line-height: 1.563;
+      color: $darkGrey;
+      margin-bottom: 15px;
+    }
+    &__detail{
+      font-size: 14px;
+      color: $grey;
+    }
+  }
+}
+

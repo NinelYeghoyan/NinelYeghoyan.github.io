@@ -81,7 +81,16 @@ $(document).ready(function () {
             $(".overlay-md").css("display", "none");
         }, 2000);
     });
+    // loader for tabs changes
+    $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+        var id=$(this).attr('href');
+        $(id).find(".tab-overlay").children(".overlay-md").css("display", "flex");
+        setTimeout(function(){
+            $(".overlay-md").css("display", "none");
+        }, 2000);
+    });
 });
+
 // ------ header menu part -------
 var funct =  function () {
     if ($('.help-tab--close').hasClass('open')) $('.help-tab--close').removeClass('open');

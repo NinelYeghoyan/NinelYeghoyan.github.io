@@ -1,0 +1,170 @@
+@import "_variables";
+// dashboard
+.dashboard{
+  &__title{
+    color: #01567a;
+  }
+  &__drop{
+    .drop__box{
+      height: 100%;
+      border: none;
+      padding: 0;
+    }
+    .drop__value{
+      margin-right: 10px;
+    }
+    .drop__list{
+      min-width: 120px;
+      top: 25px;
+      left: -39px;
+    }
+  }
+  // balance style
+  &__balance{
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin-bottom: 35px;
+    &__col25{
+      width: 25%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__head{
+      padding: 17px 0;
+    }
+    &__row{
+      padding: 15px 0;
+      border-top: 1px solid #dedede;
+    }
+    &__box{
+      margin-left: 30px;
+    }
+    &__title{
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: dimgray;
+      margin-bottom: 12px;
+    }
+    &__text{
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #929292;
+    }
+    &__value{
+      font-family: "Open Sans", sans-serif;
+      font-size: 22px;
+      color: dimgray;
+    }
+    // mobile
+    &-sm{
+      display: none;
+      border: 1px solid #dedede;
+      margin-bottom: 30px;
+      &__block{
+        padding: 10px;
+        &  ~ .dashboard__balance-sm__block {
+          border-top: 1px solid #dedede;
+        }
+      }
+      &__box{
+        flex-grow: 1;
+        min-width: 1px;
+        margin-left: 15px;
+      }
+      &__row{
+        & ~ .dashboard__balance-sm__row{
+          margin-top: 5px;
+        }
+      }
+      img{
+        width: 35px;
+      }
+    }
+  }
+  // activity
+  &__activity{
+    &__box{
+      font-family: 'Open Sans', sans-serif;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+    }
+    &__rowTitle{
+      padding: 17px 20px;
+    }
+    &__row{
+      padding: 20px;
+      border-top: 1px solid #dedede;
+    }
+    &__date{
+      font-size: 18px;
+      color: dimgray;
+      margin-bottom: 10px;
+    }
+    &__text{
+      flex-grow: 1;
+      min-width: 1px;
+      font-size: 18px;
+      color: dimgray;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    &__info{
+      font-size: 14px;
+      color: #929292;
+      text-transform: capitalize;
+    }
+    &__valueDeposit{
+      font-size: 14px;
+      color: #04b578;
+      text-transform: capitalize;
+    }
+    &__valueWithdraw{
+      font-size: 14px;
+      color: rgb(255, 91, 145);
+      text-transform: capitalize;
+    }
+    &__viewAll{
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      color: rgb(105, 105, 105);
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover{
+        background-color: #F7F9FF;
+      }
+    }
+    &__block{
+      position: relative;
+    }
+  }
+  // announcements
+  &__announcement{
+    &__row{
+      padding: 10px 20px;
+      border-top: 1px solid #dedede;
+    }
+    &__title{
+      display: inline-block;
+      font-size: 18px;
+      color: rgb(105, 105, 105);
+      margin-bottom: 11px;
+    }
+    &__text{
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.2;
+      color: rgb(146, 146, 146);
+    }
+    &__date{
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1.2;
+      text-align: right;
+      color: rgb(146, 146, 146);
+    }
+  }
+}

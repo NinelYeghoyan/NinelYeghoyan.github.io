@@ -1,0 +1,20 @@
+@import "_variables";
+@import "_mixins";
+.terms{
+  &__body{
+    padding: 70px 0;
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 1.2;
+    color: $blue;
+    margin-bottom: 15px;
+  }
+  &__text{
+    line-height: 1.875;
+    color: $dimGray;
+    & ~ .terms__text{
+      margin-top: 25px;
+    }
+  }
+}

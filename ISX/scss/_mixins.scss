@@ -1,0 +1,15 @@
+@import "_variables";
+
+// inside banners mixin
+@mixin insideBanner{
+  background-image: url(../img/inside-banner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 300px;
+  &__title{
+    font-size: 50px;
+    text-align: center;
+    color: $white;
+  }
+}

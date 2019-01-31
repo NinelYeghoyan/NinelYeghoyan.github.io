@@ -1,0 +1,59 @@
+@import "_variables";
+@import "_mixins";
+.auth {
+  &-banner {
+    background-image: url(../img/log-banner-top.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: $white;
+  }
+  &-banner-2 {
+    background-image: url(../img/log-banner-bottom.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    color: $blue;
+  }
+  &__text{
+    line-height: 1.563;
+    text-align: center;
+    color: $darkGrey;
+    margin-top: 20px;
+  }
+  &__span{
+    display: block;
+  }
+  &__form{
+    width: 360px;
+    margin: 40px auto auto auto;
+  }
+  &__pass{
+    border-left: 1px solid #dedede;
+    padding-left: 65px;
+  }
+  &__details{
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: $grey;
+  }
+  &__buttonRow{
+    margin-top: 28px;
+  }
+  &__line{
+    border-top: 1px solid #dedede;
+    margin-top: 20px;
+    padding-top: 14px;
+  }
+  &__link{
+    color: $blue;
+    text-decoration: underline;
+    &:hover{
+      color: $blue;
+    }
+  }
+}
