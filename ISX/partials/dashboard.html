@@ -88,7 +88,7 @@
                     <div class="overlay-md">
                         <img src="../img/icons/loader.gif" alt="loader"/>
                     </div>
-                    <h3 class="top-header">Dashboard</h3>
+                    <!--<h3 class="top-header">Dashboard</h3>-->
                     <div class="dashboard">
                         <!-- dashboard balance -->
                         <section class="dashboard__balance">
@@ -232,18 +232,12 @@
                                         <div class="dashboard__activity__rowTitle d-flex align-items-center justify-content-between">
                                             <h6 class="dashboard__title">Recent activity</h6>
                                             <div class="dashboard__drop">
-                                                <div class="drop">
-                                                    <button type="button" class="drop__box d-flex align-items-center justify-content-between">
-                                                        <span class="drop__value">Request</span>
-                                                        <img src="../img/icons/arrow_down.png" alt="arrow down"/>
-                                                    </button>
-                                                    <ul class="drop__list">
-                                                        <li class="drop__item drop__none">Request</li>
-                                                        <li class="drop__item">Request-1</li>
-                                                        <li class="drop__item">Request-2</li>
-                                                        <li class="drop__item">Request-3</li>
-                                                    </ul>
-                                                </div>
+                                                <select id="dashboard__drop" class="js-example-basic-single" name="state" style="width: 150px;">
+                                                    <option value="BTC">Request</option>
+                                                    <option value="ETH">Request-1</option>
+                                                    <option value="LTC">Request-2</option>
+                                                    <option value="Ripple">Request-3</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="dashboard__activity__block">
@@ -329,7 +323,7 @@
                     <div class="overlay-md">
                         <img src="../img/icons/loader.gif" alt="loader"/>
                     </div>
-                    <h3 class="top-header">Addresses</h3>
+                   <!-- <h3 class="top-header">Addresses</h3>-->
                     <!-- addresses header -->
                     <section class="addresses">
                         <div class="addresses__row d-flex align-items-center justify-content-between">
@@ -559,21 +553,15 @@
                             </div>
                             <!-- history header-->
                             <div class="history__header">
-                                <h3 class="top-header">History</h3>
+                               <!-- <h3 class="top-header">History</h3>-->
                                 <div class="d-flex justify-content-end">
                                     <div class="history__drop">
-                                        <div class="drop">
-                                            <button type="button" class="drop__box d-flex align-items-center justify-content-between">
-                                                <span class="drop__value">Transactions</span>
-                                                <img src="../img/icons/arrow_down.png" alt="arrow down"/>
-                                            </button>
-                                            <ul class="drop__list">
-                                                <li class="drop__item drop__none" data-value="transactions">Transactions</li>
-                                                <li class="drop__item" data-value="order">Order</li>
-                                                <li class="drop__item" data-value="login">Login</li>
-                                                <li class="drop__item" data-value="request">Request</li>
-                                            </ul>
-                                        </div>
+                                        <select id="history__drop" class="js-example-basic-single" name="state" style="width: 185px;">
+                                            <option value="transactions">Transactions</option>
+                                            <option value="order">Order</option>
+                                            <option value="login">Login</option>
+                                            <option value="request">Request</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -1112,7 +1100,7 @@
                     <div class="overlay-md">
                         <img src="../img/icons/loader.gif" alt="loader"/>
                     </div>
-                    <h3 class="top-header">Settings</h3>
+                   <!-- <h3 class="top-header">Settings</h3>-->
                     <section class="settings">
                         <div class="row">
                             <aside class="delete-padding--right col-lg-6 col-md-6 col-sm-12 col-xs-12">

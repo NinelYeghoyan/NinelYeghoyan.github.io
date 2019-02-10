@@ -6,42 +6,6 @@ $(document).ready(function () {
         var winHeight = window.innerHeight;
         $(".auth-banner, .auth-banner-2").height(winHeight);
     });
-    // dropdown open and close
-    $(".drop").click(function() {
-        $(".drop").not(this).find(".drop__list").hide();
-        $(this).find(".drop__list").toggle();
-        $(".drop").not(this).find("img").removeClass("drop__rotate");
-        $(this).find("img").toggleClass("drop__rotate");
-    });
-    // dropdown select item
-    $(".drop .drop__item").click(function() {
-        let txt = $(this).text();
-        $(this).parents(".drop").find(".drop__value").text(txt);
-        $(this).parents(".drop").find(".drop__item").removeClass("drop__none");
-        $(this).addClass("drop__none");
-    });
-    // history dropdown option
-    $(".history__drop .drop__item").click(function() {
-        let value = $(this).attr("data-value");
-        let txt = $(this).text();
-        $(".history-table").hide();
-        $("#"+ value).show();
-        $(".history__drop .drop__value").text(txt);
-        $(".history__drop .drop__item").removeClass("drop__none");
-        $(this).addClass("drop__none");
-        $(".table-lg-body .overlay-md").css("display", "flex");
-        $(".table-sm .overlay-md").css("display", "flex");
-        setTimeout(function(){
-            $(".overlay-md").css("display", "none");
-        }, 2000);
-    });
-    // Dashboard activity dropdown loader
-    $(".dashboard__drop .drop__item").click(function() {
-        $(".dashboard__activity__block .overlay-md").css("display", "flex");
-        setTimeout(function(){
-            $(".overlay-md").css("display", "none");
-        }, 2000);
-    });
     // Addresses page add account
     $(".addresses__add__btn").click(function() {
         $(".addresses__account--edit").next(".dropdown-btn__list").hide();
@@ -89,6 +53,30 @@ $(document).ready(function () {
             $(".overlay-md").css("display", "none");
         }, 2000);
     });
+
+    // plugin option
+    $('.js-example-basic-single').select2({
+        width: 'resolve' // need to override the changed default
+    });
+    $("select").select2({minimumResultsForSearch: -1});
+    // history page change table content
+    $('#history__drop').change(function(){
+        let value = $(this).val();
+        $(".history-table").hide();
+        $("#"+ value).show();
+        $(".table-lg-body .overlay-md").css("display", "flex");
+        $(".table-sm .overlay-md").css("display", "flex");
+        setTimeout(function(){
+            $(".overlay-md").css("display", "none");
+        }, 2000);
+    });
+    // Dashboard activity dropdown loader
+    $('#dashboard__drop').change(function(){
+        $(".dashboard__activity__block .overlay-md").css("display", "flex");
+        setTimeout(function(){
+            $(".overlay-md").css("display", "none");
+        }, 2000);
+    });
 });
 
 // ------ header menu part -------
@@ -125,10 +113,6 @@ helpTabMobile.click(function(event) {
     func();
 });
 $(document).click(function (event) {
-    if(event.target.className.search('drop')===-1){
-        $(".drop").find(".drop__list").hide();
-        $(".drop").find("img").removeClass("drop__rotate");
-    }
     if(event.target.className.search('addresses__add')===-1&&
         event.target.className.search('addresses__account--edit')){
         if(!$(event.target).parents('.dropdown-btn__list').length){
