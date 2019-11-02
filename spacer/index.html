@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArmeniaTravel</title>
+    <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+<header class="header" id="nav">
+    <div class="wrapper">
+        <div class="header--wrapper">
+            <h4 class="header__title scrollColor">welcome to our website!</h4>
+            <ul class="header__list">
+                <li class="header__item header__position_white header__position_whiteAfter click-lang scrollColor">English
+                    <ul class="header__languagepicker">
+                        <li class="header__languagepicker__item">
+                            <a href="#" class="header__languagepicker__link">Nederlands</a>
+                        </li>
+                        <li class="header__languagepicker__item">
+                            <a href="#" class="header__languagepicker__link">German</a>
+                        </li>
+                        <li class="header__languagepicker__item">
+                            <a href="#" class="header__languagepicker__link">Français</a>
+                        </li>
+                        <li class="header__languagepicker__item">
+                            <a href="#" class="header__languagepicker__link">Español</a>
+                        </li>
+                        <li class="header__languagepicker__item">
+                            <a href="#" class="header__languagepicker__link">Italiano</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__item header__position_white header__position_whiteAfter click-money scrollColor">USD
+                    <ul class="header__moneypicker">
+                        <li class="header__moneypicker__item">
+                            <a href="#" class="header__moneypicker__link">EUR</a>
+                        </li>
+                        <li class="header__moneypicker__item">
+                            <a href="#" class="header__moneypicker__link">AMD</a>
+                        </li>
+                        <li class="header__moneypicker__item">
+                            <a href="#" class="header__moneypicker__link">GBP</a>
+                        </li>
+                        <li class="header__moneypicker__item">
+                            <a href="#" class="header__moneypicker__link">RUR</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__item header__position_white popup-click--log scrollColor">Login</li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav__logo nav__logo-white"></a>
+            <div class="nav--mobile menu-open">
+                <span class="nav--mobile__item scrollColor">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="mob-menu">
+                <!-- Menu icon -->
+                <div class="icon-close">
+                    <img src="img/close.png">
+                </div>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link scrollColor">hotels</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link scrollColor">transfer</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link scrollColor">tickets & excursions</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link scrollColor">tours</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link scrollColor">ski</a>
+                    </li>
+                    <li class="nav__item">
+                    <span class="nav__icon">
+                        <img src="img/cart.png" alt="img"/>
+                    </span>
+                        <a href="#" class="nav__link scrollColor">my bookings</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="wrapper banner--wrapper">
+        <h1 class="banner__title">Find Your Hotel</h1>
+        <p class="banner__text">The best hotels at the best rates</p>
+        <div class="banner-form--popup">
+            <!-- Menu icon -->
+            <div class="icon-close">
+                <img src="img/close.png">
+            </div>
+            <form action="" class="banner-form">
+                <div class="banner-form__col">
+                    <label for="location" class="banner-form__label">Location</label>
+                    <select name="" id="location" class="banner-form__select">
+                        <option value="">Yerevan, Armenia</option>
+                        <option value="">Yerevan, Armenia</option>
+                        <option value="">Yerevan, Armenia</option>
+                        <option value="">Yerevan, Armenia</option>
+                    </select>
+                </div>
+                <div class="banner-form__col">
+                    <label for="arrival" class="banner-form__label">Arrival</label>
+                    <select name="" id="arrival" class="banner-form__select">
+                        <option value="">10 Mar, 2017</option>
+                        <option value="">10 Mar, 2017</option>
+                        <option value="">10 Mar, 2017</option>
+                        <option value="">10 Mar, 2017</option>
+                    </select>
+                </div>
+
+                <div class="banner-form__col">
+                    <label for="departure" class="banner-form__label">departure</label>
+                    <select name="" id="departure" class="banner-form__select">
+                        <option value="">15 Mar, 2017</option>
+                        <option value="">15 Mar, 2017</option>
+                        <option value="">15 Mar, 2017</option>
+                        <option value="">15 Mar, 2017</option>
+                    </select>
+                </div>
+                <div class="banner-form__col">
+                    <label for="rooms" class="banner-form__label">rooms</label>
+                    <select name="" id="rooms" class="banner-form__select">
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </div>
+                <div class="banner-form__col">
+                    <label for="guests" class="banner-form__label">Guests</label>
+                    <select name="" id="guests" class="banner-form__select">
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="banner-form__button">search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="banner" id="scroll">
+        <div class="banner__bgColor">
+
+        </div>
+    </section>
+    <section class="fixed-barOuter">
+        <div class="fixed-barInner">
+            <ul class="fixed-barList">
+                <li class="fixed-barList__item">Book Now</li>
+            </ul>
+        </div>
+    </section>
+    <section class="popup popup--log">
+        <div class="popup-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="popup__content">
+            <div class="popup-wrapper">
+                <h2 class="popup__title">Log in</h2>
+                <p class="popup__text">Enter your name and password to log in:</p>
+                <form action="" class="popup-form">
+                    <div class="popup-form__row">
+                     <span class="popup-form__icon">
+                       <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </span>
+                        <input type="text" placeholder="username" class="popup-form__input"/>
+                    </div>
+                    <div class="popup-form__row">
+                    <span class="popup-form__icon">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                    </span>
+                        <input type="password" placeholder="password" class="popup-form__input"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Log in" class="popup-form__button"/>
+                    </div>
+                    <div class="popup-form__forgot-box">
+                        <label class="popup-form--remember"><input type="checkbox" name="remember">remember</label>
+                        <a href="#" class="popup-form__link">Forgot you password?</a>
+                    </div>
+                </form>
+                <div class="popup-social">
+                    <h4 class="popup-social__title">or log in with</h4>
+                    <div class="popup-social__list">
+                        <div class="popup-social__box">
+                        <span class="popup-social__icon">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </span>
+                            <span class="popup-social__text">facebook</span>
+                        </div>
+                        <div class="popup-social__box">
+                        <span class="popup-social__icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </span>
+                            <span class="popup-social__text">twitter</span>
+                        </div>
+                        <div class="popup-social__box">
+                        <span class="popup-social__icon">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </span>
+                            <span class="popup-social__text">google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="destination">
+        <div class="wrapper">
+            <h2 class="section-title">popular destinations</h2>
+            <p class="section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="destination__row">
+                <a href="#" class="destination__row__link">
+                    <div class="destination__row__block">
+                        <img src="img/img1.png" alt="Yerevan"/>
+                        <div class="destination__row__textbox">
+                            <h1 class="destination__row__text">Yerevan</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="destination__row__link">
+                    <div class="destination__row__block">
+                        <img src="img/img2.png" alt="Tatev"/>
+                        <div class="destination__row__textbox">
+                            <h1 class="destination__row__text">Tatev</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="destination__row__link">
+                    <div class="destination__row__block">
+                        <img src="img/img3.png" alt="Dilijan"/>
+                        <div class="destination__row__textbox">
+                            <h1 class="destination__row__text">Dilijan</h1>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="destination__row__link">
+                    <div class="destination__row__block">
+                        <img src="img/img4.png" alt="Geghard"/>
+                        <div class="destination__row__textbox">
+                            <h1 class="destination__row__text">Geghard</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="section-button__row">
+                <button class="section-button">view all</button>
+            </div>
+        </div>
+    </section>
+    <section class="choose">
+        <div class="wrapper">
+            <h2 class="section-title">why choose us</h2>
+            <div class="choose__row">
+                <div class="choose__row__block">
+                    <img src="img/search.png" class="choose__row--animation" alt="search"/>
+                    <h5 class="choose__row__title">advanced search options</h5>
+                    <p class="choose__row__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="choose__row__block">
+                    <img src="img/price.png" class="choose__row--animation" alt="price"/>
+                    <h5 class="choose__row__title">best price</h5>
+                    <p class="choose__row__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="choose__row__block">
+                    <img src="img/support.png" class="choose__row--animation" alt="support"/>
+                    <h5 class="choose__row__title">support</h5>
+                    <p class="choose__row__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="choose__row__block">
+                    <img src="img/payment.png" class="choose__row--animation" alt="payment"/>
+                    <h5 class="choose__row__title">payment method</h5>
+                    <p class="choose__row__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hotel">
+        <div class="wrapper">
+            <h2 class="section-title">TOP HOTELS</h2>
+            <p class="section-text">Here some hotels reputation that maybe you’ll like.</p>
+            <div class="hotel__row">
+                <a href="#" class="hotel__row__link">
+                    <figure class="hotel__figure">
+                        <div class="hotel__figure__imgBox">
+                            <img src="img/img5.png" class="hotel__figure__img" alt="img"/>
+                        </div>
+                        <figcaption class="hotel__figcaption">
+                            <h5 class="hotel__figcaption__title">Hotel Name lorem ipsum is simply</h5>
+                            <p class="hotel__figcaption__text">Hotel location, lorem ipsum is</p>
+                            <span class="hotel__figcaption__price">$35</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="hotel__row__link">
+                    <figure class="hotel__figure">
+                        <div class="hotel__figure__imgBox">
+                            <img src="img/img6.png" class="hotel__figure__img" alt="img"/>
+                        </div>
+                        <figcaption class="hotel__figcaption">
+                            <h5 class="hotel__figcaption__title">Hotel Name lorem ipsum is simply</h5>
+                            <p class="hotel__figcaption__text">Hotel location, lorem ipsum is</p>
+                            <span class="hotel__figcaption__price">$28</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="hotel__row__link">
+                    <figure class="hotel__figure">
+                        <div class="hotel__figure__imgBox">
+                            <img src="img/img7.png" class="hotel__figure__img" alt="img"/>
+                        </div>
+                        <figcaption class="hotel__figcaption">
+                            <h5 class="hotel__figcaption__title">Hotel Name lorem ipsum is simply</h5>
+                            <p class="hotel__figcaption__text">Hotel location, lorem ipsum is</p>
+                            <span class="hotel__figcaption__price">$16</span>
+                            <span class="hotel__figcaption__priceDelete">$30</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="hotel__row__link">
+                    <figure class="hotel__figure">
+                        <div class="hotel__figure__imgBox">
+                            <img src="img/img8.png" class="hotel__figure__img" alt="img"/>
+                        </div>
+                        <figcaption class="hotel__figcaption">
+                            <h5 class="hotel__figcaption__title">Hotel Name lorem ipsum is simply</h5>
+                            <p class="hotel__figcaption__text">Hotel location, lorem ipsum is</p>
+                            <span class="hotel__figcaption__price">$67</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="section-button__row">
+                <button class="section-button">view all hotels
+                    <span class="section-button__img">
+                        <img src="img/arrow-right.png" alt="arrow-right"/>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__bgColor">
+        <div class="wrapper footer__wrapper">
+            <a href="#" class="footer__list">
+                <img src="img/logo-white.png" alt="footer-logo"/>
+            </a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Terms & conditions</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">privacy policy</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">help</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">hotels</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">transfer</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">tours</a>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">contact us</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">get in touch</a>
+                </li>
+                <li class="footer__item footer__list__social">
+                    <span class="footer__list__social__icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </span>
+                    <span class="footer__list__social__icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <span class="footer__list__social__icon">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </span>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list__title">subscribe to us</li>
+                <li>
+                    <form class="footer__list__form">
+                        <input type="text" placeholder="e-mail" class="footer__list__input">
+                        <button class="footer__list__button">
+                            <img src="img/submit.png" class="footer__list__button__img" alt="submit"/>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper footer__rights">
+            <p class="footer__rights__text">© <span class="footer__rights--uppercase">Armenia Travel.</span> All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="js/libs.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
